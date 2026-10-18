@@ -1,0 +1,47 @@
+CRISP: Cyber Risk Intelligence Surveillance Platform
+
+the problem:
+	The compny has multiple firewall and Saas they use, they do not 
+	know if they are secure, they would like a agent to do research
+	on some trusted site on new vulnerabilites to cross reference on
+	the machines that have on the network and determine if they are 
+	vulnerable
+
+who uses the system:
+	It team
+
+inputs:
+	* a csv/markdown file of the endpoints the company has and wants to
+	  be analyzed
+	* a list of found vulnerabilities the agent found on web
+
+major function:
+	* web scalping
+	* compare found vuln software version to machines on network
+	* make a report of new vuln and machines that are affected
+	* a ui with configs and reports
+
+output:
+	* new found vulnerabilty from web scalping
+	* a list of machine that are effect
+	* recommended next steps
+
+security/access requirements:
+	* agent has read only
+
+requirments: (so far)
+	* claude api key
+	* database
+	* dashboard
+	* data standarization
+	* cross reference processing
+		* could make a accuracy/precison stats
+	* History
+	* configs
+	* prioritize firewalls and Saas (cloud services) machines
+
+trusted websites:
+	Dark Readings
+	CISA
+	CVSS
+

@@ -1,0 +1,4298 @@
+[
+    {
+        "deviceName": "markworrell-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "3017156-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "eddiegomez-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "BrettFast-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "greggkupec-sp4",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3120",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JESSEROBLES-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SELMATRAIN-QL",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JEFFTUTTLE-SP3",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2026",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "STEVESCHULTE-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TIMOTHYPENA-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "brianvalenzuela-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "3021139-CedarHillStatePark",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1751",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CLINTHOOD-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1925",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3101",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1951",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DocFeuerbacher-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3204",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "RLOZANO-UB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JOELSTONE-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "BILLVENABLE-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "AUSSCAN-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JASONSMITH-UB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "4019043-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DUSTYNCOX-UB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "IRMALOANER-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3207",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "KeatonOmick-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "HILLARYCADRA-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "HOUSCAN1-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JeffPool-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SASCANDESKPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2000 (RETIRED)",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "mickfeganpc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ShawnThurman-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "PabloDelacerdaPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3607",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "HOUFRONTDESK-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "angelawhitepc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1858",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "MAXVALLA-TAB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2424",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1755",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SCOTTLEWAN-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "austinchristen-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1971",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "MattElliot1-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "RyanOgle-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1189",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "LESRABURN-5500",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1750",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "mikesanford-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "RYANCHAVEZ-UB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1970",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "GRADYCARLSONPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "michaelemmons",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DAVIDAJLANI-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DANIELBALLIN-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CHRISSCHUB-SP6",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "WILLWIGHT-LOANE",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "WADELOLLARPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ChristianMoskal-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JESUSTREVINO-SP",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2253",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CHARLESSOUTHARD",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "mosesarellanopc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "NICOLESAENZ-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TEDFITZMAURICE",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "RichMoore-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SABSShop-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3643",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JUSTINCALVIN-UB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "KRISTENELORENZ",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "WESTONHADA-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ERICKENNEDYPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "MIKERALEY-5510",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "LINGLE-5300",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3601",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "GRADYFRANKPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "3018015-BADGE",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CathyCruzPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "IRENEO-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TravisEvans-SP6",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JWORTHINGTON-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "papafaye-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JOSEHERRERA--RT",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "camialling-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DAVECHARESTPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "PARKERBLASCHKEU",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SCOTTHOBZA-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3210",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3636",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DerekOrr-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "jamesmcclain-tablet",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2016",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JEFFREYMORENOUB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1888",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "HermiloMorales-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3106",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TINARIVAS5500",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JORGEFUENTESPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "AlmaFabianPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "leocoll-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "PETEESPARZAPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "veronicagutierrez-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JERRYGOSS-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SAMRIOJAS-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "MTREVINO-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "NICHOMARTINEZPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1753",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2224",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2420",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ErinTippsPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "AlRamirez-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "AUSFRONTDESKPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2834",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "AUSTRAININGPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1701",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CShewmaker-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JONIHOGUEPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3606",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SAFRONTDESK-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JuvenalFuentesPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "RYANSYRING-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "PAULOLSENPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3104",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "MARYHAZLETT-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3910",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1920",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CLINTULLMAN-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TylerPatton-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ERICPEARSON-UB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "PHILSHIPLEY-UB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3119",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JULIEVOLLMER-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1917",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1886",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "LEOANDERSON-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3347",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2634",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1758",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CarlosMartinezPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "Isoriano-PC2",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DanielOlson-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ROBERTMOELLERPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ronwylie-sp6",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "RUBENSALAS-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1719",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1921",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2641",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "blakegreenpc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "robinfalkepc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1747",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "lloydfaver-sp6",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3110",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JoeyArriola1-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2626",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2279",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JEFFEUBANK-UB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "AMERALNAHHASPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "MICHAELEMMONSUB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3812",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "Intune-8JPq8z8F",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JAKEPACK-UB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3108",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "brianjohnson-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "KENDELLBROWNING - RETIRED",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "jerryvander-sp5",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "PPORTZER-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3215",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1188",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2604",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3221",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1943",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2410",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1733",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "NTXFRONTDESKPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "KATIECREWPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3009",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3506",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CAROLCADENGO-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SDIXON-UBOOK",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TREYWEINAND-SUR",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3813",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1147",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "RYANMUELLERPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "kerryfellers-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "dougworrellpc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2436",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1904",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SAIACONFRENCEPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ZEBYOUNG-SB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1180",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1899",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TravisKarr-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "joshkapchinske-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "MICHAELWENZPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "MARTINPEREZPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "STEVEGONZALEZPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JULIANALEMANPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JONRUGGLESPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ROBERTHERNANDEZ",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1999",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1892",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3100",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "GarettWheaton-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "LarryAlvarezPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JORGEESTELLOPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JoshWisePC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "daniellermasp4",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "PEARSONRANDEL-S",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JOHNDEVANEYPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2614",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "WestonVossSP6",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2203",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JOEMARTIN-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JayHogue-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2433",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2971",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3446",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "chrispennington-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JamesHarden-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2440",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "AlejandroM-sp4",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2622",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "HOUBID-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ROGMENDOZAPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ANCELMONINO-TAB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2224",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DavidPaden-sp6",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SABIDROOMPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "NICKSLOVAK-SP4",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CodyWilson-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JOEYGEORGE-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "3019032-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3623",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "Charlesstilwell-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ROYCASTILLO-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2603",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2610",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "40180340-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "MiguelRendonPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3502",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SG-CO-FILE01",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1954",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "BRYANROD-ALW",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1947",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2999",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TaylorBecerril-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "cliffthuot1-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "johnlairson-sp4",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "adamryan-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "AlbertLopez1-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "jeffhulett-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "robertdavis-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "lesmesser-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "laytonmuehr-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2628",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "WESTLAND-BJ",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1980",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2405",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3965",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "mikebynum-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "kanphaobun-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "katiejohnson-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "PaulGregg-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "johnbuschpc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1911",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "michaelcardona-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ROBERTZAVALA-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CullenSchoenerPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "kevinthompson-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "RUSSELLBONE-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TREYDANIELPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "markgrauvogl1-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "lubadub-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SUSANROBERTS-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "MIKEVAUGHN-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "bethanyfarner-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ALEXWOODARD-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "dustinwilson-sp4",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4782",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4539",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TRACYNORRIS-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3249",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "AAORTEGA1887",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2412",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "juanMarquez-Pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2518",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "RBERRY-PRO8",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CARLOSVAZQUEZPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "3020133BADGE-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "codyellig-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3114",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ROBERTALONG-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JANIEHUNTER1-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3319",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "4020023-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3626",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2950",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3630",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "STX-ONBOARD",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CorpusChristi-QL",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DANNYGUT-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1636",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1737",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ChrisSchwer-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3505",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CIVTRAINING-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3843",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SCOTTHOBZA-SP3",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "BB-Asad",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JUSTINCASKEYPC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3127",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "laurelehsai-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "KIRBYBAIRD-SP7",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1984",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2223",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1891",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TylerTuscher-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "fas-3354",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-5531",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TracyLopez-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3600",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2601",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3171",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SUSANBYRD-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "HouConfRoomB-QL",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "HouConfRoomA-QL [OLD]",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2429",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "STACIEMADRIGAL",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2002",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DARIELACHRINOS-",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1960",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "LoriIngle-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1916",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "JBradley5310",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2409",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS--3220",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3901",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2650",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "Intune-pkp1Z8ta",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2020",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1948",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CIVILSAEST-QL",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3345",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1950",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "LUISDIAZ-TABLET",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "HAIDARFAZELI-BI",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1934",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "WESTONBERGY-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SG-HOU-DASHBD",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "WAS-RichardBatson",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SG-CO-RDS04",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2254",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3432",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3113",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3814",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1963",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "KIRBYBAIRD-SP4",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "BRIANCLAXTON-PC",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "GCASTANO5500",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2137",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2091",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2092",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1937",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3593",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2611",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1941",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3006",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "TABLET-CUHJL2VA",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1929",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3434",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3433",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3849",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3847",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1993",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2142",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3845",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3716",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2616",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2453",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS--3846",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2458",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2455",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2452",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2974 (3023148-CoRROSPBuildout)",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3450",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2454",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2029",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3196",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3449",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2451",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2995",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2994",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2993",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "HOUTRAININGROOM",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3184",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3187",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3186",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2637",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3344 (Duplicate?)",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3475",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3826",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3799",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2966",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3797",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3794",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3190",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3822",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3791",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2037",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3798",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3824",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3793",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3823",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3850",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3192",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2058",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3346",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3796",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3189",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2960",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2049",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2044",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1919",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1977",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2059 [LOST]",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2046",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2047",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2043",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3792",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2401",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS--3234",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2045",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2060",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2090",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2079",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2077",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1752",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2021",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3435",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2843",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2078",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2854",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1967",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2860",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2852",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2851",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2866",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2856",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2858",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2855",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2466",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2464",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2462",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3328",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2490",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2896",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2894",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2488",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2476",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3149",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3145",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3835",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3323",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3833",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3832",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2489",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "DESKTOP-RRISKVO",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "amadomose-pc",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2832",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SG-CO-DEV-MER",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2414",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1962",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3349",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2507",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3065",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3067",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3256",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3259",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3068",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3257",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3255",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4534",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2921",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3864",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3578",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3978",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3972",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3589",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4510",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4515",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4513",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4511",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3077",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3079",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3078",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3075",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "ANTHONY-DEV",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2632",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3372",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3369",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3370",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3378",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3375",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3361",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3365",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3377",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3371",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3379",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3380",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3242",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3400",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3387",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3389",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3390",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3727",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3726",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3724",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3725",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3728",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4543",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2471",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3743",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4546",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2831",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2469",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3961",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2841",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2859",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2419",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2472",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1944",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4613",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2865",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4611",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2864",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2863",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4614",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4615",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3442",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2465",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3089",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2893",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2463",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4558",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4561",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4559",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3445",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3087",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1907",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1913",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3521",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3443",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "3017090-GB",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4617",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3258",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3001",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2627",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4562",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2469",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4618",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1192",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2924",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4570",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4578",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4574",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4770 (4022325-Motiva) [OLD]",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3994",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3997",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3993",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3995",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4773",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4608",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3699",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3697",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3691",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3692",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4623",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3990",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4627",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4626",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "CHARMOGAB-SP3",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3960",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4630",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4634",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2617",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2613",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4642",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4788",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4649",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4648",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4787",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4652",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3244",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4658",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4807",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4663",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3633",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4820",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4671",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4674",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3260",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4677",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4676",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "Intune-I77RfIpg",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4678",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2260",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4679",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3245",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4696",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4700",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4693",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4694",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4695",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4692",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4699",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4701",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4687",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4688",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4690",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4698",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4689",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3102",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1720",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4702",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4703",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4704",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2602",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4709",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4708",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2266",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4724",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4725",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4723",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4726",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2264",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4739",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4733",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4735",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4737",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4734",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4736",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4741",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4738",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4740",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2263",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4747",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4745",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4742",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4743",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4744",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4750",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4748",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4749",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4751",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2262",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4754",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4753",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4755",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4756",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4757",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4761",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4759",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4758",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4767",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4763",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4764",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4760",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4765",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4766",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2261",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2280",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2277",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4876",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4877",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4873",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4872",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4878",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4874",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4880",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4881",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4879",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4875",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-1200",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS---3037",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2278",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4978 (3023143-UTDSSC+SUEarlyMobilizationPackage)",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2404",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4977",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2274",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2080",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-5000",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3261",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3262",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4915",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4916",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4917",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4918",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "SG-CO-DEV-ANTHONY",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3265",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2288",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3243",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-5278",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-5279",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-4861",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2265 (3024131-TXSTHilltopHousingPhase2)",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-2008",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-3996",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-5557",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "FAS-5554",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    },
+    {
+        "deviceName": "INTUNE-BNTHUEQG",
+        "product": "GoToAssist Customer 4.8.0.1702",
+        "version": "4.8.0.1702",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/GoToAssist_Customer_4.8.0.1702_installation_export_289522_16000069920.csv"
+    }
+]

@@ -1,0 +1,38 @@
+0CRISP: Cyber Risk Intelligence Platform
+
+                        INPUT
+          ┌──────────────┴──────────────┐
+          ▼                             ▼
+ Clean & Standardize              Research Agent
+          │                             │
+          ▼                             ▼
+ Inventory Database             Vulnerability List
+          │                             │
+          └──────────────┬──────────────┘
+                         ▼
+               Vulnerability Matching
+                         │
+                         ▼
+              Vulnerable/Affected Assets
+                         │
+                         ▼
+                   Analysis Agent
+                         │
+                         ▼
+             Reports & Recommendations
+                         │
+                         ▼
+                   User Interface
+                    
+
+input:
+	* inventory csv
+	* filters
+	* Trusted Sites
+
+output:
+	* analysis report
+	* serverity rating
+	* list of vulnerable devices
+	* history
+	* remendations

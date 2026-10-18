@@ -1,0 +1,55 @@
+Display Name,Contract Number,Type,Vendor,Cost,Status,License Start Date,License End Date
+Adobe Creative Cloud ,CNTR-10,Software License,SHI,0,Active,25-May-26,24-May-27
+Bluebeam Extreme,CNTR-13,Software License,"Bluebeam, Inc.",0,Active,15-Oct-25,14-Oct-26
+Camtasia,CNTR-14,Software License,TechSmith Corporation,0,Active,12-Apr-26,11-Apr-27
+AIA Contract Documents,CNTR-19,Subscription Software License,AIA,5000,Active,6-Jul-26,6-Jul-27
+Cosential,CNTR-22,SaaS,Cosential,39489.5,Active,30-May-26,29-May-27
+Costworks,CNTR-23,Software License,RSMeans,25000,Active,3-Jul-26,2-Jul-27
+DNS Registration,CNTR-25,Software Maintenance,Network Solutions ,120,Active,25-Jun-22,5-Jun-27
+iSQFT,CNTR-29,SaaS,iSQFT,3000,Active,2-Nov-24,1-Nov-26
+Nvidia Grid,CNTR-33,Software License,SHI,1800,Active,12-Apr-26,11-Apr-27
+Oracle P6,CNTR-36,Software License,Oracle Corporation,90000,Active,1-Apr-26,1-Apr-27
+OnScreen Takeoff,CNTR-37,Software License,"On Center Software, Inc.",6000,Active,3-Dec-25,2-Dec-26
+Parallels RAS,CNTR-38,Software License,SHI,8256.23,Active,17-Aug-26,17-Aug-27
+Royal TS,CNTR-40,Software License,SHI,500,Active,10-Jun-26,9-Jun-27
+Sage FAS,CNTR-41,Software License,"Sage Software, Inc.",4000,Active,3-Dec-25,2-Dec-26
+Sketchup,CNTR-44,Software License,"Trimble, Inc.",0,Active,12-Apr-26,11-Apr-27
+Snagit Maintenance,CNTR-45,Software License,TechSmith Corporation,0,Active,12-Apr-26,11-Apr-27
+Veeam Backup and Replication Enterprise ,CNTR-53,Software License,SHI,0,Active,22-Sep-26,21-Sep-27
+WonderShare Filmora,CNTR-54,Software License,SHI,108.24,Active,--,--
+Microsoft SQL Server 2016,CNTR-65,Software License,Microsoft Corporation,0,Active,2-Sep-18,30-Sep-26
+Microsoft SQL Server Core 2017,CNTR-66,Software License,Microsoft Corporation,0,Active,3-Dec-19,1-Dec-26
+Windows 10 ,CNTR-79,Software License,Microsoft Corporation,300,Active,--,--
+E4Clicks,CNTR-81,Software Maintenance,RSMeans,25000,Active,16-May-26,15-May-27
+Cornerstone LMS,CNTR-82,SaaS,Cornerstone,62360,Active,13-Dec-25,13-Dec-31
+Docusign,CNTR-84,SaaS,Docusign,75000,Active,21-Oct-25,20-Oct-26
+Quest Software TOAD for Oracle,CNTR-91,Software Maintenance,Quest Software Inc.,790,Active,1-May-25,1-May-28
+LinkedIn Learning,CNTR-93,SaaS,LinkedIn,8833.4,Active,3-Jun-25,1-Jun-28
+Alert Media,CNTR-97,PaaS,Alert Media,9349,Active,15-Nov-25,30-Sep-26
+Check Point Software (Avanan),CNTR-101,SaaS,Check Point Software ,34000,Active,19-Jun-26,18-Jun-27
+CrowdStrike,CNTR-102,SaaS,CrowdStrike,145627,Active,2-Mar-26,1-Mar-27
+Procore,CNTR-104,SaaS,Procore,177097,Active,18-Dec-25,17-Dec-26
+Calance Integrations,CNTR-106,Software Maintenance,Calance,50000,Active,31-May-26,30-May-27
+FreshService,CNTR-107,SaaS,Freshworks,27000,Active,17-Jun-26,16-Jun-29
+Exagrid Support,CNTR-108,Warranty,Exagrid,18150,Active,2-Nov-25,1-Oct-30
+Oracle P6 20 license Q3 renewal,CNTR-110,Software Maintenance,Oracle and/or its affiliates,22500,Active,11-Sep-26,11-Sep-27
+Autodesk AutoCAD,CNTR-111,Subscription Software License,ATG,1800,Active,28-Jan-26,3-Nov-26
+Keeper,CNTR-112,Software License,Keeper,3255,Active,21-Nov-25,20-Nov-26
+Dynatrace,CNTR-114,Software License,Dynatrace,25000,Active,15-Dec-25,14-Dec-26
+GoTo,CNTR-115,Software Maintenance,GoTo,8227,Active,9-Jan-26,8-Jan-27
+Pantera Bid Management,CNTR-118,SaaS,Pantera Tools,32000,Active,14-May-26,14-May-27
+CMiC DBA services,CNTR-119,Software Maintenance,CMiC,165000,Active,2-Aug-24,2-Aug-28
+MetTel SIM Data cards,CNTR-121,MSA,MetTel,123354,Active,1-Jun-24,1-Jun-27
+Open Asset ,CNTR-123,SaaS,Open Asset,32000,Active,30-Sep-25,29-Sep-26
+Nessus,CNTR-124,Software License,"Tenable, Inc.",3000,Active,15-Feb-26,15-Feb-27
+Horizon3.ai,CNTR-125,Software License,SHI,14000,Active,16-Dec-25,16-Dec-26
+Ardoq,CNTR-128,SaaS,Ardoq,56000,Active,25-Mar-26,24-Mar-27
+HeavyBid,CNTR-130,Software Maintenance,HCSS,8000,Active,9-May-26,16-May-27
+Printer Cloud ,CNTR-131,Software License,Stewart Organization,9000,Active,1-Jul-26,30-Jul-27
+CiraSync ,CNTR-132,Software License,Microsoft Corporation,5000,Active,23-May-26,24-May-27
+Veeam M365 Backup ,CNTR-133,Software License,Veeam Software AG,19000,Active,30-Apr-26,29-Apr-27
+Bridgit Bench,CNTR-135,SaaS,Bridgit Bench,175000,Active,7-Aug-25,6-Aug-28
+ClearStory,CNTR-136,SaaS,ClearStory,12000,Active,1-Oct-25,30-Sep-26
+Revver,CNTR-137,SaaS,Revver,10275,Active,11-May-26,10-May-29
+CostOS Cloud,CNTR-138,SaaS,Nomitech,83000,Active,31-Mar-26,31-Mar-29
+Openspace,CNTR-139,SaaS,"Open Space Labs, Inc.",218263.5,Active,30-Jun-26,29-Jun-29

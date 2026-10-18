@@ -1,0 +1,44 @@
+This is some ideas I have there will probably need to be more
+if you got any question just text me or call me
+
+Im planning on finding a couple website for reference ill upload the site here when i find them, I
+might forget to do this so just remind me if i do
+
+import file section:
+	* cvs upload only
+	* select file inventory type:
+		* Firewalls (company want)
+		* Saas (company want)
+		* Other
+	* list of files being uploaded (maybe)
+	* when user clicks "upload"
+		* show loading bar or whatever
+			* this might take a sec while the cleaner is working
+		* show "upload successfully" when cleares are done
+
+Devices:
+	* some kind of window or seprate page to show what devices are currently in
+	  database
+	* a delete device option
+
+History:
+	* scan + report history
+	* Vulnerable device history
+
+Report + remendation (keep this on the main page most important piece)
+	* show the report remendation of the most recent run
+	* download option
+	
+
+settings:
+	* schedule when to run
+	* trusted website config
+	* themes (maybe)
+	* idk what else this just what was on the top of my head
+
+Running:
+	* before run have the user have the ability to apply filters if the want
+	* show loading bar while the system in working
+
+if the system does not have a claude log in yet, have the system notify the user on
+the main page

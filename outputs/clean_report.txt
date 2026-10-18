@@ -1,0 +1,65 @@
+CRISP inventory cleaning report
+================================================================
+input : /home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv
+output: /home/gavin/Projects/softwareClass/outputs
+
+Row accounting
+----------------------------------------------------------------
+  rows in file         : 117
+  header rows          : 1
+  blank spacer rows    : 20 (dropped)
+  FSW/FAP group labels : 22 (consumed, not devices)
+  device records       : 74
+  accounted for        : 117
+
+Devices by type
+----------------------------------------------------------------
+  ap         27
+  firewall   11
+  switch     36
+
+Matching readiness
+----------------------------------------------------------------
+  with a parsed version : 72
+  needing review        : 30 -> needs_review.csv
+  vendor-flagged critical: 1
+  upgrade available      : 1
+
+Flags
+----------------------------------------------------------------
+  placeholder_name        29  device name is a serial-number placeholder, not a real name
+  imprecise_version        2  version has fewer than 3 components (branch, not exact release)
+  missing_firmware         2  no firmware version in the export - cannot be matched
+
+Dropped columns (empty in this export)
+----------------------------------------------------------------
+  Auto-link Status
+  HA Status
+  Firmware Template
+  Provisioning Templates
+  Company/Organization (Device)
+  Contact Email (Device)
+  Contact Phone Number (Device)
+  Address (Device)
+
+Distinct software the matcher will see
+----------------------------------------------------------------
+  fortiap          6.4          1 device(s)
+  fortiap          7.2          1 device(s)
+  fortiap          7.4.4        9 device(s)
+  fortiap          7.4.5       14 device(s)
+  fortiap          7.6.5        1 device(s)
+  fortios          7.2.10       1 device(s)
+  fortios          7.6.7       10 device(s)
+  fortiswitchos    7.2.4        1 device(s)
+  fortiswitchos    7.2.7        3 device(s)
+  fortiswitchos    7.4.3        1 device(s)
+  fortiswitchos    7.4.5        2 device(s)
+  fortiswitchos    7.6.1        7 device(s)
+  fortiswitchos    7.6.4       19 device(s)
+  fortiswitchos    7.6.6        2 device(s)
+
+Validation warnings
+----------------------------------------------------------------
+  none - every firewall's reported switch/AP counts matched the
+  devices parsed beneath it, and row accounting balances.

@@ -1,0 +1,326 @@
+[
+    {
+        "deviceName": "Adobe Creative Cloud ",
+        "product": "ContractsReport",
+        "version": "CNTR-10",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Bluebeam Extreme",
+        "product": "ContractsReport",
+        "version": "CNTR-13",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Camtasia",
+        "product": "ContractsReport",
+        "version": "CNTR-14",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "AIA Contract Documents",
+        "product": "ContractsReport",
+        "version": "CNTR-19",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Cosential",
+        "product": "ContractsReport",
+        "version": "CNTR-22",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Costworks",
+        "product": "ContractsReport",
+        "version": "CNTR-23",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "DNS Registration",
+        "product": "ContractsReport",
+        "version": "CNTR-25",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "iSQFT",
+        "product": "ContractsReport",
+        "version": "CNTR-29",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Nvidia Grid",
+        "product": "ContractsReport",
+        "version": "CNTR-33",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Oracle P6",
+        "product": "ContractsReport",
+        "version": "CNTR-36",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "OnScreen Takeoff",
+        "product": "ContractsReport",
+        "version": "CNTR-37",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Parallels RAS",
+        "product": "ContractsReport",
+        "version": "CNTR-38",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Royal TS",
+        "product": "ContractsReport",
+        "version": "CNTR-40",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Sage FAS",
+        "product": "ContractsReport",
+        "version": "CNTR-41",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Sketchup",
+        "product": "ContractsReport",
+        "version": "CNTR-44",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Snagit Maintenance",
+        "product": "ContractsReport",
+        "version": "CNTR-45",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Veeam Backup and Replication Enterprise ",
+        "product": "ContractsReport",
+        "version": "CNTR-53",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "WonderShare Filmora",
+        "product": "ContractsReport",
+        "version": "CNTR-54",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Microsoft SQL Server 2016",
+        "product": "ContractsReport",
+        "version": "CNTR-65",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Microsoft SQL Server Core 2017",
+        "product": "ContractsReport",
+        "version": "CNTR-66",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Windows 10 ",
+        "product": "ContractsReport",
+        "version": "CNTR-79",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "E4Clicks",
+        "product": "ContractsReport",
+        "version": "CNTR-81",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Cornerstone LMS",
+        "product": "ContractsReport",
+        "version": "CNTR-82",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Docusign",
+        "product": "ContractsReport",
+        "version": "CNTR-84",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Quest Software TOAD for Oracle",
+        "product": "ContractsReport",
+        "version": "CNTR-91",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "LinkedIn Learning",
+        "product": "ContractsReport",
+        "version": "CNTR-93",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Alert Media",
+        "product": "ContractsReport",
+        "version": "CNTR-97",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Check Point Software (Avanan)",
+        "product": "ContractsReport",
+        "version": "CNTR-101",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "CrowdStrike",
+        "product": "ContractsReport",
+        "version": "CNTR-102",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Procore",
+        "product": "ContractsReport",
+        "version": "CNTR-104",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Calance Integrations",
+        "product": "ContractsReport",
+        "version": "CNTR-106",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "FreshService",
+        "product": "ContractsReport",
+        "version": "CNTR-107",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Exagrid Support",
+        "product": "ContractsReport",
+        "version": "CNTR-108",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Oracle P6 20 license Q3 renewal",
+        "product": "ContractsReport",
+        "version": "CNTR-110",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Autodesk AutoCAD",
+        "product": "ContractsReport",
+        "version": "CNTR-111",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Keeper",
+        "product": "ContractsReport",
+        "version": "CNTR-112",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Dynatrace",
+        "product": "ContractsReport",
+        "version": "CNTR-114",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "GoTo",
+        "product": "ContractsReport",
+        "version": "CNTR-115",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Pantera Bid Management",
+        "product": "ContractsReport",
+        "version": "CNTR-118",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "CMiC DBA services",
+        "product": "ContractsReport",
+        "version": "CNTR-119",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "MetTel SIM Data cards",
+        "product": "ContractsReport",
+        "version": "CNTR-121",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Open Asset ",
+        "product": "ContractsReport",
+        "version": "CNTR-123",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Nessus",
+        "product": "ContractsReport",
+        "version": "CNTR-124",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Horizon3.ai",
+        "product": "ContractsReport",
+        "version": "CNTR-125",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Ardoq",
+        "product": "ContractsReport",
+        "version": "CNTR-128",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "HeavyBid",
+        "product": "ContractsReport",
+        "version": "CNTR-130",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Printer Cloud ",
+        "product": "ContractsReport",
+        "version": "CNTR-131",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "CiraSync ",
+        "product": "ContractsReport",
+        "version": "CNTR-132",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Veeam M365 Backup ",
+        "product": "ContractsReport",
+        "version": "CNTR-133",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Bridgit Bench",
+        "product": "ContractsReport",
+        "version": "CNTR-135",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "ClearStory",
+        "product": "ContractsReport",
+        "version": "CNTR-136",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Revver",
+        "product": "ContractsReport",
+        "version": "CNTR-137",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "CostOS Cloud",
+        "product": "ContractsReport",
+        "version": "CNTR-138",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    },
+    {
+        "deviceName": "Openspace",
+        "product": "ContractsReport",
+        "version": "CNTR-139",
+        "filename": "/home/gavin/Projects/softwareClass/inputs/ContractsReport.csv"
+    }
+]
