@@ -47,7 +47,7 @@ def writeJson(inputFile, deviceName, Version, product, data):
         "deviceName": deviceName,
         "product": product,
         "version": Version,
-        "filename": str(inputFile)
+        "fileName": str(inputFile)
     }
 
     with open(outputFile, "w") as file:

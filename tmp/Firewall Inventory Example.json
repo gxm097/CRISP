@@ -1,698 +1,668 @@
 [
     {
+        "devieType": "firewall",
         "deviceName": "SG-AUS-Forti",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-AUS-Forti01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.6.7",
+        "build": "3704",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "AustinAccounting",
+        "hostName": "SG-AUS-Forti01",
+        "platfom": "FortiSwitch-108F-POE",
+        "firwareVersion": "7.4.3",
+        "build": "830",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        AustinAccounting",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "AustinEstimating",
+        "hostName": "SG-AUS-Forti01",
+        "platfom": "FortiSwitch-108F-POE",
+        "firwareVersion": "7.4.3",
+        "build": "830",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        AustinEstimating",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-AUS-SW02",
+        "hostName": "SG-AUS-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.4.3",
+        "build": "830",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-AUS-SW02",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-AUS-SW01",
+        "hostName": "SG-AUS-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.4.3",
+        "build": "830",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-AUS-SW01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #1]",
+        "hostName": "SG-AUS-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.4.3",
+        "build": "830",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #2]",
+        "hostName": "SG-AUS-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.4.3",
+        "build": "830",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP431F #1]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #3]",
+        "hostName": "SG-AUS-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.4.3",
+        "build": "830",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP231F #2]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #4]",
+        "hostName": "SG-AUS-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.4.3",
+        "build": "830",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP231F #3]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #5]",
+        "hostName": "SG-AUS-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.4.3",
+        "build": "830",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP431F #4]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        [serial-named FP231F #5]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
+        "devieType": "firewall",
         "deviceName": "SG-BV-FW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-BV-FW01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.6.7",
+        "build": "3704",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-BV-SW01",
+        "hostName": "SG-BV-FW01",
+        "platfom": "FortiSwitch-124F-FPOE",
+        "firwareVersion": "7.6.6",
+        "build": "1137",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-BV-SW01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "SG-BV-AP01",
+        "hostName": "SG-BV-FW01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.6.6",
+        "build": "1137",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        SG-BV-AP01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
+        "devieType": "firewall",
         "deviceName": "SG-CC-Forti",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-CC-Forti01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.6.7",
+        "build": "3704",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-CC-SW02",
+        "hostName": "SG-CC-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-CC-SW02",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-CC-SW01",
+        "hostName": "SG-CC-Forti01",
+        "platfom": "FortiSwitch-124F-FPOE",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-CC-SW01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #6]",
+        "hostName": "SG-CC-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        [serial-named FP431F #6]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
+        "devieType": "firewall",
         "deviceName": "SG-GT-Forti01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-GT-Forti01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.6.7",
+        "build": "3704",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-GT-SW01",
+        "hostName": "SG-GT-Forti01",
+        "platfom": "FortiSwitch-124F-FPOE",
+        "firwareVersion": "7.6.6",
+        "build": "1137",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-GT-SW01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #7]",
+        "hostName": "SG-GT-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.6.6",
+        "build": "1137",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        [serial-named FP431F #7]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
+        "devieType": "firewall",
         "deviceName": "SG-HOU-Forti",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-HOU-Forti01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.6.7",
+        "build": "3704",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-HOU-SW06",
+        "hostName": "SG-HOU-Forti01",
+        "platfom": "FortiSwitch-2048F",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-HOU-SW06",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-HOU-SW02",
+        "hostName": "SG-HOU-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-HOU-SW02",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-HOU-SW04",
+        "hostName": "SG-HOU-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-HOU-SW04",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-HOU-SW03",
+        "hostName": "SG-HOU-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-HOU-SW03",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-HOU-SW01",
+        "hostName": "SG-HOU-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-HOU-SW01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-HOU-SW05",
+        "hostName": "SG-HOU-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-HOU-SW05",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #8]",
+        "hostName": "SG-HOU-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP421E #9]",
+        "hostName": "SG-HOU-Forti01",
+        "platfom": "FP421E",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP431F #8]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #10]",
+        "hostName": "SG-HOU-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP421E #9]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #11]",
+        "hostName": "SG-HOU-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP231F #10]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        [serial-named FP231F #11]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
+        "devieType": "firewall",
         "deviceName": "SG-NB-Forti01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-NB-Forti01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.6.7",
+        "build": "3704",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "BuildTrustNeat",
+        "hostName": "SG-NB-Forti01",
+        "platfom": "FortiSwitch-108F-FPOE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        BuildTrustNeat",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "LiveTeamworkNeat",
+        "hostName": "SG-NB-Forti01",
+        "platfom": "FortiSwitch-108F-FPOE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        LiveTeamworkNeat",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "NicolesOffice",
+        "hostName": "SG-NB-Forti01",
+        "platfom": "FortiSwitch-108E-POE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        NicolesOffice",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "Printer_Area",
+        "hostName": "SG-NB-Forti01",
+        "platfom": "FortiSwitch-108E",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        Printer_Area",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-NB-SW01",
+        "hostName": "SG-NB-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-NB-SW01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #12]",
+        "hostName": "SG-NB-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #13]",
+        "hostName": "SG-NB-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP231F #12]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        [serial-named FP431F #13]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
+        "devieType": "firewall",
         "deviceName": "SG-NTX2-Forti",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-NTX2-Forti01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.6.7",
+        "build": "3704",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "FWTrainingRoom",
+        "hostName": "SG-NTX2-Forti01",
+        "platfom": "FortiSwitch-108F-FPOE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        FWTrainingRoom",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "[serial-named FortiSwitch-108F-FPOE #14]",
+        "hostName": "SG-NTX2-Forti01",
+        "platfom": "FortiSwitch-108F-FPOE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FortiSwitch-108F-FPOE #14]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "[serial-named FortiSwitch-248E-FPOE #15]",
+        "hostName": "SG-NTX2-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FortiSwitch-248E-FPOE #15]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "[serial-named FortiSwitch-248E-FPOE #16]",
+        "hostName": "SG-NTX2-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FortiSwitch-248E-FPOE #16]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #17]",
+        "hostName": "SG-NTX2-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #18]",
+        "hostName": "SG-NTX2-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP431F #17]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #19]",
+        "hostName": "SG-NTX2-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP231F #18]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        [serial-named FP231F #19]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
+        "devieType": "firewall",
         "deviceName": "SG-NTX-Forti",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-NTX-Forti01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.2.10",
+        "build": "1706",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-NTX-SW01",
+        "hostName": "SG-NTX-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-NTX-SW01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #20]",
+        "hostName": "SG-NTX-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.6.1",
+        "build": "1047",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        [serial-named FP431F #20]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
+        "devieType": "firewall",
         "deviceName": "SG-SA-Forti",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-SA-Forti01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.6.7",
+        "build": "3704",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "[serial-named FortiSwitch-108F-FPOE #21]",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FortiSwitch-108F-FPOE",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FortiSwitch-108F-FPOE #21]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "[serial-named FortiSwitch-108F #22]",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FortiSwitch-108F",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FortiSwitch-108F #22]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "Accounting",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FortiSwitch-108F-FPOE",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        Accounting",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "TMR-IreneOchoa",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FortiSwitch-108F-FPOE",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        TMR-IreneOchoa",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "TMR-MichelleTrevino",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FortiSwitch-108F",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        TMR-MichelleTrevino",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-SA-SW01",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-SA-SW01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-CSA-SW02",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-CSA-SW02",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-CSA-SW03",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-CSA-SW03",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #23]",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "Selma Front Conference",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP431F #23]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #24]",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        Selma Front Conference",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #25]",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP231F #24]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "Front Conference",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP231F #25]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #26]",
+        "hostName": "SG-SA-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        Front Conference",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        [serial-named FP431F #26]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
+        "devieType": "firewall",
         "deviceName": "SG-STX-Forti",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-STX-Forti01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.6.7",
+        "build": "3704",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "NeatBarSwitch",
+        "hostName": "SG-STX-Forti01",
+        "platfom": "FortiSwitch-108F-FPOE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        NeatBarSwitch",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-STX-SW02",
+        "hostName": "SG-STX-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-STX-SW02",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-STX-SW01",
+        "hostName": "SG-STX-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-STX-SW01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #27]",
+        "hostName": "SG-STX-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP431F #28]",
+        "hostName": "SG-STX-Forti01",
+        "platfom": "FP431F",
+        "firwareVersion": "7.2.7",
+        "build": "479",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        [serial-named FP431F #27]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        [serial-named FP431F #28]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": NaN,
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
+        "devieType": "firewall",
         "deviceName": "SG-WES-Forti",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "hostName": "SG-WES-Forti01",
+        "platform": "FortiGate-80F",
+        "firwareVersion": "7.6.7",
+        "build": "3704",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "    FSW",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "switch",
+        "name": "SG-WES-SW01",
+        "hostName": "SG-WES-Forti01",
+        "platfom": "FortiSwitch-248E-FPOE",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     },
     {
-        "deviceName": "        SG-WES-SW01",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "    FAP",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
-    },
-    {
-        "deviceName": "        [serial-named FP231F #29]",
-        "product": "Firewall Inventory Example",
-        "version": NaN,
-        "filename": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
+        "deviceType": "ap",
+        "name": "[serial-named FP231F #29]",
+        "hostName": "SG-WES-Forti01",
+        "platfom": "FP231F",
+        "firwareVersion": "7.6.4",
+        "build": "1114",
+        "fileName": "/home/gavin/Projects/softwareClass/inputs/Firewall Inventory Example.csv"
     }
 ]

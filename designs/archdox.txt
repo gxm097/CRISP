@@ -1,3 +1,0 @@
-inventory cvs:
-	* when import maybe have a saas, firewall, devices option
-	* takes only cvs format
