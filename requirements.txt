@@ -1,0 +1,5 @@
+pandas
+json
+re
+csv
+docker
