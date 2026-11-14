@@ -1,0 +1,10 @@
+CVE-2023-27997 [CRITICAL / CVSS 9.8]
+  Vendor: Fortinet
+  Product: FortiOS
+  Platform: FortiGate (SSL-VPN)
+  Affected versions: [{'version_start': '7.2.0', 'version_end': '7.2.4'}, {'version_start': '7.0.0', 'version_end': '7.0.11'}, {'version_start': '6.4.0', 'version_end': '6.4.12'}, {'version_start': '6.0.0', 'version_end': '6.0.16'}]
+  Fixed versions: ['7.2.5', '7.0.12', '6.4.13', '6.0.17']
+  Known exploited: True
+  CISA KEV: True
+  Confidence: MEDIUM
+  Source: https://nvd.nist.gov/vuln/detail/cve-2023-27997?trk=article-ssr-frontend-pulse_little-text-block
