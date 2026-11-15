@@ -1,77 +1,89 @@
+
 import pandas as pd
 from pathlib import Path
-import json
-
-inputPath = Path.home() / "Projects" / "softwareClass" / "inputs"
-outputPath = Path.home() / "Projects" / "softwareClass" / "tmp"
-
+ 
+ROOT = Path(__file__).resolve().parents[1]
+inputPath = ROOT / "inputs"
+outputPath = ROOT / "tmp"
+outputPath.mkdir(exist_ok=True)
+ 
+ 
 def listFiles(inputPath):
-    csvFiles = list(inputPath.glob("*csv"))
-    return csvFiles
-
+    return sorted(inputPath.glob("*csv"))
+ 
+ 
 def getFileName(filePath):
-    pathWithoutExt = filePath.with_suffix("")
-    file = str(pathWithoutExt)
-    split = file.split("/")
-    
-    return split[6]
-
-
+    return filePath.stem
+ 
+ 
 def getProductName(inputFileName):
-    
-    split01 = inputFileName.split("installation")
-    split02 = split01[0].split("_")
-
-    productName = " ".join(split02).strip()
-    return productName
-
-
-
-def getData(inputFile, targetRow, product, jsonData):
-    df = pd.read_csv(inputFile)
-
+    cleanName = inputFileName.replace(".csv", "")
+    if "installation" in cleanName:
+        return " ".join(part for part in cleanName.split("installation")[0].split("_") if part).strip()
+    return " ".join(cleanName.split("_")).strip()
+ 
+ 
+def sqlValue(value):
+    if value is None or pd.isna(value):
+        return "NULL"
+    value = str(value).strip()
+    if value == "":
+        return "NULL"
+    return "'" + value.replace("'", "''") + "'"
+ 
+ 
+def isBlank(value):
+    return value is None or pd.isna(value) or str(value).strip() == ""
+ 
+ 
+def loadCsv(filePath):
+    # dtype=str keeps every value exactly as written (5.10 stays "5.10", not 5.1).
+    df = pd.read_csv(filePath, dtype=str)
+    # Drop rows that are completely empty (e.g. ",,," lines left by an Excel export).
+    return df.dropna(how="all").reset_index(drop=True)
+ 
+ 
+def getData(df, targetRow, product):
     deviceName = df.iloc[targetRow, 0]
-    Version = df.iloc[targetRow, 1]
-
-    data = {
-            "deviceName": deviceName,
-            "product": product,
-            "version": Version,
-            "filename": str(inputFile)
-        }
-
-    jsonData.append(data)
-
-def writeJson(inputFile, deviceName, Version, product, data):
-    data = {
-        "deviceName": deviceName,
-        "product": product,
-        "version": Version,
-        "fileName": str(inputFile)
-    }
-
-    with open(outputFile, "w") as file:
-        json.dump(data, file, indent=4)
-
+    # AssetName is NOT NULL in the database, so a row with no name can't be inserted.
+    if isBlank(deviceName):
+        return None
+ 
+    version = df.iloc[targetRow, 1]
+    vendor = df.iloc[targetRow, 2] if len(df.columns) > 2 else None
+ 
+    return (
+        "INSERT INTO InventoryAsset "
+        "(OrganizationID, AssetTypeID, AssetName, Vendor, Product, Version, Build, Hostname, PublicFacing, Status) "
+        f"VALUES (1, 5, {sqlValue(deviceName)}, {sqlValue(vendor)}, {sqlValue(product)}, {sqlValue(version)}, NULL, NULL, FALSE, 'Active');"
+    )
+ 
+ 
 csvFiles = listFiles(inputPath)
-for i in range(len(csvFiles)):
-    jsonData = []
-    file = getFileName(csvFiles[i])
-    print (file)
-    outputFile = outputPath / (file + ".json")
-    df = pd.read_csv(csvFiles[i])
-    rowCount = len(df.index)
-    productName = getProductName(file) #this needs work
-
-    for row in range(0, rowCount):
-        getData(csvFiles[i], row, productName, jsonData) #needs work
-        print ("row #", row)
-    
-    with open(outputFile, "w") as file:
-        json.dump(jsonData, file, indent=4)
+for csvFile in csvFiles:
+    file = getFileName(csvFile)
+    print(file)
+    outputFile = outputPath / (file + "_inventory.sql")
+    df = loadCsv(csvFile)
+    productName = getProductName(file)
+ 
+    sqlLines = []
+    skipped = 0
+    for row in range(len(df)):
+        line = getData(df, row, productName)
+        if line is None:
+            skipped += 1
+        else:
+            sqlLines.append(line)
+ 
+    if skipped:
+        print("skipped", skipped, "row(s) with no asset name")
+ 
+    if not sqlLines:
+        print("no valid rows found, no output file written")
+        continue
+ 
+    with open(outputFile, "w", encoding="utf-8") as fileHandle:
+        fileHandle.write("\n".join(sqlLines) + "\n")
     print("done, output file = ", outputFile)
-
-
-
-
-    
+ 
