@@ -1,5 +1,11 @@
-pandas
-json
-re
-csv
-docker
+# Runtime dependencies for CRISP.
+# Install with:  pip install -r requirements.txt
+#
+# json, re, csv and subprocess are Python standard library -- they are NOT
+# listed here. "pip install json" fails outright, which is why they were removed.
+# The docker CLI is shelled out to by cleaners/loadInventory.py; the "docker"
+# Python SDK is not used, so it is not a dependency either.
+
+pandas            # cleaners/generalClean.py, cleaners/firewallClean.py
+anthropic         # agents/researchAgent.py, agents/research/researchAgentDB.py
+psycopg[binary]   # agents/research/buildResearchSummary.py (PostgreSQL driver)

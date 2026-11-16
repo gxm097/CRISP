@@ -176,6 +176,29 @@ VALUES
     CURRENT_TIMESTAMP
 );
 
+--Vulnerability Affected Version
+CREATE TABLE VulnerabilityAffectedVersion
+(
+    AffectedVersionID SERIAL PRIMARY KEY,
+
+    VulnerabilityID INT NOT NULL,
+
+    VersionStart VARCHAR(50),
+
+    VersionEnd VARCHAR(50),
+
+    VersionStartKey INT[],
+
+    VersionEndKey INT[],
+
+    FOREIGN KEY (VulnerabilityID)
+        REFERENCES Vulnerability(VulnerabilityID)
+        ON DELETE CASCADE
+);
+
+CREATE INDEX idx_affected_vulnerability
+ON VulnerabilityAffectedVersion(VulnerabilityID);
+
 --Inventory Import
 CREATE TABLE InventoryImport
 (

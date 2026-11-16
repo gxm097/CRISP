@@ -5,3 +5,6 @@ notes.txt
 inputs
 outputs
 
+agents/research/researchSummary.json
+__pycache__/
+*.pyc
