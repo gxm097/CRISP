@@ -1,8 +1,3 @@
-
-# Copy of researchAgentDB.py that also saves what it finds into the crisp
-# database. The json file is still written the same way, the database is
-# extra. Run buildResearchSummary.py first.
-
 import json
 import os
 import anthropic
@@ -266,16 +261,13 @@ def research(vendor, product, version, maxContinuations=5):
 
 def getScore(cvss):
     score = cvss["score"]
-    # CVSSScore is DECIMAL(3,1) with a CHECK of 0 to 10 in init.sql, so a bad
-    # number from the model would fail the insert instead of just being wrong.
     if score is None or score < 0 or score > 10:
         return None
     return score
 
 
 def versionKey(version):
-    # "7.2.10" becomes [7, 2, 10] so postgres can compare it. Stops at the
-    # first part that is not a number, so "7.4.5b" becomes [7, 4].
+    # "7.2.10" becomes [7, 2, 10]
     if not version:
         return None
     parts = []
@@ -296,8 +288,6 @@ def getExploitStatus(cve):
 
 def saveTarget(cursor, assessment, source, target, result):
     for cve in result["cves"]:
-        # CVE is UNIQUE in init.sql, so a cve seen on two targets updates the
-        # row it already has instead of failing the whole run.
         cursor.execute("""
             INSERT INTO Vulnerability
                 (CVE, Title, Description, CVSSScore, Severity,
@@ -314,9 +304,6 @@ def saveTarget(cursor, assessment, source, target, result):
             RETURNING VulnerabilityID
             """,
             (cve["cve_id"],
-             # Title is NOT NULL VARCHAR(255), fall back to the id and cut it
-             # down so a long title cannot fail the insert.
-             (cve["title"] or cve["cve_id"])[:255],
              cve["description"],
              getScore(cve["cvss"]),
              cve["cvss"]["severity"].capitalize(),
@@ -325,8 +312,7 @@ def saveTarget(cursor, assessment, source, target, result):
              cve["published_date"]))
         vulnerability = cursor.fetchone()[0]
 
-        # Deleted first so a re-run replaces the ranges instead of doubling
-        # them up, and so a cve that drops a range does not keep a stale one.
+
         cursor.execute("""
             DELETE FROM VulnerabilityAffectedVersion WHERE VulnerabilityID = %s
             """, (vulnerability,))
@@ -344,9 +330,6 @@ def saveTarget(cursor, assessment, source, target, result):
                  versionKey(affected["version_start"]),
                  versionKey(affected["version_end"])))
 
-    # One row per target researched, this is the scan history. The whole json
-    # for the target goes in RawContent so the affected version ranges are kept
-    # even though there is no table for them yet.
     urls = [source_["source_url"] for cve in result["cves"]
             for source_ in cve["sources"]]
     cursor.execute("""
@@ -376,8 +359,7 @@ cursor.execute("SELECT SourceID FROM VulnerabilitySource WHERE SourceName = %s",
                (SOURCENAME,))
 source = cursor.fetchone()[0]
 
-# A new Assessment row every run. notes.txt asks for a history of the scans and
-# ResearchResult.AssessmentID is NOT NULL, so the run needs its own id.
+
 cursor.execute("""
     INSERT INTO Assessment (OrganizationID, AssessmentStart, TriggerType, Status)
     VALUES (%s, CURRENT_TIMESTAMP, 'Manual', 'Running')
@@ -400,8 +382,6 @@ for number, target in enumerate(targets, start=1):
 
     outputFile.write_text(json.dumps(results, indent=2) + "\n", encoding="utf-8")
 
-    # Committed every loop for the same reason the json is written every loop,
-    # a crash on target 20 keeps the first 19.
     saveTarget(cursor, assessment, source, target, result)
     connection.commit()
 
