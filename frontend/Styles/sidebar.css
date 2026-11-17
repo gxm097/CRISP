@@ -1,0 +1,59 @@
+.sidebar{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position:fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    width: 200px;
+    background-color: var(--sidebar-color);
+}
+.sidebar div{
+    font-family:Arial;
+}
+.crisp{
+    margin-top:30px;
+    margin-bottom:60px;
+    font-size: 24px;
+    font-family: Arial;
+    color: white;
+}
+
+.sidebar-tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-bottom:8px;
+    width: 200px;
+    
+   
+}
+.sidebar-tabs:hover,.admin-user-tab:hover, .admin-settings-tab:hover, .sign-out-tab:hover{
+    background-color: white;
+}
+
+.sidebar img{
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+}
+
+.sign-out-tab{
+    display: flex;
+    position:absolute;
+    bottom: 25px;
+    left:0;
+   justify-content: center;
+    width: 200px;
+    height: 30px;
+    padding-top:15px;
+}
+
+.admin-p{
+    margin-top:25px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+

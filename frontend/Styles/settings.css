@@ -1,0 +1,13 @@
+.theme-toggle-div{
+    display: flex;
+    width: 350px;
+    height: 30px;
+    align-items: center;
+    position: absolute;
+    left: 500px;
+    top: 40px;
+}
+
+.dark-toggle{
+    margin-right: 10px;
+}

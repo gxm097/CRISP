@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    height: 1000px;
+    background-color: var(--background-color);
+    color: var(--text);
+    position: relative;
+}
+
+.main-content {
+  margin-left: 250px;  
+  margin-top: 80px;    
+}
+
+.hidden { 
+    display: none;
+ }
+
+
+:root {
+  --background-color: rgb(222, 224, 226);
+  --text: #1a1a1a;
+  --sidebar-color: #8e8ba0;
+}
+
+body.dark {
+  --background-color: #1b1d21;
+  --text: #e6e6e6;
+  --sidebar-color: #202022;
+}

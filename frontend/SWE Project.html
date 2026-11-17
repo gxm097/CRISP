@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<title> Crisp </title>
+
+<link rel = "stylesheet" href = "styles/header.css">
+<link rel = "stylesheet" href = "styles/sidebar.css">
+<link rel = "stylesheet" href = "styles/general.css">
+<link rel = "stylesheet" href = "styles/settings.css">
+</head>
+
+<body>
+    <div class = "header">
+        
+        <div class = "left-section">
+             <input class ="search-bar" type="text" placeholder="Search">
+             <button class = "search-button">
+                 <img class = "search-icon-button" src="icons/search-icon.png"> 
+             </button>
+
+        </div>
+
+        <div class = "right-section">
+                s
+        </div>
+    </div>
+
+    <div class = "sidebar">
+       <div class ="crisp">
+        Crisp
+       </div> 
+
+       <div class = "sidebar-tabs" data-view="overview">
+        <img src ="icons/overview.png">
+            <div>Overview</div>
+       </div>
+
+       <div class = "sidebar-tabs" data-view="inventory">
+        <img src ="icons/inventory.png">
+             <div>Inventory</div>
+       </div>
+
+       <div class = "sidebar-tabs" data-view="assessments">
+        <img src ="icons/assessments.png">
+             <div>Assessments</div>
+       </div>
+
+       <div class = "sidebar-tabs" data-view = "findings">
+        <img src ="icons/findings.png">
+             <div>Findings</div>
+       </div>
+
+       <div class = "sidebar-tabs" data-view = "reports">
+        <img src ="icons/reports.png">
+             <div>Reports</div>
+       </div>
+
+        <div class = "admin-p">Administration</div>
+
+       <div class = "sidebar-tabs" data-view = "users">
+        <img src ="icons/users-access.png">
+             <div>Users &#38; access</div>
+       </div>
+
+       <div class = "sidebar-tabs" data-view = "settings">
+        <img src ="icons/settings.png">
+             <div>Settings</div>
+       </div>
+
+       <div class = "sign-out-tab">
+        <img src="icons/sign-out.png">
+           <div>Sign out</div>
+        </div>
+
+     
+    </div>
+
+
+        <main class="main-content">
+      <section id="overview" class="view">
+        <h1>Overview</h1>
+      </section>
+
+      <section id="inventory" class="view hidden">
+        <h1>Inventory</h1>
+        <p>Devices</p>
+      </section>
+
+      <section id="assessments" class="view hidden">
+        <h1>Assessments</h1>
+      </section>
+
+      <section id="findings" class="view hidden">
+        <h1>Findings</h1>
+      </section>
+
+      <section id="reports" class="view hidden">
+        <h1>Reports</h1>
+      </section>
+
+      <section id="users" class="view hidden">
+        <h1>Users and access</h1>
+      </section>
+
+      <section id="settings" class="view hidden">
+        <h1>Settings</h1>
+          <div class = "theme-toggle-div">
+            <button id = "dark-toggle" class = "dark-toggle">Dark Mode</button>
+            <p>Toggle between light and dark themes</p>
+          </div>
+        
+      </section>
+
+    </main>
+
+    <script src="src/swe.js"></script>
+
+
+   
+</body>
+
+
+</html>

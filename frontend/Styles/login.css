@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.login-container{
+    display: flex;
+    flex-direction: column ;
+    background-color: aqua;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    position: relative;
+    
+}
+
+.register-div{
+    position:absolute;
+    bottom: 0;
+}
