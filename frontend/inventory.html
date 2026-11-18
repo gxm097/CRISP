@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISP - Inventory</title>
+    <link rel="stylesheet" href="Styles/overview.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-------------nav-bar / side-bar--------------------->
+
+
+    <!--------------------header------------------------->
+
+    <div class="page">
+        <header class="page-header">
+            <div>
+                <h1>Inventory</h1>
+                <p class="sub"> Maintain CRISP monitor for vulnerability exposure</p>
+            </div>
+            <div class="btn-group">
+                <button class="import-btn">Import CSV</button>
+                <button class="asset-btn">Add asset</button>
+            </div>
+        </header>
+        <!----------------Top row---------------------->
+        <section class="stats">
+
+            <div class="card">
+                <div class="label">Total inventory</div>
+                <div class="info">---</div>
+            </div>
+
+            <div class="card">
+                <div class="label">Actively monitored</div>
+                <div class="info">---</div>
+            </div>
+
+            <div class="card">
+                <div class="label">Affected assets</div>
+                <div class="info">---</div>
+            </div>
+
+            <div class="card green">
+                <div class="label">Needs attention</div>
+                <div class="info">---</div>
+            </div>
+        </section>
+
+        <!------------------table------------------------>
+
+        <!--------search/filters----------->
+        <section class="card table-card">
+            <div class="filter-bar">
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" id="search" placeholder="Search inventory...">
+                </div>
+
+                <select id="asset-type" class="filter-select">
+                    <option value="">All asset types</option>
+                    <option value="firewall">Firewalls</option>
+                    <option value="switch">Switch</option>
+                    <option value="ap">ap</option>
+                </select>
+                <select id="vender" class="filter-select">
+                    <option value="">All vendors</option>
+                    <option value="fortinet">Fortinet</option>
+                    <option value="microsoft">Microsoft</option>
+                </select>
+            </div>
+            <!-------------------------------->
+
+            <div class="table-wrap">
+                <table class=" findings-table">
+                    <thread>
+                        <tr>
+                            <th>asset</th>
+                            <th>type</th>
+                            <th>vendor / product</th>
+                            <th>version</th>
+                            <th>monitoring</th>
+                            <th>findings</th>
+                        </tr>
+                    </thread>
+                    <tbody id="inventory-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <script src="scripts/overview.js"></script>
+
+</body>
+
+</html>
