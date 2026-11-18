@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_FILE = ROOT / "outputs" / "correlationReport.txt"
 CSV_OUTPUT_FILE = ROOT / "outputs" / "correlationReport.csv"
 JSON_OUTPUT_FILE = ROOT / "outputs" / "correlationReport.json"
-DSN = os.environ.get("CRISP_DSN")
+DSN = "postgresql://postgres:crisppassword@localhost:5432/crisp"
 
 
 parser = argparse.ArgumentParser(description="Build a text report from database correlations")
@@ -473,19 +473,22 @@ json_report = {
 JSON_OUTPUT_FILE.write_text(json.dumps(json_report, indent=2, default=str) + "\n", encoding="utf-8")
 
 organization_id = assessment["organizationid"]
-with connection.cursor() as report_cursor:
-    report_cursor.execute("""
-        INSERT INTO Report
-            (OrganizationID, GeneratedByUserID, ReportType, PeriodStart, PeriodEnd)
-        VALUES (%s, %s, %s, %s, %s)
-    """, (
-        organization_id,
-        args.generated_by,
-        "Correlation Report",
-        assessment["assessmentstart"],
-        assessment["assessmentend"],
-    ))
-connection.commit()
+
+with psycopg.connect(DSN) as report_connection:
+    with report_connection.cursor() as report_cursor:
+        report_cursor.execute("""
+            INSERT INTO Report
+                (OrganizationID, GeneratedByUserID, ReportType, PeriodStart, PeriodEnd)
+            VALUES (%s, %s, %s, %s, %s)
+        """, (
+            organization_id,
+            args.generated_by,
+            "Correlation Report",
+            assessment["assessmentstart"],
+            assessment["assessmentend"],
+        ))
+
+    report_connection.commit()
 
 print("Assessment:", assessment_id)
 print("Assets assessed:", assessed_asset_count)
