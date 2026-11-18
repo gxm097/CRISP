@@ -46,12 +46,12 @@ app.get('/dashboard', (req, res) => {
   res.sendFile(path.join(__dirname, 'SWE Project.html'));
 });
 
-app.get('/overview', (req, res  => {
+app.get('/overview', (req, res) => {
   res.sendFile(path.join(__dirname, 'overview.html'));
-}))
-app.get('/inventory', (req, res  => {
+});
+app.get('/inventory', (req, res) => {
   res.sendFile(path.join(__dirname, 'inventory.html'));
-}))
+});
 
 app.get('/api/dashboard', async (req, res) => {
   try {
