@@ -5,30 +5,31 @@
         <link rel = "stylesheet" href ="Styles/login.css">
     </head>
     <body>
-        <div class = "login-container">
-            <div>Crisp</div> 
-            <div>
-                <input id = "username" class = "username" type = "text" placeholder="Username">
+        <form action="/login" method="POST">
+            <div class = "login-container">
+                <div>Crisp</div> 
+                <div>
+                    <input id = "username" class = "username" name="username" type = "text" placeholder="Username">
+                </div>
+
+                <div>
+                    <input id = "password" class = "password" name="password" type = "password" placeholder="Password">
+                </div>
+
+                <div class = "login-button-container">
+                    <button id = "login-button" class = "login-button">Login</button>
+                    
+                </div>
+
+                <p id="message"> plsvr </p>
+
+                <div class = "register-div">
+                    <p>Don't have an account?
+                    <a href = "signup.html">Sign up</a>   
+                    </p>
+                </div>
             </div>
-
-            <div>
-                <input id = "password" class = "password" type = "password" placeholder="Password">
-            </div>
-
-            <div class = "login-button-container">
-                <button id = "login-button" class = "login-button">Login</button>
-                
-            </div>
-
-             <p id="message"> plsvr </p>
-
-            <div class = "register-div">
-                <p>Don't have an account?
-                 <a href = "signup.html">Sign up</a>   
-                </p>
-            </div>
-        </div>
-
-        <script src = "src/login.js"></script>
+        </form>
+        
     </body>
 </html>
