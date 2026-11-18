@@ -54,7 +54,7 @@ VALUES
 (
     1,
     'testadmin',
-    'temporary_test_hash',
+    '$2b$10$8TVe9VwYDNXJy2ciMN4ZiuEmvVzc7S.YULJlcLL9T34WP4Sh8z5pi',
     'testadmin@example.com',
     'Account Administrator',
     TRUE,
