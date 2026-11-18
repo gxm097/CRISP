@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISP - Overview</title>
+    <link rel="stylesheet" href="styles/overview.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-------------nav-bar / side-bar--------------------->
+
+
+    <!--------------------header------------------------->
+    <div class="page">
+        <header class="page-header">
+            <div>
+                <p id="date"></p>
+                <h1><span id="greeting"></span>, <span id="username"></span></h1>
+                <p class="sub"> Here is what needs your attention across the environment.</p>
+            </div>
+                <button class="btn"> Run assessment</button>
+        </header>
+        <!-------------------ROW 1--------------------------->
+        <section class="stats">
+
+            <div class="card blue">
+                <div class="icon"><i class="bi-hdd-stack"></i></div>
+                <div class="info">---</div>
+                <div class="label">Monitor assets</div>
+            </div>
+            <div class="card red">
+                <div class="icon"><i class="bbi bi-exclamation-triangle"></i></div>
+                <div class="info">---</div>
+                <div class="label">Active findings</div>
+            </div>
+
+            <div class="card yellow">
+                <div class="icon"><i class="bi bi-activity"></i></div>
+                <div class="info">---</div>
+                <div class="label">Critical priority</div>
+            </div>
+            <div class="card green">
+                <div class="icon"> <i class="bi bi-file-earmark-bar-graph"></i></div>
+                <div class="info">---</div>
+                <div class="label">Security posture</div>
+            </div>
+        </section>
+
+        <!--------------------ROW 2---------------------->
+        <section class="row-graph">
+            <div class="card status-card">
+
+                <div class="card-head">
+                    <div>
+                        <h2 class="card-title">Assesment status</h2>
+                        <p class="sub">Latest completed run</p>
+                    </div>
+                </div>
+                <div class="status-body">
+                    <div class="ring">
+                        <svg viewBox=" 0 0 120 120">
+                            <circle class="ring-track" cx="60" cy="60" r="52"></circle>
+                            <circle class=" ring-fill" id="ring-fill" cx="60" cy="60" r="52"></circle>
+                        </svg>
+                        <div class="ring-label">
+                            <strong id="ring-percent">---</strong>
+                            <span>Complete</span>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div>
+                            <span class="d-label">Completed</span>
+                            <span class="d-value" id="completed">---</span>
+                        </div>
+                        <div>
+                            <span class="d-label">Duration</span>
+                            <span class="d-value" id="duration">---</span>
+                        </div>
+                        <div>
+                            <span class=" d-label">Assets assessed</span>
+                            <span class="d-value" id="assessed">---</span>
+                        </div>
+                        <div>
+                            <span class=" d-label">New findings</span>
+                            <span class="d-value" id="new-findings">---</span>
+                        </div>
+
+                    </div>
+
+                    <a class="next-run ">
+                        <i class="bi bi-calendar4"></i>
+                        <div class="next-text">
+                            <span class="d-label">Next scheduled run:</span>
+                            <span class="d-value"> Tomorrow at </span>
+                        </div>
+                    </a>
+
+        </section>
+
+
+        <!---------------------ROW 3--------------------->
+        <section class="card findings-card">
+            <div class="card-head padded">
+                <div>
+                    <h2 class="card-title">Priority findings</h2>
+                    <p class="sub">Risk needing immediate review </p>
+                </div>
+                <a href="#" class="findings-link"> View all findings <i class="bi bi-chevron-right"></i>
+                    <!--------add findings.html ------>
+                </a>
+            </div>
+
+            <div class="table-wrap">
+                <table class="findings-table">
+                    <thread>
+                        <tr>
+                            <th>Findings</th>
+                            <th>Asset</th>
+                            <th>CVSS</th>
+                            <th>Severity</th>
+                            <th>Status</th>
+                            <th>Discovered</th>
+                        </tr>
+                    </thread>
+                    <tbody id="findings-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!---------------------ROW 4------------------------>
+        <section class="row-four">
+            <div class="card">Assest exposure
+                <p class="sub"> Findings by asset category</p>
+            </div>
+            <div class="card">Intelligence sources
+                <p class="sub"> Feed status</p>
+            </div>
+            <div class="card">Recent activity
+                <p class="sub"> Updates across your workspace</p>
+            </div>
+        </section>
+
+
+        <script src="scripts/overview.js"></script>
+</body>
+
+</html>
