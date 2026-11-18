@@ -8,3 +8,4 @@ outputs
 agents/research/researchSummary.json
 __pycache__/
 *.pyc
+node_modules/

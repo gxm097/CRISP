@@ -54,7 +54,7 @@ VALUES
 (
     1,
     'testadmin',
-    'temporary_test_hash',
+    '$2b$10$8TVe9VwYDNXJy2ciMN4ZiuEmvVzc7S.YULJlcLL9T34WP4Sh8z5pi',
     'testadmin@example.com',
     'Account Administrator',
     TRUE,
@@ -646,6 +646,8 @@ CREATE TABLE Correlation
     AssetID INT NOT NULL,
 
     VulnerabilityID INT NOT NULL,
+
+    PotentiallyVulnerable BOOLEAN NOT NULL,
 
     CorrelationType VARCHAR(100),
     
