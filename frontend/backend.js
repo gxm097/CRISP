@@ -46,6 +46,12 @@ app.get('/dashboard', (req, res) => {
   res.sendFile(path.join(__dirname, 'SWE Project.html'));
 });
 
+app.get('/overview', (req, res  => {
+  res.sendFile(path.join(__dirname, 'overview.html'));
+}))
+app.get('/inventory', (req, res  => {
+  res.sendFile(path.join(__dirname, 'inventory.html'));
+}))
 
 app.listen(3000, () => {
   console.log('Server running at http://localhost:3000');

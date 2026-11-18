@@ -390,3 +390,75 @@ font-weight: 700;
     font-family: inherit
 }
 
+/********asset-button window*******/
+.mode-overlay {
+    position:fixed;
+    inset: 0;
+    background: rgba(15, 25, 35, 0.55) ;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 1000;
+    opacity: 0 ;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s;
+    
+}
+.mode-overlay-open{
+    opacity: 1;
+    visibility: visible;
+}
+.mode{
+    background:#fff;
+    width:100%;
+    max-width: 600px ;
+    max-height:90vh ;
+    overflow-y: auto;
+    border-radius:20px ;
+    padding:22px;
+    position: relative;
+}
+/*form-lay out */
+.mode .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top : 20px;
+}
+.mode .full{
+    grid-column: 1 -1;
+}
+.mode label{
+     display: block;
+     font-size: 0.75em;
+     font-weight: 600 ;
+     color: #1c2b3a;
+     margin-bottom: 6px;
+}
+
+.mode input, .mode select{
+    width: 100% ;
+    box-sizing: border-box;
+    font:inherit;
+    font-size: 0.85rem;
+    padding: 12px 14px;
+    border: 1px solid #dde3ea;
+    border-radius: 10px;
+    color: #1c2b3a;
+    background: #fff;
+} 
+
+/*buttons on bottom*/
+.mode .actions{
+display: flex;
+justify-content: flex-end;
+gap:12px;
+border-top: 1px solid #dde3ea;
+margin-top: 20px;
+padding-top: 16px;
+}
+
+@media (max-width: 560px){
+    .mode .grid {grid-template-columns: 1fr;}
+}

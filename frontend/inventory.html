@@ -23,7 +23,76 @@
             </div>
             <div class="btn-group">
                 <button class="import-btn">Import CSV</button>
-                <button class="asset-btn">Add asset</button>
+                <button class="asset-btn" id="openMode">Add asset</button>
+                <div class="mode-overlay" id="assetMode">
+                    <div class="mode">
+                        <!--formgoes here -->
+                        <div class="mode-head">
+                         <div>
+                        <h1 id="mode-title">Add Inventory asset</h1>
+                        <p class="sub"> Register a technology device for monitoring.</p>
+                         </div>
+                        <button type="button" class="close" id="closeMode" aria-label="Close">&times;</button>
+                            </div>
+                            
+                        <form id="assetForm">
+                            <div class="grid">
+
+                                <div>
+                                    <label for="assetType">Asset type</label>
+                                    <select id="assetType" name="type">
+                                        <option>Network firewall</option>
+                                        <option>server</option>
+                                         <option>server</option>
+                                          <option>server</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="status">Monitoring</label>
+                                    <select id="status" name="status">
+                                        <option>Active</option>
+                                        <option>pause</option>
+                                    </select>
+                                </div>
+                                <div class="full">
+                                    <label for="asset-lab">Asset name</label>
+                                    <input id="name" name="name" placeholder="....." required>
+                                    </div>
+
+                                    <div>
+                                    <label for="ven-lab">Vendor</label>
+                                    <input id="vendor" name="vendor" placeholder="....." required>
+                                    </div>
+
+                                    <div>
+                                    <label for="prod-lab">Product/model</label>
+                                    <input id="product" name="product" placeholder="....." required>
+                                    </div>
+
+                                    <div>
+                                    <label for="soft-lab">Software/firmware version</label>
+                                    <input id="software" name="software" placeholder="....." required> 
+                                    </div>
+
+                                <div>
+                                    <label for="pub-fac">Public-facing</label>
+                                    <select id="public" name="public">
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    </select>
+                                </div>
+
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="btn btn-cancel" id="cancelMode">Cancel</button>
+                                <button type="submit" class="btn btn-save" id="saveMode">Save asset</button>
+                                </div>
+                        </form>
+                        
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <!----------------Top row---------------------->
@@ -90,7 +159,6 @@
                 </table>
             </div>
         </section>
-
 
         <script src="scripts/overview.js"></script>
 
