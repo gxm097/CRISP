@@ -722,8 +722,6 @@ CREATE TABLE Correlation
     VulnerabilityID INT NOT NULL,
 
     PotentiallyVulnerable BOOLEAN NOT NULL,
-
-    CorrelationType VARCHAR(100),
     
     UNIQUE
 (
