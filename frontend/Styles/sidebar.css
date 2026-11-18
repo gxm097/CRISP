@@ -6,8 +6,10 @@
     top:0;
     bottom: 0;
     left:0;
-    width: 200px;
-    background-color: var(--sidebar-color);
+    width: 250px;
+    background:#07192f;
+    color:white;
+    padding:25px;
 }
 .sidebar div{
     font-family:Arial;
