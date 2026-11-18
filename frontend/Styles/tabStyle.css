@@ -228,6 +228,79 @@ td{
     border-radius:8px;
 }
 
+
+/* Inventory Page */
+
+/* INVENTORY */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.card.green{
+    border-left:4px solid #16a34a;
+}
+
+.label{
+    color:#6b7280;
+    font-size:14px;
+}
+
+.info{
+    font-size:28px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.btn-group{
+    display:flex;
+    gap:12px;
+}
+
+.import-btn{
+    background:white;
+    border:1px solid #d1d5db;
+    padding:10px 16px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.asset-btn{
+    background:#0b839b;
+    color:white;
+    border:none;
+    padding:10px 16px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.filter-bar{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.filter-bar input,
+.filter-bar select{
+    padding:10px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+}
+
+.table-wrap{
+    overflow-x:auto;
+}
+
 /* REPORTS PAGE */
 
 .report-cards{
