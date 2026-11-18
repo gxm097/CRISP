@@ -291,7 +291,7 @@ def saveTarget(cursor, assessment, source, target, result):
         cursor.execute("""
             INSERT INTO Vulnerability
                 (CVE, Title, Description, CVSSScore, Severity,
-                 ExploitStatus, KEVFlag, FirstPublished, LastUpdated)
+                ExploitStatus, KEVFlag, FirstPublished, LastUpdated)
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, CURRENT_TIMESTAMP)
             ON CONFLICT (CVE) DO UPDATE SET
                 Title = EXCLUDED.Title,
@@ -302,14 +302,17 @@ def saveTarget(cursor, assessment, source, target, result):
                 KEVFlag = EXCLUDED.KEVFlag,
                 LastUpdated = CURRENT_TIMESTAMP
             RETURNING VulnerabilityID
-            """,
-            (cve["cve_id"],
-             cve["description"],
-             getScore(cve["cvss"]),
-             cve["cvss"]["severity"].capitalize(),
-             getExploitStatus(cve),
-             bool(cve["kev"]),
-             cve["published_date"]))
+        """,
+        (
+            cve["cve_id"],
+            cve["title"],
+            cve["description"],
+            getScore(cve["cvss"]),
+            cve["cvss"]["severity"].capitalize(),
+            getExploitStatus(cve),
+            bool(cve["kev"]),
+            cve["published_date"]
+        ))
         vulnerability = cursor.fetchone()[0]
 
 
