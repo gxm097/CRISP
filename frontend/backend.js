@@ -120,6 +120,34 @@ app.get('/api/assets', async (req, res) => {
   }
 });
 
+app.post('/api/assets', async (req, res) => {
+  const { type, status, name, vendor, product, software, public: isPublic } = req.body;
+
+  if (!name || !type) {
+    return res.status(400).json({ error: 'Asset name and type are required' });
+  }
+
+  try {
+    const result = await pool.query(`
+      INSERT INTO InventoryAsset
+        (OrganizationID, AssetTypeID, AssetName, Vendor, Product, Version, PublicFacing, Status)
+      SELECT 1, AssetTypeID, $2, $3, $4, $5, $6, $7
+      FROM AssetType
+      WHERE AssetTypeName = $1
+      RETURNING AssetID AS id
+    `, [type, name, vendor, product, software, isPublic === 'Yes', status === 'pause' ? 'Paused' : 'Active']);
+
+    if (result.rowCount === 0) {
+      return res.status(400).json({ error: 'Unknown asset type' });
+    }
+
+    res.status(201).json({ id: result.rows[0].id });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Could not save asset' });
+  }
+});
+
 app.listen(3000, () => {
   console.log('Server running at http://localhost:3000');
 });
