@@ -823,16 +823,19 @@ VALUES
 );
 
 --QA Result
-CREATE TABLE QAResult
+CREATE TABLE QAFurtherReview:
 (
-    QAResultID SERIAL PRIMARY KEY,
+    FurtherReviewID SERIAL PRIMARY KEY,
 
     AnalysisResultID INT NOT NULL UNIQUE,
 
-    Disposition VARCHAR(50) NOT NULL,
+    Reason TEXT,
+
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
     FOREIGN KEY (AnalysisResultID)
         REFERENCES AnalystResult(AnalysisResultID)
+        ON DELETE CASCADE
 );
 
 ALTER TABLE FindingVerification

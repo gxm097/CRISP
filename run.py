@@ -6,11 +6,11 @@ import time
 ROOT = Path(__file__).resolve().parent
 
 scripts = [
-    #(ROOT / "cleaners" / "firewallClean.py", []),
-    #(ROOT / "cleaners" / "generalClean.py", []),
-    #(ROOT / "cleaners" / "loadInventory.py", ["--docker"]),
-    #(ROOT / "agents" / "research" / "researchAgent.py", []),
-    #(ROOT / "agents" / "reports" / "correlationCOPY.py", []),
+    (ROOT / "cleaners" / "firewallClean.py", []),
+    (ROOT / "cleaners" / "generalClean.py", []),
+    (ROOT / "cleaners" / "loadInventory.py", ["--docker"]),
+    (ROOT / "agents" / "research" / "researchAgent.py", []),
+    (ROOT / "agents" / "reports" / "correlationCOPY.py", []),
     (ROOT / "agents" / "analyzerAgent.py", []),
     #ROOT / "agents" / "qaAgent.py",
 ]
