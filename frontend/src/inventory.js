@@ -65,6 +65,76 @@
     applyFilters();
 });
 
+// Import CSV
+const csvInput = document.getElementById('csvFile');
+
+document.querySelector('.import-btn').addEventListener('click', () => csvInput.click());
+
+csvInput.addEventListener('change', async () => {
+    const file = csvInput.files[0];
+    if (!file) return;
+
+    const rows = parseCsv(await file.text());
+    csvInput.value = '';
+
+    if (rows.length === 0) {
+        alert('That file has no rows to import.');
+        return;
+    }
+
+    const res = await fetch('/api/assets/import', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ rows })
+    });
+    const result = await res.json();
+
+    if (!res.ok) {
+        alert('Nothing was imported:\n' + result.errors.join('\n'));
+        return;
+    }
+
+    alert(`Imported ${result.added} asset(s).`);
+    applyFilters();
+});
+
+function parseCsv(text) {
+    text = text.replace(/^\uFEFF/, '');
+    const lines = [];
+    let row = [], cell = '', inQuotes = false;
+
+    for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+        if (inQuotes) {
+            if (c === '"' && text[i + 1] === '"') { cell += '"'; i++; }
+            else if (c === '"') inQuotes = false;
+            else cell += c;
+        } else if (c === '"') inQuotes = true;
+        else if (c === ',') { row.push(cell); cell = ''; }
+        else if (c === '\n') { row.push(cell); lines.push(row); row = []; cell = ''; }
+        else if (c !== '\r') cell += c;
+    }
+    if (cell || row.length) { row.push(cell); lines.push(row); }
+
+    const filled = lines.filter(r => r.some(v => v.trim() !== ''));
+    if (filled.length < 2) return [];
+
+    // match friendly column names like "Asset Name" or "Product/Model"
+    const columnNames = {
+        assetname: 'name', name: 'name',
+        assettype: 'type', type: 'type',
+        vendor: 'vendor',
+        productmodel: 'product', product: 'product',
+        version: 'version',
+        publicfacing: 'public', public: 'public'
+    };
+    const headers = filled[0].map(h => columnNames[h.toLowerCase().replace(/[^a-z]/g, '')] || h);
+
+    return filled.slice(1).map(r =>
+        Object.fromEntries(headers.map((h, i) => [h, (r[i] || '').trim()]))
+    );
+}
+
     function renderTable(assets) {
     const tbody = document.getElementById("inventory-body");
 
