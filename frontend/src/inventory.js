@@ -44,12 +44,26 @@
         if (e.key === 'Escape') closeMode();
     });
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        console.log(Object.fromEntries(new FormData(form)));
-        form.reset();
-        closeMode();
-    })
+    form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form));
+
+    const res = await fetch('/api/assets', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    });
+
+    if (!res.ok) {
+        const err = await res.json();
+        alert(err.error || 'Could not save asset');
+        return;
+    }
+
+    form.reset();
+    closeMode();
+    applyFilters();
+});
 
     function renderTable(assets) {
     const tbody = document.getElementById("inventory-body");
