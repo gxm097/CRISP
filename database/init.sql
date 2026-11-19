@@ -53,11 +53,20 @@ INSERT INTO user_account
 VALUES
 (
     1,
-    'testadmin',
+    'admin',
     '$2b$10$8TVe9VwYDNXJy2ciMN4ZiuEmvVzc7S.YULJlcLL9T34WP4Sh8z5pi',
-    'testadmin@example.com',
+    'admin@example.com',
     'Account Administrator',
     TRUE,
+    'Active'
+),
+(
+    1,
+    'analyst',
+    '$2b$10$8TVe9VwYDNXJy2ciMN4ZiuEmvVzc7S.YULJlcLL9T34WP4Sh8z5pi',
+    'analyst@example.com',
+    'Analyst',
+    FALSE,
     'Active'
 );
 
@@ -162,6 +171,8 @@ INSERT INTO Vulnerability
     CVE,
     Title,
     Description,
+    Vendor,
+    Product,
     CVSSScore,
     Severity,
     ExploitStatus,
@@ -170,52 +181,28 @@ INSERT INTO Vulnerability
 )
 VALUES
 (
-    'CVE-2026-0001',
-    'Example FortiGate Vulnerability',
-    'Testing vulnerability table.',
-    9.8,
+    'CVE-2025-59718',
+    'FortiOS FortiCloud SSO authentication bypass via crafted SAML response',
+    'An improper verification of cryptographic signature in FortiOS 7.2.0 through 7.2.11. An unauthenticated attacker can bypass FortiCloud SSO login authentication with a crafted SAML response message.',
+    'Fortinet',
+    'FortiOS',
+    9.1,
     'Critical',
+    'None',
+    FALSE,
+    '2025-12-09'
+),
+(
+    'CVE-2022-0609',
+    'Use after free in Animation',
+    'Use after free in Animation in Google Chrome prior to 98.0.4758.102 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. Listed in CISA KEV.',
+    'Google',
+    'Google Chrome',
+    8.8,
+    'High',
     'Known Exploited',
     TRUE,
-    CURRENT_TIMESTAMP
-),
-(
-    'CVE-2026-0002',
-    'Example Cisco AnyConnect Vulnerability',
-    'Testing vulnerability table.',
-    7.5,
-    'High',
-    'Exploitable',
-    FALSE,
-    CURRENT_TIMESTAMP
-),(
-    'CVE-2026-0003',
-    'Example Cisco Catalyst Vulnerability',
-    'Testing vulnerability table.',
-    5.0,
-    'Medium',
-    'Exploitable',
-    FALSE,
-    CURRENT_TIMESTAMP
-),(
-    'CVE-2026-0004',
-    'Example Ubiquiti UniFi AP Vulnerability',
-    'Testing vulnerability table.',
-    4.3,
-    'Low',
-    'Exploitable',
-    FALSE,
-    CURRENT_TIMESTAMP
-),
-(
-    'CVE-2026-0005',
-    'Example Microsoft Office 365 Vulnerability',
-    'Testing vulnerability table.',
-    8.2,
-    'High',
-    'Exploitable',
-    FALSE,
-    CURRENT_TIMESTAMP
+    '2022-04-04'
 );
 
 --Vulnerability Affected Version
@@ -240,6 +227,30 @@ CREATE TABLE VulnerabilityAffectedVersion
 
 CREATE INDEX idx_affected_vulnerability
 ON VulnerabilityAffectedVersion(VulnerabilityID);
+
+INSERT INTO VulnerabilityAffectedVersion
+(
+    VulnerabilityID,
+    VersionStart,
+    VersionEnd,
+    VersionStartKey,
+    VersionEndKey
+)
+VALUES
+(
+    1,
+    '7.2.0',
+    '7.2.11',
+    ARRAY[7, 2, 0],
+    ARRAY[7, 2, 11]
+),
+(
+    2,
+    NULL,
+    '98.0.4758.102',
+    NULL,
+    ARRAY[98, 0, 4758, 102]
+);
 
 --Inventory Import
 CREATE TABLE InventoryImport
@@ -272,6 +283,11 @@ VALUES
     1,
     1,
     'spawglass_inventory_october.csv'
+),
+(
+    1,
+    1,
+    'Google_Chrome_installation_export.csv'
 );
 
 --Inventory Assests
@@ -327,61 +343,40 @@ ON InventoryAsset(Vendor, Product, Version);
 INSERT INTO InventoryAsset
 (
     OrganizationID,
+    ImportID,
     AssetTypeID,
     AssetName,
     Vendor,
     Product,
     Version,
+    Hostname,
     PublicFacing
 )
 VALUES
 (
     1,
     1,
+    1,
     'Firewall-01',
     'Fortinet',
     'FortiGate-80F',
     '7.2.10',
+    'firewall-01.spawglass.local',
     TRUE
 ),
 (
     1,
     2,
-    'VPN-Endpoint-01',
-    'Cisco',
-    'AnyConnect',
-    '4.10.04049',
-    TRUE
-),
-(
-    1,
-    3,
-    'Switch-01',
-    'Cisco',
-    'Catalyst 9300',
-    '17.3.3',
-    FALSE
-),
-(
-    1,
-    4,
-    'AccessPoint-01',
-    'Ubiquiti',
-    'UniFi AP AC Pro',
-    '4.0.80.10875',
-    FALSE
-),
-(
-    1,
     5,
-    'SaaS-01',
-    'Microsoft',
-    'Office 365',
-    NULL,
+    'juanMarquez-Pc',
+    'Google',
+    'Google Chrome',
+    '97.0.4692.99',
+    'juanmarquez-pc.spawglass.local',
     FALSE
 );
 
---VulnerabilitySourceReference (nothing)
+--Vulnerability Source Reference
 CREATE TABLE VulnerabilitySourceReference
 (
     ReferenceID SERIAL PRIMARY KEY,
@@ -408,7 +403,28 @@ CREATE TABLE VulnerabilitySourceReference
     )
 );
 
---Assessment Schedule (nothing)
+INSERT INTO VulnerabilitySourceReference
+(
+    VulnerabilityID,
+    SourceID,
+    SourceURL,
+    RetrievedDate
+)
+VALUES
+(
+    1,
+    1,
+    'https://nvd.nist.gov/vuln/detail/CVE-2025-59718',
+    CURRENT_TIMESTAMP
+),
+(
+    2,
+    2,
+    'https://www.cisa.gov/known-exploited-vulnerabilities-catalog',
+    CURRENT_TIMESTAMP
+);
+
+--Assessment Schedule
 CREATE TABLE AssessmentSchedule
 (
     ScheduleID SERIAL PRIMARY KEY,
@@ -431,13 +447,24 @@ INSERT INTO AssessmentSchedule
 (
     OrganizationID,
     Frequency,
-    Enabled
+    Enabled,
+    LastRun,
+    NextRun
 )
 VALUES
 (
     1,
     'Daily',
-    TRUE
+    TRUE,
+    CURRENT_TIMESTAMP - INTERVAL '1 day',
+    CURRENT_TIMESTAMP + INTERVAL '1 day'
+),
+(
+    1,
+    'Weekly',
+    FALSE,
+    NULL,
+    CURRENT_TIMESTAMP + INTERVAL '7 days'
 );
 
 --Assessments
@@ -466,18 +493,27 @@ INSERT INTO Assessment
 (
     OrganizationID,
     AssessmentStart,
+    AssessmentEnd,
     TriggerType,
     Status
 )
 VALUES
 (
     1,
-    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP - INTERVAL '1 day',
+    CURRENT_TIMESTAMP - INTERVAL '1 day' + INTERVAL '18 minutes',
     'Manual',
+    'Completed'
+),
+(
+    1,
+    CURRENT_TIMESTAMP,
+    NULL,
+    'Scheduled',
     'Running'
 );
 
---Assessment Asset (Nothing)
+--Assessment Asset
 CREATE TABLE AssessmentAsset
 (
     AssessmentID INT NOT NULL,
@@ -511,6 +547,12 @@ VALUES
     1,
     1,
     '7.2.10',
+    'Evaluated'
+),
+(
+    1,
+    2,
+    '97.0.4692.99',
     'Evaluated'
 );
 
@@ -554,6 +596,7 @@ INSERT INTO ResearchResult
     AssetID,
     QueryText,
     Status,
+    RawContent,
     SourceURL
 )
 VALUES
@@ -561,9 +604,19 @@ VALUES
     1,
     1,
     1,
-    'FortiGate-80F vulnerabilities',
+    'find the CVEs affecting Fortinet FortiOS version 7.2.10',
     'Completed',
-    'https://example.com'
+    '{"query": {"vendor": "Fortinet", "product": "FortiOS", "version": "7.2.10"}, "cves": [{"cve_id": "CVE-2025-59718", "title": "FortiOS FortiCloud SSO authentication bypass via crafted SAML response"}]}',
+    'https://nvd.nist.gov/vuln/detail/CVE-2025-59718'
+),
+(
+    1,
+    2,
+    2,
+    'find the CVEs affecting Google Chrome version 97.0.4692.99',
+    'Completed',
+    '{"query": {"vendor": "Google", "product": "Google Chrome", "version": "97.0.4692.99"}, "cves": [{"cve_id": "CVE-2022-0609", "title": "Use after free in Animation"}]}',
+    'https://www.cisa.gov/known-exploited-vulnerabilities-catalog'
 );
 
 --Finding
@@ -606,17 +659,29 @@ INSERT INTO Finding
     OrganizationID,
     AssetID,
     VulnerabilityID,
-    Priority
+    Priority,
+    FindingStatus,
+    LastVerified
 )
 VALUES
 (
     1,
     1,
     1,
-    'Critical'
+    9.1,
+    'Open',
+    CURRENT_TIMESTAMP
+),
+(
+    1,
+    2,
+    2,
+    8.8,
+    'Open',
+    CURRENT_TIMESTAMP
 );
 
---Finding Verification (nothing)
+--Finding Verification
 CREATE TABLE FindingVerification
 (
     FindingVerificationID SERIAL PRIMARY KEY,
@@ -675,6 +740,13 @@ VALUES
     'Assessment Summary',
     '2026-11-01',
     '2026-11-30'
+),
+(
+    1,
+    2,
+    'Executive Summary',
+    '2026-10-01',
+    '2026-10-31'
 );
 
 --Audit Event
@@ -709,6 +781,12 @@ VALUES
     1,
     'User Login',
     'UserAccount',
+    1
+),
+(
+    2,
+    'Assessment Started',
+    'Assessment',
     1
 );
 
@@ -762,7 +840,14 @@ VALUES
     1,
     1,
     TRUE,
-    'Version Supported'
+    'Version In Range'
+),
+(
+    1,
+    2,
+    2,
+    TRUE,
+    'Version In Range'
 );
 
 -- Analyst Result
@@ -816,14 +901,30 @@ VALUES
     1,
     'vulnerable',
     'HIGH',
-    'Test analysis result.',
-    ARRAY['Asset version falls within the affected range.'],
-    ARRAY[]::TEXT[],
-    ARRAY['Upgrade to a fixed version.']
+    'Firewall-01 is a Fortinet FortiGate-80F running 7.2.10, which falls inside the affected range 7.2.0 through 7.2.11 for CVE-2025-59718. The asset is public facing, so the FortiCloud SSO login is reachable from the internet.',
+    ARRAY['Asset version 7.2.10 falls within the affected range 7.2.0 through 7.2.11.',
+          'FortiGate-80F runs FortiOS, the product named in the advisory.',
+          'The asset is flagged public facing in the inventory.'],
+    ARRAY['Build number of the installed firmware.',
+          'Whether FortiCloud SSO is actually enabled on this appliance.'],
+    ARRAY['Upgrade FortiOS to 7.2.12 or later.',
+          'Restrict administrative access to the management interface.']
+),
+(
+    2,
+    'vulnerable',
+    'MEDIUM',
+    'juanMarquez-Pc reports Google Chrome 97.0.4692.99, below the 98.0.4758.102 fix for CVE-2022-0609. The CVE is listed in the CISA KEV catalog. Confidence is MEDIUM because the version came from a software export rather than the endpoint itself.',
+    ARRAY['Installed version 97.0.4692.99 is lower than the fixed version 98.0.4758.102.',
+          'CVE-2022-0609 is listed in the CISA KEV catalog.'],
+    ARRAY['Date the software export was taken.',
+          'Whether Chrome has auto updated since the export.'],
+    ARRAY['Update Google Chrome to 98.0.4758.102 or later.',
+          'Turn on automatic Chrome updates across the fleet.']
 );
 
---QA Result
-CREATE TABLE QAFurtherReview:
+--QA Further Review
+CREATE TABLE QAFurtherReview
 (
     FurtherReviewID SERIAL PRIMARY KEY,
 
@@ -838,20 +939,19 @@ CREATE TABLE QAFurtherReview:
         ON DELETE CASCADE
 );
 
-ALTER TABLE FindingVerification
-ADD CONSTRAINT fk_findingverification_qaresult
-FOREIGN KEY (QAResultID)
-REFERENCES QAResult(QAResultID);
-
-INSERT INTO QAResult
+INSERT INTO QAFurtherReview
 (
     AnalysisResultID,
-    Disposition
+    Reason
 )
 VALUES
 (
     1,
-    'Verified'
+    'Analyst confidence is HIGH and the asset is public facing, so an analyst should confirm the installed build before remediation.'
+),
+(
+    2,
+    'Analyst confidence is MEDIUM. The Chrome version came from a software export and was not confirmed on the endpoint.'
 );
 
 INSERT INTO FindingVerification
@@ -864,6 +964,11 @@ VALUES
 (
     1,
     1,
+    1
+),
+(
+    2,
+    2,
     1
 );
 
