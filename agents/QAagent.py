@@ -13,7 +13,7 @@ def getAnalysisResult():
     with DSN.cursor(row_factory=dict_row) as cursor:
         cursor.execute("""
             SELECT
-                AnalysisResultID AS "analysisID"
+                AnalysisResultID AS "analysisID",
                 CorrelationID AS "correlationID",
                 VulnerabilityStatus AS "vulnerabilityStatus",
                 Confidence AS "confidence",
@@ -125,10 +125,24 @@ def qaCheck(analysis, asset, vulnerability, affectedVersionStart, affectedVersio
 
     return "Further Review"
 
+def getPriorityScore(vulnerabilityID):
+    with DSN.cursor() as cursor:
+            cursor.execute("""
+                SELECT
+                    CVSSScore
+                FROM Vulnerability
+                WHERE VulnerabilityID = %s;
+            """, (vulnerabilityID,))
+            row = cursor.fetchone()
+    
+    if row is None:
+        return None
+    return row
+
 def saveFurtherReview(analysisResultID, reason):
     with DSN.cursor() as cursor:
         cursor.execute("""
-            INSERT INTO FurtherReview
+            INSERT INTO QAFurtherReview
                 (AnalysisResultID, Reason)
             VALUES (%s, %s)
 
@@ -142,7 +156,41 @@ def saveFurtherReview(analysisResultID, reason):
 
     DSN.commit()
 
+def saveVerifiedFinding(organizationID, assetID, vulnerabilityID, priority):
+
+    with DSN.cursor() as cursor:
+        cursor.execute("""
+            INSERT INTO Finding
+            (
+                OrganizationID,
+                AssetID,
+                VulnerabilityID,
+                Priority,
+                FindingStatus,
+                FirstDetected,
+                LastVerified
+            )
+            VALUES
+            (
+                %s,
+                %s,
+                %s,
+                %s,
+                'Open',
+                CURRENT_TIMESTAMP,
+                CURRENT_TIMESTAMP
+            );
+        """, (
+            organizationID,
+            assetID,
+            vulnerabilityID,
+            priority
+        ))
+
+    DSN.commit()
+
 analysisResult = getAnalysisResult()
+organizationID = 1
 for analysis in analysisResult:
     correlationID = analysis["correlationID"]
     assetID = getAssetID(correlationID)
@@ -157,4 +205,7 @@ for analysis in analysisResult:
     if verdict == "Further Review":
         reason = analysis["supportingEvidence"]
         analysisID = analysis["analysisID"]
-        saveFurtherReview(analysisID, reason)
+        #saveFurtherReview(analysisID, reason)
+    elif verdict == "Verified":
+         priority = getPriorityScore(vulnerabilityID)
+         saveVerifiedFinding(organizationID, assetID, vulnerabilityID, priority)

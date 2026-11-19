@@ -577,7 +577,7 @@ CREATE TABLE Finding
 
     VulnerabilityID INT NOT NULL,
 
-    Priority VARCHAR(30) NOT NULL,
+    Priority DECIMAL(3,1) NOT NULL,
 
     FindingStatus VARCHAR(50) DEFAULT 'Open',
 
