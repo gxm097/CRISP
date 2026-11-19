@@ -10,6 +10,8 @@ apiKey = apiKeyFile.read_text(encoding="utf-8").strip()
 
 outputFile = ROOT / "outputs" / "analyzeResults.md"
 
+LIMIT = 5
+
 DSN = psycopg.connect(
     host = "localhost",
     dbname = "crisp",
@@ -71,17 +73,68 @@ Rules:
 10. Do not modify, scan, probe, exploit, patch, reconfigure, or otherwise interact with the monitored asset. CRISP is a read-only 
     vulnerability assessment platform.
 
-return a structured json matching the json schema and a markdown file of the summary and remendation that need to be taken
+return a structured json matching the json schema
 """
 
 jsonSchema = {
-    "vulnerabilityStatus": "vulnerable",
-    "confidence": "HIGH",
-    "reasoningSummary": "the installed version is whithin the vulnerable version range",
-    "supportingEvidence": [],
-    "missingInformation": [],
-    "remendation": []
+    "type": "object",
 
+    "properties": {
+
+        "vulnerabilityStatus": {
+            "type": "string",
+            "enum": [
+                "vulnerable",
+                "unknown",
+                "not_vulnerable"
+            ]
+        },
+
+        "confidence": {
+            "type": "string",
+            "enum": [
+                "HIGH",
+                "MEDIUM",
+                "LOW"
+            ]
+        },
+
+        "reasoningSummary": {
+            "type": "string"
+        },
+
+        "supportingEvidence": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+
+        "missingInformation": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+
+        "recommendations": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+
+    "required": [
+        "vulnerabilityStatus",
+        "confidence",
+        "reasoningSummary",
+        "supportingEvidence",
+        "missingInformation",
+        "recommendations"
+    ],
+
+    "additionalProperties": False
 }
 
 client = anthropic.Anthropic(api_key=apiKey)
@@ -101,6 +154,57 @@ def callClaude(messages):
             },
         },
     )
+
+def getClaudeResponse(userQuery):
+    response = callClaude([
+        {
+            "role": "user",
+            "content": userQuery
+        }
+    ])
+
+    for block in response.content:
+        if block.type == "text":
+            return json.loads(block.text)
+
+    return None
+
+def saveAnalysisResult(correlationID, result):
+
+    with DSN.cursor() as cursor:
+
+        cursor.execute("""
+            INSERT INTO AnalystResult
+            (
+                CorrelationID,
+                VulnerabilityStatus,
+                Confidence,
+                ReasoningSummary,
+                SupportingEvidence,
+                MissingInformation,
+                Recommendations
+            )
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+
+            ON CONFLICT (CorrelationID)
+            DO UPDATE SET
+                VulnerabilityStatus = EXCLUDED.VulnerabilityStatus,
+                Confidence = EXCLUDED.Confidence,
+                ReasoningSummary = EXCLUDED.ReasoningSummary,
+                SupportingEvidence = EXCLUDED.SupportingEvidence,
+                MissingInformation = EXCLUDED.MissingInformation,
+                Recommendations = EXCLUDED.Recommendations;
+        """, (
+            correlationID,
+            result["vulnerabilityStatus"],
+            result["confidence"],
+            result["reasoningSummary"],
+            result["supportingEvidence"],
+            result["missingInformation"],
+            result["recommendations"]
+        ))
+
+    DSN.commit()
 
 def getPotentialCorrelations():
     with DSN.cursor() as cursor:
@@ -197,10 +301,14 @@ def prepareAnalysisMessage(vulnerability, asset, affectedVersion):
     vulnDescription = vulnerability[3]
     cvssScore = vulnerability[4]
     severity = vulnerability[5]
-    affectedVersionStart = affectedVersion[0]
-    affectedVersionEnd = affectedVersion[1]
     exploitStatus = vulnerability[6]
 
+    if affectedVersion is None:
+        affectedVersionStart = None
+        affectedVersionEnd = None
+    else:
+        affectedVersionStart = affectedVersion[0]
+        affectedVersionEnd = affectedVersion[1]
 
 
     assetMessage = f"""
@@ -232,13 +340,35 @@ def buildQuery(assetMessage, VulnerabilityMessage):
 
 
 correlations = getPotentialCorrelations()
-for correlations in correlations:
-     assetID = int(correlations[2])
-     vulnerability = getVulnerability(assetID)
-     asset = getAssetInfo(assetID)
-     affectedVersions = getAffectedVersion(vulnerability[0])
+correlationCount = 0
+results = []
+for correlation in correlations:
+    if correlationCount >= LIMIT:
+         break
+    else:
+        correlationID = int(correlation[0])
+        assetID = int(correlation[2])
+        vulnerabilityID = int(correlation[3])
+        affectedVersions = getAffectedVersion(vulnerabilityID)
+        vulnerability = getVulnerability(vulnerabilityID)
+        asset = getAssetInfo(assetID)
 
-     assetMessage, vulnerabilityMessage = prepareAnalysisMessage(vulnerability, asset, affectedVersions)
-     query = buildQuery(assetMessage, vulnerabilityMessage)
+        assetMessage, vulnerabilityMessage = prepareAnalysisMessage(vulnerability, asset, affectedVersions)
+        query = buildQuery(assetMessage, vulnerabilityMessage)
 
-     print(query)
+        print("\nAnalyzing correlation:", correlationID)
+        
+        result = getClaudeResponse(query)
+        print(result)
+        if result is None:
+            print("No Claude result returned")
+            continue
+
+        saveAnalysisResult(correlationID, result)
+        results.append(result)
+        print("Result:", result["vulnerabilityStatus"], "| Confidence:", result["confidence"])
+        correlationCount += 1
+print("\nAnalyzer complete")
+print("Analyzed:", correlationCount)
+
+DSN.close()

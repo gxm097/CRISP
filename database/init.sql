@@ -134,6 +134,10 @@ CREATE TABLE Vulnerability
 
     Description TEXT,
 
+    Vendor VARCHAR(50),
+
+    Product VARCHAR(50),
+
     CVSSScore DECIMAL(3,1),
 
     Severity VARCHAR(30),
@@ -377,7 +381,7 @@ VALUES
     FALSE
 );
 
---VulnerabilitySourceReference
+--VulnerabilitySourceReference (nothing)
 CREATE TABLE VulnerabilitySourceReference
 (
     ReferenceID SERIAL PRIMARY KEY,
@@ -404,7 +408,7 @@ CREATE TABLE VulnerabilitySourceReference
     )
 );
 
---Assessment Schedule
+--Assessment Schedule (nothing)
 CREATE TABLE AssessmentSchedule
 (
     ScheduleID SERIAL PRIMARY KEY,
@@ -473,7 +477,7 @@ VALUES
     'Running'
 );
 
---Assessment Asset
+--Assessment Asset (Nothing)
 CREATE TABLE AssessmentAsset
 (
     AssessmentID INT NOT NULL,
@@ -511,7 +515,6 @@ VALUES
 );
 
 --Research Results
-
 CREATE TABLE ResearchResult
 (
     ResearchResultID SERIAL PRIMARY KEY,
@@ -564,7 +567,6 @@ VALUES
 );
 
 --Finding
-
 CREATE TABLE Finding
 (
     FindingID SERIAL PRIMARY KEY,
@@ -614,7 +616,7 @@ VALUES
     'Critical'
 );
 
---Finding Verification
+--Finding Verification (nothing)
 CREATE TABLE FindingVerification
 (
     FindingVerificationID SERIAL PRIMARY KEY,
@@ -763,29 +765,61 @@ VALUES
     'Version Supported'
 );
 
---Analyst Result
+-- Analyst Result
 CREATE TABLE AnalystResult
 (
     AnalysisResultID SERIAL PRIMARY KEY,
 
     CorrelationID INT NOT NULL UNIQUE,
 
-    Determination TEXT,
+    VulnerabilityStatus VARCHAR(30) NOT NULL,
+
+    Confidence VARCHAR(10) NOT NULL,
+
+    ReasoningSummary TEXT,
+
+    SupportingEvidence TEXT[],
+
+    MissingInformation TEXT[],
+
+    Recommendations TEXT[],
 
     FOREIGN KEY (CorrelationID)
         REFERENCES Correlation(CorrelationID)
-        ON DELETE CASCADE
+        ON DELETE CASCADE,
+
+    CHECK
+    (
+        VulnerabilityStatus IN
+        ('vulnerable', 'unknown', 'not_vulnerable')
+    ),
+
+    CHECK
+    (
+        Confidence IN
+        ('HIGH', 'MEDIUM', 'LOW')
+    )
 );
 
 INSERT INTO AnalystResult
 (
     CorrelationID,
-    Determination
+    VulnerabilityStatus,
+    Confidence,
+    ReasoningSummary,
+    SupportingEvidence,
+    MissingInformation,
+    Recommendations
 )
 VALUES
 (
     1,
-    'Applicable'
+    'vulnerable',
+    'HIGH',
+    'Test analysis result.',
+    ARRAY['Asset version falls within the affected range.'],
+    ARRAY[]::TEXT[],
+    ARRAY['Upgrade to a fixed version.']
 );
 
 --QA Result

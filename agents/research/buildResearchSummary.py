@@ -10,7 +10,7 @@ outputFile = ROOT / "tmp" / "researchSummary.json"
 
 DSN = "postgresql://postgres:crisppassword@localhost:5432/crisp"
 
-TOP = 25             # how many targets to mark research = true
+TOP = 10             # how many targets to mark research = true
 MAX_PER_PRODUCT = 3 
 
 TYPE_SCORE = {"Firewall": 40, "VPN Endpoint": 35, "Switch": 25,

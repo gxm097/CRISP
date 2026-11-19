@@ -6,21 +6,22 @@ import time
 ROOT = Path(__file__).resolve().parent
 
 scripts = [
-    ROOT / "cleaners" / "firewallClean.py",
-    ROOT / "cleaners" / "generalClean.py",
-    ROOT / "agents" / "research" / "researchAgent.py",
-    ROOT / "agents" / "reports" / "correlation.py",
-    ROOT / "agents" / "analyzerAgent.py",
+    #(ROOT / "cleaners" / "firewallClean.py", []),
+    #(ROOT / "cleaners" / "generalClean.py", []),
+    #(ROOT / "cleaners" / "loadInventory.py", ["--docker"]),
+    #(ROOT / "agents" / "research" / "researchAgent.py", []),
+    #(ROOT / "agents" / "reports" / "correlationCOPY.py", []),
+    (ROOT / "agents" / "analyzerAgent.py", []),
     #ROOT / "agents" / "qaAgent.py",
 ]
 
-for script in scripts:
+for script, arguments in scripts:
 
     print(f"\nRunning: {script.name}")
     print("-" * 50)
 
     result = subprocess.run(
-        [sys.executable, str(script)]
+        [sys.executable, str(script), *arguments]
     )
 
     if result.returncode != 0:
