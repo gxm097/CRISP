@@ -19,12 +19,6 @@ DSN = psycopg.connect(
     password = "crisppassword"
 )
 
-trustedDomains = [
-    "nvd.nist.gov",
-    "cve.org",
-    "cisa.gov",
-]
-
 ORGANIZATION = 1
 SOURCENAME = "NVD"
 
@@ -319,6 +313,8 @@ def prepareAnalysisMessage(vulnerability, asset, affectedVersion):
         Build: {Build}
         Host Name: {Hostname}
         Description: {Description}
+        Public Facing: {PublicFacing}
+        Status: {Status}
         """
 
     vulnerabilityMessage = f"""
