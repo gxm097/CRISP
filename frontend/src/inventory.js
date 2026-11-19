@@ -74,28 +74,56 @@ csvInput.addEventListener('change', async () => {
     const file = csvInput.files[0];
     if (!file) return;
 
-    const rows = parseCsv(await file.text());
-    csvInput.value = '';
-
-    if (rows.length === 0) {
-        alert('That file has no rows to import.');
+    if (!file.name.toLowerCase().endsWith('.csv')) {
+        alert('Only CSV files are supported.');
+        csvInput.value = '';
         return;
     }
 
-    const res = await fetch('/api/assets/import', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ rows })
-    });
-    const result = await res.json();
+    const status = document.getElementById('import-status');
+    const importButton = document.querySelector('.import-btn');
+    importButton.disabled = true;
+    status.textContent = 'Uploading ' + file.name + '…';
 
-    if (!res.ok) {
-        alert('Nothing was imported:\n' + result.errors.join('\n'));
-        return;
+    const form = new FormData();
+    form.append('file', file);
+    form.append('importType', document.getElementById('import-type').value);
+
+    try {
+        const res = await fetch('/api/import-jobs', {
+            method: 'POST',
+            credentials: 'same-origin',
+            body: form
+        });
+        const result = await res.json();
+        if (!res.ok) {
+            throw new Error(result.errors?.join('\n') || result.error || 'Could not start import');
+        }
+
+        csvInput.value = '';
+        while (result.status !== 'Completed' && result.status !== 'Failed') {
+            status.textContent = result.stage + ' (' + result.progress + '%)';
+            await new Promise(resolve => setTimeout(resolve, 3000));
+            const poll = await fetch('/api/import-jobs/' + encodeURIComponent(result.jobId), {
+                credentials: 'same-origin'
+            });
+            const latest = await poll.json();
+            if (!poll.ok) throw new Error(latest.message || 'Could not read import status');
+            Object.assign(result, latest);
+        }
+
+        if (result.status === 'Failed') {
+            throw new Error(result.errors.join('\n'));
+        }
+
+        status.textContent = 'Import completed for ' + result.filename;
+        applyFilters();
+    } catch (error) {
+        status.textContent = 'Import failed: ' + error.message;
+        alert(error.message);
+    } finally {
+        importButton.disabled = false;
     }
-
-    alert(`Imported ${result.added} asset(s).`);
-    applyFilters();
 });
 
 function parseCsv(text) {

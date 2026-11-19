@@ -1,4 +1,4 @@
-
+import argparse
 import pandas as pd
 from pathlib import Path
  
@@ -59,31 +59,41 @@ def getData(df, targetRow, product):
     )
  
  
-csvFiles = listFiles(inputPath)
-for csvFile in csvFiles:
-    file = getFileName(csvFile)
-    print(file)
-    outputFile = outputPath / (file + "_inventory.sql")
-    df = loadCsv(csvFile)
-    productName = getProductName(file)
- 
-    sqlLines = []
-    skipped = 0
-    for row in range(len(df)):
-        line = getData(df, row, productName)
-        if line is None:
-            skipped += 1
-        else:
-            sqlLines.append(line)
- 
-    if skipped:
-        print("skipped", skipped, "row(s) with no asset name")
- 
-    if not sqlLines:
-        print("no valid rows found, no output file written")
-        continue
- 
-    with open(outputFile, "w", encoding="utf-8") as fileHandle:
-        fileHandle.write("\n".join(sqlLines) + "\n")
-    print("done, output file = ", outputFile)
- 
+def main():
+    parser = argparse.ArgumentParser(description="Clean CRISP inventory CSV files.")
+    parser.add_argument("--input", type=Path, help="one uploaded CSV file")
+    parser.add_argument("--output", type=Path, help="generated inventory SQL file")
+    args = parser.parse_args()
+
+    csvFiles = [args.input] if args.input else listFiles(inputPath)
+    for csvFile in csvFiles:
+        file = getFileName(csvFile)
+        print(file)
+        outputFile = args.output if args.output else outputPath / (file + "_inventory.sql")
+        outputFile.parent.mkdir(parents=True, exist_ok=True)
+        df = loadCsv(csvFile)
+        productName = getProductName(file)
+
+        sqlLines = []
+        skipped = 0
+        for row in range(len(df)):
+            line = getData(df, row, productName)
+            if line is None:
+                skipped += 1
+            else:
+                sqlLines.append(line)
+
+        if skipped:
+            print("skipped", skipped, "row(s) with no asset name")
+
+        if not sqlLines:
+            print("no valid rows found, no output file written")
+            continue
+
+        with open(outputFile, "w", encoding="utf-8") as fileHandle:
+            fileHandle.write("\n".join(sqlLines) + "\n")
+        print("done, output file = ", outputFile)
+
+
+if __name__ == "__main__":
+    main()

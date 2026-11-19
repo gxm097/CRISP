@@ -1,4 +1,4 @@
-
+import argparse
 import pandas as pd
 from pathlib import Path
 import re
@@ -94,35 +94,48 @@ def cleanWhiteSpace(inputFile):
     return cleanFileOutputPath
  
  
-cleanFile = cleanWhiteSpace(inputFile)
-df = pd.read_csv(cleanFile, dtype=str)
-sqlLines = []
-fireRowList = []
- 
-for rows in range(len(df)):
-    getFirewalls(cleanFile, rows, fireRowList)
- 
-for fireRow in fireRowList:
-    hostName = df.iloc[fireRow, 3]
-    firewallProduct = df.iloc[fireRow, 4]
-    version, build = cleanFirmware(df.iloc[fireRow, 10], "firewall")
-    sqlLines.append(buildInsert(1, df.iloc[fireRow, 0], "Fortinet", firewallProduct, version, build, hostName, True))
- 
-    apRowList, swRowList = getSwitchAndAPList(fireRow, df)
-    for swRow in swRowList:
-        swName = df.iloc[swRow, 0]
-        swProduct = df.iloc[swRow, 4]
-        swVersion, swBuild = cleanFirmware(df.iloc[swRow, 10], "switch")
-        sqlLines.append(buildInsert(3, swName, "Fortinet", swProduct, swVersion, swBuild, hostName, False))
- 
-    for apRow in apRowList:
-        apName = df.iloc[apRow, 0]
-        apProduct = df.iloc[apRow, 4]
-        apVersion, apBuild = cleanFirmware(df.iloc[apRow, 10], "ap")
-        sqlLines.append(buildInsert(4, apName, "Fortinet", apProduct, apVersion, apBuild, hostName, False))
- 
-with open(outputFile, mode="w", encoding="utf-8") as file:
-    file.write("\n".join(sqlLines) + "\n")
- 
-print("output written to: ", outputFile)
- 
+def main():
+    parser = argparse.ArgumentParser(description="Clean a firewall inventory CSV file.")
+    parser.add_argument("--input", type=Path, help="uploaded firewall CSV file")
+    parser.add_argument("--output", type=Path, help="generated inventory SQL file")
+    args = parser.parse_args()
+
+    sourceFile = args.input if args.input else inputFile
+    targetFile = args.output if args.output else outputFile
+    targetFile.parent.mkdir(parents=True, exist_ok=True)
+
+    cleanFile = cleanWhiteSpace(sourceFile)
+    df = pd.read_csv(cleanFile, dtype=str)
+    sqlLines = []
+    fireRowList = []
+
+    for rows in range(len(df)):
+        getFirewalls(cleanFile, rows, fireRowList)
+
+    for fireRow in fireRowList:
+        hostName = df.iloc[fireRow, 3]
+        firewallProduct = df.iloc[fireRow, 4]
+        version, build = cleanFirmware(df.iloc[fireRow, 10], "firewall")
+        sqlLines.append(buildInsert(1, df.iloc[fireRow, 0], "Fortinet", firewallProduct, version, build, hostName, True))
+
+        apRowList, swRowList = getSwitchAndAPList(fireRow, df)
+        for swRow in swRowList:
+            swName = df.iloc[swRow, 0]
+            swProduct = df.iloc[swRow, 4]
+            swVersion, swBuild = cleanFirmware(df.iloc[swRow, 10], "switch")
+            sqlLines.append(buildInsert(3, swName, "Fortinet", swProduct, swVersion, swBuild, hostName, False))
+
+        for apRow in apRowList:
+            apName = df.iloc[apRow, 0]
+            apProduct = df.iloc[apRow, 4]
+            apVersion, apBuild = cleanFirmware(df.iloc[apRow, 10], "ap")
+            sqlLines.append(buildInsert(4, apName, "Fortinet", apProduct, apVersion, apBuild, hostName, False))
+
+    with open(targetFile, mode="w", encoding="utf-8") as file:
+        file.write("\n".join(sqlLines) + "\n")
+
+    print("output written to: ", targetFile)
+
+
+if __name__ == "__main__":
+    main()

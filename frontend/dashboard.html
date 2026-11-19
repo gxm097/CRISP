@@ -111,12 +111,12 @@
 
         <div class="card blue">
             <div class="label">Monitored Assets</div>
-            <div class="info">124</div>
+            <div class="info" data-stat="assets">124</div>
         </div>
 
         <div class="card red">
             <div class="label">Active Findings</div>
-            <div class="info">18</div>
+            <div class="info" data-stat="findings">18</div>
         </div>
 
         <div class="card yellow">
@@ -224,7 +224,7 @@
 
             </thead>
 
-            <tbody>
+            <tbody id="findings-body">
 
                 <tr>
 
@@ -651,8 +651,7 @@
     </main>
 
     <script src="src/swe.js"></script>
-
-
+    <script src="src/overview.js"></script>
    
 </body>
 

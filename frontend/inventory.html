@@ -24,6 +24,13 @@
             <div class="btn-group">
                 <button class="import-btn">Import CSV</button>
                 <input type="file" id="csvFile" accept=".csv" hidden>
+                <select id="import-type" aria-label="CSV import type">
+                    <option value="Auto-detect">Auto-detect</option>
+                    <option value="Firewall inventory">Firewall inventory</option>
+                    <option value="General inventory">General inventory</option>
+                    <option value="Software inventory">Software inventory</option>
+                </select>
+                <p id="import-status" role="status" aria-live="polite"></p>
                 <button class="asset-btn" id="openMode">Add asset</button>
                 <div class="mode-overlay" id="assetMode">
                     <div class="mode">
