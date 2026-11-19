@@ -9,6 +9,7 @@
   const key = 'crisp-assessments-demo-v2';
   let state, busy = false, editingStart = null;
   const seed = () => { const data = { schedules: [], assessments: [], assessmentAssets: [], researchResults: [],
+    // Sample inventory assets
     assets: [
       {AssetID:1, AssetTypeID:1, AssetName:'Firewall-01', Version:'7.2.10', Status:'Active'},
       {AssetID:2, AssetTypeID:2, AssetName:'VPN-Endpoint-01', Version:'4.10.04049', Status:'Active'},
@@ -223,7 +224,7 @@
   $('reset').onclick=()=>{const id=$('schedule-id').value; defaults(); $('schedule-id').value=id;};
   $('cancel').onclick=()=>$('editor').close(); $('confirm-cancel').onclick=()=>$('confirm').close(); $('close-detail').onclick=()=>$('detail').close();
   $('search').oninput=render; $('filter').onchange=render;
-  
+
   if (!demo) setInterval(()=>{if(!document.hidden) work(load);},15000);
   work(load);
 })();
