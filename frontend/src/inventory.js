@@ -1,4 +1,4 @@
-//invetory bar
+//invetory bar 
     const search = document.getElementById("search");
     const type = document.getElementById("asset-type");
     const vendor = document.getElementById("vendor");
