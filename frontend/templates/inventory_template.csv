@@ -1,2 +1,6 @@
-name,type,vendor,product,version,public
-Example-Switch-01,Switch,Fortinet,FortiSwitch-124F,7.4.3,No
+Asset Name,Asset Type,Vendor,Product/Model,Version,Public Facing
+Houston-FW-01,Firewall,Fortinet,FortiGate-80F,7.6.7,Yes
+Remote-VPN-01,VPN Endpoint,Fortinet,FortiClient,7.2.4,No
+Houston-Office-SW01,Switch,Fortinet,FortiSwitch-124F,7.4.3,No
+Houston-Lobby-AP01,Access Point,Fortinet,FortiAP-231F,7.4.5,No
+Office-Chrome,SaaS,Google,Google Chrome,120.0.6099.111,No
