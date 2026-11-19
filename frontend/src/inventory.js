@@ -51,3 +51,26 @@
         form.reset();
         closeMode();
     })
+
+    function renderTable(assets) {
+    const tbody = document.getElementById("inventory-body");
+
+    if (!Array.isArray(assets) || assets.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6">No assets found</td></tr>`;
+        return;
+    }
+
+    tbody.innerHTML = assets.map(a => `
+      <tr>
+        <td>${a.name}</td>
+        <td>${a.type}</td>
+        <td>${a.vendor ?? ""} / ${a.product ?? ""}</td>
+        <td>${a.version ?? "—"}</td>
+        <td>${a.status}</td>
+        <td>${a.findings}</td>
+      </tr>
+    `).join("");
+}
+
+// load the table when the page opens
+applyFilters();
