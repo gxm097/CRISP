@@ -461,3 +461,30 @@ padding-top: 16px;
 @media (max-width: 560px){
     .mode .grid {grid-template-columns: 1fr;}
 }
+
+/* Add asset pop-up */
+.mode-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.mode-overlay.open {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mode-overlay > * {
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    width: min(520px, 92vw);
+    max-height: 90vh;
+    overflow: auto;
+}

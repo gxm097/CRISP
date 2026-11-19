@@ -23,6 +23,7 @@
             </div>
             <div class="btn-group">
                 <button class="import-btn">Import CSV</button>
+                <input type="file" id="csvFile" accept=".csv" hidden>
                 <button class="asset-btn" id="openMode">Add asset</button>
                 <div class="mode-overlay" id="assetMode">
                     <div class="mode">
@@ -41,10 +42,11 @@
                                 <div>
                                     <label for="assetType">Asset type</label>
                                     <select id="assetType" name="type">
-                                        <option>Network firewall</option>
-                                        <option>server</option>
-                                         <option>server</option>
-                                          <option>server</option>
+                                        <option value="Firewall">Firewall</option>
+                                        <option value="VPN Endpoint">VPN endpoint</option>
+                                        <option value="Switch">Switch</option>
+                                        <option value="Access Point">Access point</option>
+                                        <option value="SaaS">Software (SaaS)</option>
                                     </select>
                                 </div>
                                 <div>
@@ -60,8 +62,8 @@
                                     </div>
 
                                     <div>
-                                    <label for="ven-lab">Vendor</label>
-                                    <input id="vendor" name="vendor" placeholder="....." required>
+                                    <label for="assetVendor">Vendor</label>
+                                    <input id="assetVendor" name="vendor" placeholder="....." required>
                                     </div>
 
                                     <div>
@@ -83,7 +85,7 @@
                                 </div>
 
                                 </div>
-                            </div>
+                                
                             <div class="actions">
                                 <button type="button" class="btn btn-cancel" id="cancelMode">Cancel</button>
                                 <button type="submit" class="btn btn-save" id="saveMode">Save asset</button>
@@ -135,7 +137,7 @@
                     <option value="switch">Switch</option>
                     <option value="ap">ap</option>
                 </select>
-                <select id="vender" class="filter-select">
+                <select id="vendor" class="filter-select">
                     <option value="">All vendors</option>
                     <option value="fortinet">Fortinet</option>
                     <option value="microsoft">Microsoft</option>
@@ -160,7 +162,7 @@
             </div>
         </section>
 
-        <script src="scripts/overview.js"></script>
+        <script src="src/inventory.js"></script>
 
 </body>
 

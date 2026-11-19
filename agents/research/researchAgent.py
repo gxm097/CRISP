@@ -290,26 +290,33 @@ def saveTarget(cursor, assessment, source, target, result):
     for cve in result["cves"]:
         cursor.execute("""
             INSERT INTO Vulnerability
-                (CVE, Title, Description, CVSSScore, Severity,
-                 ExploitStatus, KEVFlag, FirstPublished, LastUpdated)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, CURRENT_TIMESTAMP)
+                (CVE, Title, Description, Vendor, Product, CVSSScore, Severity,
+                ExploitStatus, KEVFlag, FirstPublished, LastUpdated)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, CURRENT_TIMESTAMP)
             ON CONFLICT (CVE) DO UPDATE SET
                 Title = EXCLUDED.Title,
                 Description = EXCLUDED.Description,
+                Vendor = EXCLUDED.Vendor,
+                Product = EXCLUDED.Product,
                 CVSSScore = EXCLUDED.CVSSScore,
                 Severity = EXCLUDED.Severity,
                 ExploitStatus = EXCLUDED.ExploitStatus,
                 KEVFlag = EXCLUDED.KEVFlag,
                 LastUpdated = CURRENT_TIMESTAMP
             RETURNING VulnerabilityID
-            """,
-            (cve["cve_id"],
-             cve["description"],
-             getScore(cve["cvss"]),
-             cve["cvss"]["severity"].capitalize(),
-             getExploitStatus(cve),
-             bool(cve["kev"]),
-             cve["published_date"]))
+        """,
+        (
+            cve["cve_id"],
+            cve["title"],
+            cve["description"],
+            target["vendor"],
+            target["product"],
+            getScore(cve["cvss"]),
+            cve["cvss"]["severity"].capitalize(),
+            getExploitStatus(cve),
+            bool(cve["kev"]),
+            cve["published_date"]
+        ))
         vulnerability = cursor.fetchone()[0]
 
 
