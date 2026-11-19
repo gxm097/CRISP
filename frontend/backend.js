@@ -149,6 +149,62 @@ app.post('/api/assets', async (req, res) => {
   }
 });
 
+app.post('/api/assets/import', async (req, res) => {
+  const rows = req.body.rows;
+
+  if (!Array.isArray(rows) || rows.length === 0) {
+    return res.status(400).json({ errors: ['The file has no rows to import'] });
+  }
+
+  const errors = [];
+  let added = 0;
+  let client;
+
+  try {
+    client = await pool.connect();
+    await client.query('BEGIN');
+
+    for (let i = 0; i < rows.length; i++) {
+      const r = rows[i];
+      const rowNumber = i + 1;
+
+      if (!r.name || !r.type) {
+        errors.push(`Row ${rowNumber}: name and type are required`);
+        continue;
+      }
+
+      const result = await client.query(`
+        INSERT INTO InventoryAsset
+          (OrganizationID, AssetTypeID, AssetName, Vendor, Product, Version, PublicFacing, Status)
+        SELECT 1, AssetTypeID, $2, $3, $4, $5, $6, 'Active'
+        FROM AssetType
+        WHERE LOWER(AssetTypeName) = LOWER($1)
+      `, [r.type, r.name, r.vendor || null, r.product || null, r.version || null,
+          ['yes', 'true'].includes(String(r.public).toLowerCase())]);
+
+      if (result.rowCount === 0) {
+        errors.push(`Row ${rowNumber}: unknown type "${r.type}"`);
+      } else {
+        added++;
+      }
+    }
+
+    if (errors.length > 0) {
+      await client.query('ROLLBACK');
+      return res.status(400).json({ errors });
+    }
+
+    await client.query('COMMIT');
+    res.json({ added });
+  } catch (err) {
+    if (client) await client.query('ROLLBACK').catch(() => {});
+    console.error(err);
+    res.status(500).json({ errors: ['Could not import the file'] });
+  } finally {
+    if (client) client.release();
+  }
+});
+
 app.listen(3000, () => {
   console.log('Server running at http://localhost:3000');
 });
