@@ -15,7 +15,7 @@
     }
 
     type.addEventListener("change", applyFilters);
-    vendor.addEventListender("change", applyFilters);
+    vendor.addEventListener("change", applyFilters);
 
     let timer;
     search.addEventListener("input", () => {
