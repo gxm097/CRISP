@@ -31,7 +31,6 @@
         overlay.classList.add('open');
     }
     function closeMode(){
-        open.log('clicked');
         overlay.classList.remove('open');
     }
     document.querySelector('.asset-btn').addEventListener('click', openMode);
