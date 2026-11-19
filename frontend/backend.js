@@ -87,6 +87,38 @@ app.get('/api/dashboard', async (req, res) => {
   }
 });
 
+app.get('/api/assets', async (req, res) => {
+  const { q = '', type = '', vendor = '' } = req.query;
+  const typeNames = { firewall: 'Firewall', switch: 'Switch', ap: 'Access Point' };
+
+  try {
+    const result = await pool.query(`
+      SELECT a.AssetID AS id,
+             a.AssetName AS name,
+             t.AssetTypeName AS type,
+             a.Vendor AS vendor,
+             a.Product AS product,
+             a.Version AS version,
+             a.Status AS status,
+             COUNT(f.FindingID)::int AS findings
+      FROM InventoryAsset a
+      JOIN AssetType t ON t.AssetTypeID = a.AssetTypeID
+      LEFT JOIN Finding f ON f.AssetID = a.AssetID AND f.FindingStatus = 'Open'
+      WHERE a.OrganizationID = 1
+        AND ($1 = '' OR a.AssetName ILIKE '%' || $1 || '%' OR a.Product ILIKE '%' || $1 || '%')
+        AND ($2 = '' OR t.AssetTypeName = $2)
+        AND ($3 = '' OR a.Vendor ILIKE $3)
+      GROUP BY a.AssetID, t.AssetTypeName
+      ORDER BY a.AssetName
+    `, [q, typeNames[type] || '', vendor]);
+
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Could not load assets' });
+  }
+});
+
 app.listen(3000, () => {
   console.log('Server running at http://localhost:3000');
 });
