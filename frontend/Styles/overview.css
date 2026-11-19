@@ -311,7 +311,9 @@ font-weight: 700;
 /*buttons*/
 .btn-group{
     display: flex;
-    gap: 10px ;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
 
 .import-btn{
@@ -487,4 +489,28 @@ padding-top: 16px;
     width: min(520px, 92vw);
     max-height: 90vh;
     overflow: auto;
+}
+
+#import-type {
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #e3e9ef;
+    border-radius: 8px;
+    background: #fff;
+    color: #4c5156;
+    font: inherit;
+}
+
+#import-status {
+    flex-basis: 100%;
+    min-height: 18px;
+    margin: 0;
+    color: #7a8899;
+    font-size: 12px;
+    text-align: right;
+}
+
+.import-btn:disabled {
+    cursor: wait;
+    opacity: 0.65;
 }
