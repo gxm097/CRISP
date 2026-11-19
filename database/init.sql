@@ -677,6 +677,7 @@ INSERT INTO Correlation
     AssessmentID,
     AssetID,
     VulnerabilityID,
+    PotentiallyVulnerable,
     CorrelationType
 )
 VALUES
@@ -684,6 +685,7 @@ VALUES
     1,
     1,
     1,
+    TRUE,
     'Version Supported'
 );
 
