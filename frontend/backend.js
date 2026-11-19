@@ -36,7 +36,7 @@ app.post('/login', async (req, res) => {
   const user = result.rows[0];
 
  if (user && await checkPassword(password, user.password_hash)) {
-    res.redirect('/dashboard');
+    res.redirect('/overview');
   } else {
     res.status(401).send('Wrong username or password.');
   }
@@ -46,6 +46,46 @@ app.get('/dashboard', (req, res) => {
   res.sendFile(path.join(__dirname, 'SWE Project.html'));
 });
 
+app.get('/overview', (req, res) => {
+  res.sendFile(path.join(__dirname, 'overview.html'));
+});
+app.get('/inventory', (req, res) => {
+  res.sendFile(path.join(__dirname, 'inventory.html'));
+});
+
+app.get('/api/dashboard', async (req, res) => {
+  try {
+    const assets = await pool.query(
+      'SELECT COUNT(*)::int AS count FROM InventoryAsset WHERE OrganizationID = 1'
+    );
+    const findings = await pool.query(
+      "SELECT COUNT(*)::int AS count FROM Finding WHERE OrganizationID = 1 AND FindingStatus = 'Open'"
+    );
+    const priority = await pool.query(`
+      SELECT v.CVE AS cve,
+             a.AssetName AS asset,
+             v.CVSSScore AS cvss,
+             v.Severity AS severity,
+             f.FindingStatus AS status,
+             TO_CHAR(f.FirstDetected, 'YYYY-MM-DD') AS discovered
+      FROM Finding f
+      JOIN Vulnerability v ON v.VulnerabilityID = f.VulnerabilityID
+      JOIN InventoryAsset a ON a.AssetID = f.AssetID
+      WHERE f.OrganizationID = 1
+      ORDER BY v.CVSSScore DESC NULLS LAST
+      LIMIT 5
+    `);
+
+    res.json({
+      assets: assets.rows[0].count,
+      findings: findings.rows[0].count,
+      priorityFindings: priority.rows
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Could not load dashboard data' });
+  }
+});
 
 app.listen(3000, () => {
   console.log('Server running at http://localhost:3000');
