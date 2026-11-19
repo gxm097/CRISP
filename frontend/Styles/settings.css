@@ -1,7 +1,19 @@
+#setings{
+    position:relative;
+}
+
+.create-acc-button{
+   position: absolute;
+   right: 300px;
+   top: 40px;
+   height: 40px;
+   width: 200px;
+   background-color:rgb(175, 169, 169)
+}
 .theme-toggle-div{
     display: flex;
-    width: 350px;
-    height: 30px;
+    width: 800px;
+    height: 40px;
     align-items: center;
     position: absolute;
     left: 500px;
@@ -10,4 +22,46 @@
 
 .dark-toggle{
     margin-right: 10px;
+    width: 100px;
+    height: 30px;
+}
+.theme-p{
+    font-size: 36px;
+    color: var(--text);
+}
+
+.dark-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: auto;
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 8px 14px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.15s;
+}
+
+.dark-toggle:hover {
+    border-color: rgba(128, 128, 128, 0.6);
+}
+
+.dark-toggle:active {
+    transform: scale(0.98);
+}
+
+.theme-icon {
+    display: inline-flex;
+}
+
+.theme-icon svg {
+    width: 16px;
+    height: 16px;
 }

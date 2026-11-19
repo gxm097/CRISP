@@ -6,7 +6,7 @@
 
 body{
     font-family:Segoe UI,sans-serif;
-    background:#f6f8fb;
+    background: var(--background-color);
 }
 
 .dashboard{
@@ -396,3 +396,4 @@ td{
 .hidden{
     display:none;
 }
+

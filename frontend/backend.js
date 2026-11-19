@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const session = require('express-session');                  
 const { hashPassword, checkPassword } = require('./createHash');
 
 const { Pool } = require('pg');
@@ -16,6 +17,26 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 
+
+app.use(session({
+  secret: 'change-this-to-a-long-random-string',
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    httpOnly: true,
+    maxAge: 1000 * 60 * 60 * 24
+  }
+}));
+
+
+function requireLogin(req, res, next) {
+  if (req.session.user) {
+    next();
+  } else {
+    res.redirect('/');
+  }
+}
+
 app.use('/Styles', express.static(path.join(__dirname, 'Styles')));
 app.use('/icons', express.static(path.join(__dirname, 'icons')));
 app.use('/src', express.static(path.join(__dirname, 'src')));
@@ -23,8 +44,6 @@ app.use('/src', express.static(path.join(__dirname, 'src')));
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'login.html'));
 });
-
-
 
 app.post('/login', async (req, res) => {
   const { username, password } = req.body;
@@ -35,56 +54,30 @@ app.post('/login', async (req, res) => {
   );
   const user = result.rows[0];
 
- if (user && await checkPassword(password, user.password_hash)) {
-    res.redirect('/overview');
+  if (user && await checkPassword(password, user.password_hash)) {
+   
+    req.session.user = {
+      id: user.user_id,
+      username: user.username,
+      role: user.role,
+      organizationId: user.organization_id
+    };
+    res.redirect('/dashboard');
   } else {
     res.status(401).send('Wrong username or password.');
   }
 });
 
-app.get('/dashboard', (req, res) => {
-  res.sendFile(path.join(__dirname, 'SWE Project.html'));
+
+app.get('/dashboard', requireLogin, (req, res) => {
+  res.sendFile(path.join(__dirname, 'dashboard.html'));
 });
 
-app.get('/overview', (req, res) => {
-  res.sendFile(path.join(__dirname, 'overview.html'));
-});
-app.get('/inventory', (req, res) => {
-  res.sendFile(path.join(__dirname, 'inventory.html'));
-});
 
-app.get('/api/dashboard', async (req, res) => {
-  try {
-    const assets = await pool.query(
-      'SELECT COUNT(*)::int AS count FROM InventoryAsset WHERE OrganizationID = 1'
-    );
-    const findings = await pool.query(
-      "SELECT COUNT(*)::int AS count FROM Finding WHERE OrganizationID = 1 AND FindingStatus = 'Open'"
-    );
-    const priority = await pool.query(`
-      SELECT v.CVE AS cve,
-             a.AssetName AS asset,
-             v.CVSSScore AS cvss,
-             v.Severity AS severity,
-             f.FindingStatus AS status,
-             TO_CHAR(f.FirstDetected, 'YYYY-MM-DD') AS discovered
-      FROM Finding f
-      JOIN Vulnerability v ON v.VulnerabilityID = f.VulnerabilityID
-      JOIN InventoryAsset a ON a.AssetID = f.AssetID
-      WHERE f.OrganizationID = 1
-      ORDER BY v.CVSSScore DESC NULLS LAST
-      LIMIT 5
-    `);
-
-    res.json({
-      assets: assets.rows[0].count,
-      findings: findings.rows[0].count,
-      priorityFindings: priority.rows
-    });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'Could not load dashboard data' });
-  }
+app.get('/logout', (req, res) => {
+  req.session.destroy(() => {
+    res.redirect('/');
+  });
 });
 
 app.listen(3000, () => {
