@@ -47,7 +47,8 @@
 
     document.getElementById("greeting").textContent = getGreeting();
 
-    document.getElementById("username").textContent = UserActivation.first.Name;
+    // TODO: show the logged-in user's name once the backend has login sessions
+    // document.getElementById("username").textContent = UserActivation.first.Name;
 
 
     //invetory bar
