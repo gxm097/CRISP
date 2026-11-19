@@ -20,6 +20,7 @@ app.use(express.json());
 app.use('/Styles', express.static(path.join(__dirname, 'Styles')));
 app.use('/icons', express.static(path.join(__dirname, 'icons')));
 app.use('/src', express.static(path.join(__dirname, 'src')));
+app.use('/templates', express.static(path.join(__dirname, 'templates')));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'login.html'));
