@@ -41,3 +41,44 @@ const signOutTab = document.querySelector('.sign-out-tab');
 signOutTab.addEventListener('click', () => {
   window.location.href = '/logout';
 });
+
+
+const createAccButton = document.querySelector('#create-acc-button');
+const createAccForm = document.querySelector('#create-acc-form');
+const cancelCreate = document.querySelector('#cancel-create');
+const createAccMessage = document.querySelector('#create-acc-message');
+
+createAccButton.addEventListener('click', () => {
+  createAccForm.classList.toggle('hidden');
+  createAccMessage.textContent = '';
+});
+
+cancelCreate.addEventListener('click', () => {
+  createAccForm.reset();
+  createAccForm.classList.add('hidden');
+  createAccMessage.textContent = '';
+});
+
+createAccForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const newUser = {
+    username: document.querySelector('#new-username').value,
+    email: document.querySelector('#new-email').value,
+    password: document.querySelector('#new-password').value,
+    role: document.querySelector('#new-role').value
+  };
+
+  const response = await fetch('/api/users', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(newUser)
+  });
+
+  const data = await response.json();
+  createAccMessage.textContent = data.message;
+
+  if (response.ok) {
+    createAccForm.reset();
+  }
+});

@@ -38,6 +38,14 @@ function requireLogin(req, res, next) {
   }
 }
 
+function requireAdmin(req, res, next) {
+  if (req.session.user && req.session.user.role === 'Account Administrator') {
+    next();
+  } else {
+    res.status(403).json({ message: 'Only administrators can create accounts.' });
+  }
+}
+
 app.use('/Styles', express.static(path.join(__dirname, 'Styles')));
 app.use('/icons', express.static(path.join(__dirname, 'icons')));
 app.use('/src', express.static(path.join(__dirname, 'src')));
@@ -74,6 +82,42 @@ app.post('/login', async (req, res) => {
 app.get('/dashboard', requireLogin, (req, res) => {
   res.sendFile(path.join(__dirname, 'dashboard.html'));
 });
+
+
+
+app.post('/api/users', requireAdmin, async (req, res) => {
+  const { username, email, password, role } = req.body;
+
+  if (!username || !email || !password || !role) {
+    return res.status(400).json({ message: 'Fill in every field.' });
+  }
+
+  const allowedRoles = ['Account Administrator', 'Analyst'];
+  if (!allowedRoles.includes(role)) {
+    return res.status(400).json({ message: 'Choose a valid role.' });
+  }
+
+  try {
+    const hash = await hashPassword(password);
+
+    await pool.query(
+      `INSERT INTO user_account (organization_id, username, password_hash, email, role)
+       VALUES ($1, $2, $3, $4, $5)`,
+      [req.session.user.organizationId, username.trim(), hash, email.trim(), role]
+    );
+
+    res.json({ message: `Account created for ${username.trim()}.` });
+  } catch (err) {
+    if (err.code === '23505') {
+      res.status(409).json({ message: 'That username or email is already taken.' });
+    } else {
+      console.log(err);
+      res.status(500).json({ message: 'Something went wrong. Try again.' });
+    }
+  }
+});
+
+
 
 
 app.get('/logout', (req, res) => {

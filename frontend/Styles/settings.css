@@ -1,31 +1,25 @@
-#setings{
-    position:relative;
+#settings {
+    position: relative;
 }
 
-.create-acc-button{
-   position: absolute;
-   right: 300px;
-   top: 40px;
-   height: 40px;
-   width: 200px;
-   background-color:rgb(175, 169, 169)
-}
-.theme-toggle-div{
-    display: flex;
-    width: 800px;
-    height: 40px;
-    align-items: center;
+.create-acc-button {
     position: absolute;
-    left: 500px;
-    top: 40px;
+    right: 170px;
+    top: 10px;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(175, 169, 169);
 }
 
-.dark-toggle{
-    margin-right: 10px;
-    width: 100px;
-    height: 30px;
+.theme-toggle-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    margin: 40px auto 0;
 }
-.theme-p{
+
+.theme-p {
     font-size: 36px;
     color: var(--text);
 }
@@ -64,4 +58,76 @@
 .theme-icon svg {
     width: 16px;
     height: 16px;
+}
+
+.create-acc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 360px;
+    margin: 24px auto 0;
+    padding: 20px;
+    background: var(--card);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 12px;
+}
+
+.create-acc-form.hidden {
+    display: none;
+}
+
+.create-acc-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--text);
+}
+
+.create-acc-form input,
+.create-acc-form select {
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: 13px;
+    color: var(--text);
+    background: var(--background-color);
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 8px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.save-user-button {
+    padding: 8px 14px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    background: #0b839b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.save-user-button:hover {
+    background: #076b80;
+}
+
+.cancel-button {
+    padding: 8px 14px;
+    font-family: inherit;
+    font-size: 13px;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.create-acc-message {
+    font-size: 13px;
+    color: var(--text);
 }

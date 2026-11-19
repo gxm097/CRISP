@@ -615,6 +615,37 @@
           </div>
           
           <button id ="create-acc-button" class = "create-acc-button">Create User Account</button>
+          <form id="create-acc-form" class="create-acc-form hidden">
+                <label>
+                    Username
+                    <input type="text" id="new-username" autocomplete="off">
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" id="new-email" autocomplete="off">
+                </label>
+
+                <label>
+                    Password
+                    <input type="password" id="new-password" autocomplete="new-password">
+                </label>
+
+                <label>
+                    Role
+                    <select id="new-role">
+                        <option>Analyst</option>
+                        <option>Account Administrator</option>
+                    </select>
+                </label>
+
+                <div class="form-buttons">
+                    <button type="submit" class="save-user-button">Create account</button>
+                    <button type="button" id="cancel-create" class="cancel-button">Cancel</button>
+            </div>
+
+            <p id="create-acc-message" class="create-acc-message"></p>
+        </form>
       </section>
 
     </main>
