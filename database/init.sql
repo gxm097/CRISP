@@ -174,6 +174,44 @@ VALUES
     'Known Exploited',
     TRUE,
     CURRENT_TIMESTAMP
+),
+(
+    'CVE-2026-0002',
+    'Example Cisco AnyConnect Vulnerability',
+    'Testing vulnerability table.',
+    7.5,
+    'High',
+    'Exploitable',
+    FALSE,
+    CURRENT_TIMESTAMP
+),(
+    'CVE-2026-0003',
+    'Example Cisco Catalyst Vulnerability',
+    'Testing vulnerability table.',
+    5.0,
+    'Medium',
+    'Exploitable',
+    FALSE,
+    CURRENT_TIMESTAMP
+),(
+    'CVE-2026-0004',
+    'Example Ubiquiti UniFi AP Vulnerability',
+    'Testing vulnerability table.',
+    4.3,
+    'Low',
+    'Exploitable',
+    FALSE,
+    CURRENT_TIMESTAMP
+),
+(
+    'CVE-2026-0005',
+    'Example Microsoft Office 365 Vulnerability',
+    'Testing vulnerability table.',
+    8.2,
+    'High',
+    'Exploitable',
+    FALSE,
+    CURRENT_TIMESTAMP
 );
 
 --Vulnerability Affected Version
@@ -301,6 +339,42 @@ VALUES
     'FortiGate-80F',
     '7.2.10',
     TRUE
+),
+(
+    1,
+    2,
+    'VPN-Endpoint-01',
+    'Cisco',
+    'AnyConnect',
+    '4.10.04049',
+    TRUE
+),
+(
+    1,
+    3,
+    'Switch-01',
+    'Cisco',
+    'Catalyst 9300',
+    '17.3.3',
+    FALSE
+),
+(
+    1,
+    4,
+    'AccessPoint-01',
+    'Ubiquiti',
+    'UniFi AP AC Pro',
+    '4.0.80.10875',
+    FALSE
+),
+(
+    1,
+    5,
+    'SaaS-01',
+    'Microsoft',
+    'Office 365',
+    NULL,
+    FALSE
 );
 
 --VulnerabilitySourceReference
