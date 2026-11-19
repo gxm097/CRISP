@@ -15,6 +15,7 @@ const pool = new Pool({
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.use('/Styles', express.static(path.join(__dirname, 'Styles')));
 app.use('/icons', express.static(path.join(__dirname, 'icons')));
