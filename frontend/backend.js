@@ -149,7 +149,7 @@ app.post('/login', async (req, res) => {
       role: user.role,
       organizationId: user.organization_id
     };
-    res.redirect('/dashboard');
+    res.redirect('/overview');
   } else {
     res.status(401).send('Wrong username or password.');
   }
@@ -164,6 +164,14 @@ app.get('/assessments', requireLogin, (req, res) => {
   res.sendFile(path.join(__dirname, 'assessments.html'));
 });
 
+// one route per page
+const pages = ['overview', 'inventory', 'findings', 'reports', 'users', 'settings'];
+
+pages.forEach(page => {
+  app.get('/' + page, requireLogin, (req, res) => {
+    res.sendFile(path.join(__dirname, page + '.html'));
+  });
+});
 
 app.post('/api/users', requireAdmin, async (req, res) => {
   const { username, email, password, role } = req.body;

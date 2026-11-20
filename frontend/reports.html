@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISP - Reports</title>
+    <link rel="stylesheet" href="/Styles/general.css">
+    <link rel="stylesheet" href="/Styles/sidebar.css">
+    <link rel="stylesheet" href="/Styles/tabStyle.css">
+    <link rel="stylesheet" href="/Styles/layout.css">
+</head>
+
+<body>
+    <main class="main">
+        <section id="reports">
+
+            <div class="page-header">
+                <div>
+                    <div class="section-label">SECURITY REPORTING</div>
+                    <h1>Reports</h1>
+                    <p>Generate stakeholder-ready summaries, findings, and trend analysis.</p>
+                </div>
+                <button class="create-btn">+ Create Report</button>
+            </div>
+
+            <div class="report-cards">
+                <div class="report-card">
+                    <span class="recommended">Recommended</span>
+                    <h3>Assessment Summary</h3>
+                    <p>High level exposure, coverage, and changes.</p>
+                    <button>Generate Report</button>
+                </div>
+
+                <div class="report-card">
+                    <h3>Vulnerability Findings</h3>
+                    <p>Technical findings and remediation details.</p>
+                    <button>Generate Report</button>
+                </div>
+            </div>
+
+            <div class="report-table">
+                <h2>Recently Generated</h2>
+                <input class="search-input" placeholder="Search reports">
+
+                <table>
+                    <tr>
+                        <th>Report</th>
+                        <th>Date</th>
+                        <th>Export</th>
+                    </tr>
+                    <tr>
+                        <td>Assessment Summary</td>
+                        <td>11/17/2026</td>
+                        <td><button>Download PDF</button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="/src/layout.js"></script>
+</body>
+
+</html>

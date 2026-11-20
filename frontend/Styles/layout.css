@@ -1,0 +1,31 @@
+/* Shared layout for pages that use src/layout.js */
+
+body.has-sidebar {
+    padding-left: 250px;
+}
+
+.sidebar,
+.sidebar * {
+    box-sizing: border-box;
+}
+
+.sidebar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sidebar-tabs:hover,
+.sign-out-tab:hover {
+    color: #07192f;
+}
+
+.sidebar-tabs.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+}
+
+body.has-sidebar .main {
+    margin: 0;
+    width: auto;
+    padding: 32px;
+}

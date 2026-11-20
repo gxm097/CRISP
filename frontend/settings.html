@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISP - Settings</title>
+    <link rel="stylesheet" href="/Styles/general.css">
+    <link rel="stylesheet" href="/Styles/sidebar.css">
+    <link rel="stylesheet" href="/Styles/tabStyle.css">
+    <link rel="stylesheet" href="/Styles/settings.css">
+    <link rel="stylesheet" href="/Styles/layout.css">
+</head>
+
+<body>
+    <main class="main">
+        <section id="settings">
+
+            <div class="theme-toggle-div">
+                <button id="dark-toggle" class="dark-toggle">
+                    <span class="theme-icon"></span>
+                    <span class="theme-label">Dark mode</span>
+                </button>
+                <p class="theme-p">Toggle between light and dark themes</p>
+            </div>
+
+            <button id="create-acc-button" class="create-acc-button">Create User Account</button>
+
+            <form id="create-acc-form" class="create-acc-form hidden">
+                <label>
+                    Username
+                    <input type="text" id="new-username" autocomplete="off">
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" id="new-email" autocomplete="off">
+                </label>
+
+                <label>
+                    Password
+                    <input type="password" id="new-password" autocomplete="new-password">
+                </label>
+
+                <label>
+                    Role
+                    <select id="new-role">
+                        <option>Analyst</option>
+                        <option>Account Administrator</option>
+                    </select>
+                </label>
+
+                <div class="form-buttons">
+                    <button type="submit" class="save-user-button">Create account</button>
+                    <button type="button" id="cancel-create" class="cancel-button">Cancel</button>
+                </div>
+
+                <p id="create-acc-message" class="create-acc-message"></p>
+            </form>
+
+        </section>
+    </main>
+
+    <script src="/src/layout.js"></script>
+    <script src="/src/settings.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISP - Users & Access</title>
+    <link rel="stylesheet" href="/Styles/general.css">
+    <link rel="stylesheet" href="/Styles/sidebar.css">
+    <link rel="stylesheet" href="/Styles/tabStyle.css">
+    <link rel="stylesheet" href="/Styles/layout.css">
+</head>
+
+<body>
+    <main class="main">
+        <section id="users">
+
+            <div class="page-header">
+                <div>
+                    <div class="section-label">ADMINISTRATION</div>
+                    <h1>Users &amp; Access</h1>
+                    <p>Manage users, permissions, and monitor account activity.</p>
+                </div>
+                <button id="inviteBtn" class="create-btn">+ Invite User</button>
+            </div>
+
+            <div class="user-stats">
+                <div class="stat-card">
+                    <h3>Active Users</h3>
+                    <h2>12</h2>
+                </div>
+            </div>
+
+            <input id="searchInput" class="search-input" placeholder="Search users">
+
+            <table class="user-table">
+                <tr>
+                    <th>User</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+                <tr class="user-row">
+                    <td>Jane Doe</td>
+                    <td>Administrator</td>
+                    <td>Active</td>
+                </tr>
+            </table>
+
+        </section>
+    </main>
+
+    <script src="/src/layout.js"></script>
+</body>
+
+</html>
