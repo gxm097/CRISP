@@ -9,9 +9,23 @@
             type: type.value,
             vendor: vendor.value
         });
-        fetch(`/api/assets?${params}`)
+                fetch(`/api/assets?${params}`)
         .then(r => r.json())
         .then(renderTable);
+
+        loadSummary();
+    }
+
+    // fill the 4 stat cards at the top of the page
+    function loadSummary() {
+        fetch('/api/inventory/summary', { credentials: 'same-origin' })
+        .then(r => r.ok ? r.json() : null)
+        .then(summary => {
+            if (!summary) return;
+            document.querySelectorAll('[data-stat]').forEach(card => {
+                card.textContent = summary[card.dataset.stat] ?? '---';
+            });
+        });
     }
 
     type.addEventListener("change", applyFilters);

@@ -247,6 +247,32 @@ app.get('/api/assets', requireLogin, async (req, res) => {
   }
 });
 
+app.get('/api/inventory/summary', requireLogin, async (req, res) => {
+  try {
+    const result = await pool.query(`
+      SELECT COUNT(*)::int AS total,
+             COUNT(*) FILTER (WHERE a.Status = 'Active')::int AS active,
+             COUNT(*) FILTER (WHERE EXISTS (
+               SELECT 1 FROM Finding f
+               WHERE f.AssetID = a.AssetID AND f.FindingStatus = 'Open'
+             ))::int AS affected,
+             COUNT(*) FILTER (WHERE EXISTS (
+               SELECT 1 FROM Finding f
+               JOIN Vulnerability v ON v.VulnerabilityID = f.VulnerabilityID
+               WHERE f.AssetID = a.AssetID AND f.FindingStatus = 'Open'
+                 AND UPPER(v.Severity) IN ('CRITICAL', 'HIGH')
+             ))::int AS "needsAttention"
+      FROM InventoryAsset a
+      WHERE a.OrganizationID = $1
+    `, [getOrganizationId(req)]);
+
+    res.json(result.rows[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Could not load inventory summary' });
+  }
+});
+
 app.post('/api/assets', requireLogin, async (req, res) => {
   const { type, status, name, vendor, product, software, public: isPublic } = req.body;
 
