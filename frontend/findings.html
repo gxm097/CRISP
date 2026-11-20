@@ -8,17 +8,63 @@
     <link rel="stylesheet" href="/Styles/general.css">
     <link rel="stylesheet" href="/Styles/sidebar.css">
     <link rel="stylesheet" href="/Styles/tabStyle.css">
+    <link rel="stylesheet" href="/Styles/findings.css">
     <link rel="stylesheet" href="/Styles/layout.css">
 </head>
 
 <body>
     <main class="main">
         <section id="findings">
-            <h1>Findings</h1>
+
+            <div class="page-header">
+                <div>
+                    <div class="section-label">VULNERABILITY MANAGEMENT</div>
+                    <h1>Findings</h1>
+                    <p>Verified vulnerabilities affecting your inventory, highest risk first.</p>
+                </div>
+            </div>
+
+            <div class="filters">
+                <input type="text" id="findings-search" placeholder="Search by CVE, title or asset">
+                <select id="severity-filter">
+                    <option value="">All severities</option>
+                    <option value="critical">Critical</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <select id="status-filter">
+                    <option value="">All statuses</option>
+                    <option value="open">Open</option>
+                    <option value="resolved">Resolved</option>
+                </select>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CVE</th>
+                            <th>Title</th>
+                            <th>Asset</th>
+                            <th>CVSS</th>
+                            <th>Severity</th>
+                            <th>Known exploited</th>
+                            <th>Status</th>
+                            <th>First detected</th>
+                        </tr>
+                    </thead>
+                    <tbody id="findings-body">
+                        <tr><td colspan="8">Loading findings…</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
         </section>
     </main>
 
     <script src="/src/layout.js"></script>
+    <script src="/src/findings.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+/* Findings page: severity badge colors */
+
+.severity-critical {
+    background: #fde2e1;
+    color: #b42318;
+}
+
+.severity-high {
+    background: #fff0db;
+    color: #cf7a00;
+}
+
+.severity-medium {
+    background: #fef7c3;
+    color: #8a6d00;
+}
+
+.severity-low {
+    background: #d9f5e5;
+    color: #12874d;
+}
+
+#findings td small {
+    color: #6b7280;
+}
+
+#findings td:first-child {
+    white-space: nowrap;
+}
