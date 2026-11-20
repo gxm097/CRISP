@@ -86,10 +86,10 @@ function parseMultipartCsv(req) {
     const nameMatch = headers.match(/name="([^"]+)"/i);
     const filenameMatch = headers.match(/filename="([^"]*)"/i);
 
-    parts.push({
+      parts.push({
       name: nameMatch ? nameMatch[1] : '',
       filename: filenameMatch ? filenameMatch[1] : null,
-      content: file.content
+      content
     });
     start = next;
   }
