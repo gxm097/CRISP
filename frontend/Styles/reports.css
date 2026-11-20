@@ -247,3 +247,93 @@ tbody tr:hover {
         align-items: flex-start;
     }
 }
+
+/* ---------- POLISH (match the other pages) ---------- */
+
+
+
+#reports {
+
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+}
+
+
+
+#reports .page-header p {
+
+    color: #5c6b7b;
+
+}
+
+
+
+.report-cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 20px;
+
+    margin-bottom: 24px;
+
+}
+
+
+
+.report-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+}
+
+
+
+.report-card .generate-report-btn {
+
+    margin-top: auto;
+
+}
+
+
+
+#reports .report-table {
+
+    margin-top: 0;
+
+    padding: 24px;
+
+}
+
+
+
+#reports .report-table h2 {
+
+    margin: 0 0 14px;
+
+    font-size: 20px;
+
+    color: #07192f;
+
+}
+
+
+
+#reports .generate-report-btn {
+
+    background: #0f5c63;
+
+}
+
+
+
+#reports .generate-report-btn:hover {
+
+    background: #0b474d;
+
+}
