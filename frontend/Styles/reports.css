@@ -13,8 +13,9 @@
 
 .page-header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    
     gap: 16px;
 }
 
@@ -67,8 +68,8 @@
 /* ---------- REPORT CARDS ---------- */
 
 .report-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    
     gap: 18px;
 }
 
