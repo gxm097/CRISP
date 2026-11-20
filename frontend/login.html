@@ -1,31 +1,43 @@
-<!doctype html>
-<html>
-    <head>
-        <title>Crisp Login</title>
-        <link rel = "stylesheet" href ="Styles/login.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISP - Sign in</title>
+    <link rel="stylesheet" href="/Styles/login.css">
+</head>
+
+<body>
+    <main class="login-card">
+
+        <div class="brand">
+            <div class="brand-name">CRISP</div>
+            <p class="brand-tagline">Continuous vulnerability monitoring</p>
+        </div>
+
+        <h1>Sign in</h1>
+
+        <p id="message" class="login-error" role="alert" hidden>Wrong username or password.</p>
+
         <form action="/login" method="POST">
-            <div class = "login-container">
-                <div>Crisp</div> 
-                <div>
-                    <input id = "username" class = "username" name="username" type = "text" placeholder="Username">
-                </div>
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" autocomplete="username" required autofocus>
 
-                <div>
-                    <input id = "password" class = "password" name="password" type = "password" placeholder="Password">
-                </div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required>
 
-                <div class = "login-button-container">
-                    <button id = "login-button" class = "login-button">Login</button>
-                    
-                </div>
-
-                <p id="message"> plsvr </p>
-
-        
-            </div>
+            <button type="submit" class="login-button">Sign in</button>
         </form>
-        
-    </body>
+
+    </main>
+
+    <script>
+        // show the error message when the server sends us back with ?error=1
+        if (new URLSearchParams(window.location.search).has('error')) {
+            document.getElementById('message').hidden = false;
+        }
+    </script>
+</body>
+
 </html>

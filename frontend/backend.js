@@ -152,7 +152,7 @@ app.post('/login', async (req, res) => {
     };
     res.redirect('/overview');
   } else {
-    res.status(401).send('Wrong username or password.');
+    res.redirect('/?error=1');
   }
 });
 

@@ -1,22 +1,99 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-}
-.login-container{
-    display: flex;
-    flex-direction: column ;
-    background-color: aqua;
-    height: 400px;
-    width: 400px;
-    align-items: center;
-    position: relative;
-    
+    padding: 24px;
+    background: #07192f;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    color: #1a1a1a;
 }
 
-.register-div{
-    position:absolute;
-    bottom: 0;
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 36px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.brand-name {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #07192f;
+}
+
+.brand-tagline {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: #0f5c63;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+input {
+    height: 42px;
+    padding: 0 12px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0f5c63;
+    box-shadow: 0 0 0 3px rgba(15, 92, 99, 0.2);
+}
+
+.login-button {
+    height: 44px;
+    margin-top: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #0f5c63;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #0b474d;
+}
+
+.login-error {
+    margin: 0 0 18px;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #b42318;
+    background: #fde2e1;
+    border-radius: 8px;
 }
