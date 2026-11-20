@@ -468,7 +468,8 @@ app.get('/api/import-jobs/:jobId', requireLogin, (req, res) => {
 app.get('/api/dashboard', requireLogin, async (req, res) => {
   const organizationId = getOrganizationId(req);
   try {
-    const [assetResult, findingResult, priorityResult, assessmentResult] = await Promise.all([
+    const [assetResult, findingResult, priorityResult, assessmentResult,
+           criticalResult, postureResult, latestRunResult, nextRunResult] = await Promise.all([
       pool.query('SELECT COUNT(*)::int AS count FROM InventoryAsset WHERE OrganizationID = $1', [organizationId]),
       pool.query(`SELECT COUNT(*)::int AS count FROM Finding f JOIN InventoryAsset a ON a.AssetID = f.AssetID
                   WHERE a.OrganizationID = $1 AND f.FindingStatus = 'Open'`, [organizationId]),
@@ -481,20 +482,63 @@ app.get('/api/dashboard', requireLogin, async (req, res) => {
                   ORDER BY v.CVSSScore DESC NULLS LAST, f.FirstDetected DESC
                   LIMIT 10`, [organizationId]),
       pool.query(`SELECT AssessmentID, AssessmentStart, AssessmentEnd, TriggerType, Status
-                  FROM Assessment WHERE OrganizationID = $1 ORDER BY AssessmentID DESC LIMIT 1`, [organizationId])
+                  FROM Assessment WHERE OrganizationID = $1 ORDER BY AssessmentID DESC LIMIT 1`, [organizationId]),
+
+      // open findings with Critical severity
+      pool.query(`SELECT COUNT(*)::int AS count
+                  FROM Finding f JOIN Vulnerability v ON v.VulnerabilityID = f.VulnerabilityID
+                  WHERE f.OrganizationID = $1 AND f.FindingStatus = 'Open'
+                    AND UPPER(v.Severity) = 'CRITICAL'`, [organizationId]),
+
+      // active assets, and how many of them have an open Critical or High finding
+      pool.query(`SELECT COUNT(*)::int AS active,
+                         COUNT(*) FILTER (WHERE EXISTS (
+                           SELECT 1 FROM Finding f
+                           JOIN Vulnerability v ON v.VulnerabilityID = f.VulnerabilityID
+                           WHERE f.AssetID = a.AssetID AND f.FindingStatus = 'Open'
+                             AND UPPER(v.Severity) IN ('CRITICAL', 'HIGH')
+                         ))::int AS "atRisk"
+                  FROM InventoryAsset a
+                  WHERE a.OrganizationID = $1 AND a.Status = 'Active'`, [organizationId]),
+
+      // latest completed assessment run
+      pool.query(`SELECT a.AssessmentEnd AS "completedAt",
+                         ROUND(EXTRACT(EPOCH FROM (a.AssessmentEnd - a.AssessmentStart)) / 60)::int AS "durationMinutes",
+                         (SELECT COUNT(*)::int FROM AssessmentAsset aa WHERE aa.AssessmentID = a.AssessmentID) AS "assetsAssessed",
+                         (SELECT COUNT(*)::int FROM Finding f
+                          WHERE f.OrganizationID = a.OrganizationID
+                            AND f.FirstDetected BETWEEN a.AssessmentStart AND a.AssessmentEnd) AS "newFindings"
+                  FROM Assessment a
+                  WHERE a.OrganizationID = $1 AND a.Status = 'Completed'
+                  ORDER BY a.AssessmentEnd DESC
+                  LIMIT 1`, [organizationId]),
+
+      // next enabled scheduled run
+      pool.query(`SELECT MIN(NextRun) AS "nextRun"
+                  FROM AssessmentSchedule
+                  WHERE OrganizationID = $1 AND Enabled = TRUE AND NextRun > CURRENT_TIMESTAMP`, [organizationId])
     ]);
+
+    const { active, atRisk } = postureResult.rows[0];
 
     res.json({
       assets: assetResult.rows[0].count,
       findings: findingResult.rows[0].count,
       priorityFindings: priorityResult.rows,
-      assessment: assessmentResult.rows[0] || null
+      assessment: assessmentResult.rows[0] || null,
+      critical: criticalResult.rows[0].count,
+      // % of active assets with no open Critical or High finding
+      posture: active > 0 ? Math.round(100 * (active - atRisk) / active) : null,
+      activeAssets: active,
+      latestRun: latestRunResult.rows[0] || null,
+      nextRun: nextRunResult.rows[0].nextRun
     });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Could not load dashboard' });
   }
 });
+
 
 app.get('/api/assessments/snapshot', requireLogin, async (req, res) => {
   const organizationId = getOrganizationId(req);

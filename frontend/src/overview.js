@@ -15,7 +15,14 @@
         const assets = document.querySelector('[data-stat="assets"]');
         const findings = document.querySelector('[data-stat="findings"]');
         if (assets) assets.textContent = data.assets;
-        if (findings) findings.textContent = data.findings;
+                if (findings) findings.textContent = data.findings;
+
+        const critical = document.querySelector('[data-stat="critical"]');
+        const posture = document.querySelector('[data-stat="posture"]');
+        if (critical) critical.textContent = data.critical;
+        if (posture) posture.textContent = data.posture === null ? '---' : data.posture + '%';
+
+        showAssessmentStatus(data);
     
         const tbody = document.getElementById("findings-body");
         if (tbody) {
@@ -31,6 +38,32 @@
             `).join("") || '<tr><td colspan="6">No priority findings.</td></tr>';
         }
     }
+
+        // fill the Assessment status box from the latest completed run
+    function showAssessmentStatus(data) {
+        const run = data.latestRun;
+
+        if (run) {
+            // ring = share of active assets that the latest run covered
+            const coverage = data.activeAssets > 0
+                ? Math.min(100, Math.round(100 * run.assetsAssessed / data.activeAssets))
+                : 0;
+            document.getElementById("ring-percent").textContent = coverage + '%';
+            document.getElementById("ring-fill").style.strokeDashoffset = 326.7 * (1 - coverage / 100);
+
+            document.getElementById("completed").textContent = new Date(run.completedAt).toLocaleString();
+            document.getElementById("duration").textContent = run.durationMinutes + ' min';
+            document.getElementById("assessed").textContent = run.assetsAssessed;
+            document.getElementById("new-findings").textContent = run.newFindings;
+        }
+
+        const nextRun = document.getElementById("next-run");
+        if (nextRun) {
+            nextRun.textContent = data.nextRun
+                ? new Date(data.nextRun).toLocaleString([], { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
+                : 'Not scheduled';
+        }
+    }       
 
     loadDashboard() 
 
