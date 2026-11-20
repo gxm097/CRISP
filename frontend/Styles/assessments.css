@@ -1,101 +1,626 @@
 /* Assessments component: rules scoped to avoid changing other tabs. */
-#assessments { --asm-bg:#fff; --asm-text:#10283f; --asm-muted:#7b8eaa; --asm-line:#dbe5ef; --asm-blue:#087a90; color:var(--asm-text); font:14px/1.5 Inter,'Segoe UI',Arial,sans-serif; }
-#assessments * { box-sizing:border-box; }
-#assessments.hidden, #assessments [hidden] { display:none !important; }
-#assessments h1 { font-size:32px; font-weight:400; letter-spacing:-1.2px; margin:4px 0 1px; }
-#assessments h2 { font-size:16px; font-weight:400; margin:0 0 4px; }
-#assessments p { color:var(--asm-muted); margin:3px 0 15px; }
-#assessments .asm-eyebrow { font-size:10px; font-weight:700; letter-spacing:1.6px; color:#00849f; margin:3px 0 9px; }
-#assessments .asm-header, #assessments .asm-card-head { display:flex; justify-content:space-between; gap:20px; align-items:center; flex-wrap:wrap; }
-#assessments .asm-header { margin-bottom:30px; align-items:flex-end; }
-#assessments .asm-header p.sub { margin-bottom:0; }
-#assessments .asm-actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
-#assessments button, #assessments input, #assessments select { font:inherit; border:1px solid var(--asm-line); border-radius:10px; background:var(--asm-bg); color:var(--asm-text); padding:11px 16px; }
-#assessments button { cursor:pointer; font-size:13px; font-weight:600; }
-#assessments button>span[aria-hidden] { font-size:19px; margin-right:8px; vertical-align:middle; line-height:1; }
-#assessments button:hover { background:#f0f6f9; }
-#assessments button:disabled { cursor:default; opacity:.55; }
-#assessments button.asm-primary { background:#08768b; border-color:#08768b; color:#fff; box-shadow:0 2px 4px #0b647323; }
-#assessments button.asm-primary:hover { background:#075d70; }
-#assessments :focus-visible { outline:3px solid #3bb4cc; outline-offset:3px; }
-#assessments .asm-notice { font-size:11px; border-left:3px solid #a5ced8; padding:6px 10px; margin:-16px 0 14px; color:#607f91; }
-#assessments #asm-message { color:#176d59; margin:0; font-size:12px; }
-#assessments #asm-message:not(:empty) { margin:10px 0 16px; }
-#assessments .asm-card, #assessments .asm-schedule-card { background:var(--asm-bg); border:1px solid var(--asm-line); border-radius:16px; box-shadow:0 1px 3px #132b4110,0 12px 28px #132b4104; }
-#assessments .asm-card { padding:24px; margin-bottom:30px; }
-#assessments .asm-latest { display:flex; gap:18px; align-items:center; padding:30px 25px; min-height:136px; }
-#assessments .asm-result-icon { display:grid; place-items:center; background:#e9f7f1; color:#168d75; width:43px; height:43px; border-radius:11px; flex-shrink:0; }
-#assessments .asm-latest-title { flex:1; }
-#assessments .asm-latest-title h2 { font-size:18px; margin:6px 0 3px; }
-#assessments .asm-latest-title p { font-size:11px; margin:0; }
-#assessments .asm-result-metrics { display:flex; align-items:center; margin-left:auto; }
-#assessments .asm-result-metrics>div { border-left:1px solid var(--asm-line); min-width:100px; padding:0 18px; }
-#assessments .asm-result-metrics small { display:block; color:var(--asm-muted); font-size:10px; white-space:nowrap; }
-#assessments .asm-result-metrics b { display:block; font-size:17px; margin-top:4px; font-weight:500; }
-#assessments .asm-result-metrics>div:first-child b { color:#ed4759; } #assessments .asm-result-metrics>div:last-child b { color:#168d75; }
-#assessments .asm-schedules-section { margin:32px 0 30px; }
-#assessments .asm-schedules-section>.asm-card-head { margin-bottom:16px; }
-#assessments .asm-schedules-section>.asm-card-head p { margin-bottom:0; }
-#assessments .asm-schedule-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:17px; }
-#assessments .asm-schedule-card { padding:22px; min-width:0; }
-#assessments .asm-schedule-top { display:flex; justify-content:space-between; align-items:flex-start; }
-#assessments .asm-calendar-icon { display:grid; place-items:center; color:#3183d3; background:#edf5ff; width:44px; height:44px; border-radius:12px; }
-#assessments .asm-schedule-card h3 { font-weight:400; font-size:14px; margin:16px 0 5px; overflow-wrap:anywhere; }
-#assessments .asm-recurrence { font-size:11px; min-height:20px; margin:0 0 22px; }
-#assessments button.asm-switch { padding:0; border:0; width:40px; height:23px; border-radius:16px; background:#ccd6df; display:flex; align-items:center; flex-shrink:0; }
-#assessments button.asm-switch span { display:block; width:18px; height:18px; border-radius:50%; background:white; margin-left:3px; box-shadow:0 1px 3px #21334522; transition:transform .15s; }
-#assessments button.asm-switch[aria-checked=true] { background:#258d71; }
-#assessments button.asm-switch[aria-checked=true] span { transform:translateX(16px); }
-#assessments .asm-schedule-meta { display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:17px 0; border-top:1px solid #e9eff5; border-bottom:1px solid #e9eff5; margin-top:22px; }
-#assessments .asm-schedule-meta>div { display:flex; gap:9px; min-width:0; }
-#assessments .asm-schedule-meta svg { color:#8296ae; flex-shrink:0; }
-#assessments .asm-schedule-meta small { color:var(--asm-muted); display:block; font-size:10px; }
-#assessments .asm-schedule-meta b { display:block; font-size:10px; font-weight:500; margin-top:3px; overflow-wrap:anywhere; }
-#assessments .asm-schedule-footer { display:flex; justify-content:space-between; align-items:center; padding-top:16px; }
-#assessments .asm-schedule-footer>button { border:0; color:#506987; padding:7px 0; background:transparent; }
-#assessments .asm-card-menu { position:relative; }
-#assessments .asm-card-menu>summary { list-style:none; cursor:pointer; color:#617c9b; font-size:22px; padding:0 7px; }
-#assessments .asm-card-menu>summary::-webkit-details-marker { display:none; }
-#assessments .asm-card-menu>div { position:absolute; right:0; top:32px; min-width:150px; background:white; border:1px solid var(--asm-line); border-radius:9px; padding:7px; z-index:2; box-shadow:0 6px 18px #172b4520; }
-#assessments .asm-card-menu button { border:0; color:#b42335; white-space:nowrap; }
-#assessments .asm-history-card { padding:0; overflow:hidden; }
-#assessments .asm-history-card>.asm-card-head { padding:25px; }
-#assessments .asm-history-card>.asm-card-head p { margin-bottom:0; }
-#assessments .asm-table-wrap { overflow-x:auto; }
-#assessments table { border-collapse:collapse; width:100%; text-align:left; white-space:nowrap; }
-#assessments th { color:#7387a4; font-size:10px; font-weight:400; text-transform:uppercase; letter-spacing:.25px; background:#f6f8fa; }
-#assessments th, #assessments td { padding:15px 18px; border-bottom:1px solid #e8eef4; vertical-align:middle; }
-#assessments tbody tr:last-child td { border-bottom:0; }
-#assessments td { font-size:12px; color:#6a80a0; }
-#assessments .asm-history-name { border:0; padding:0; background:transparent; font-size:12px; font-weight:500; color:#365b83; text-align:left; }
-#assessments .asm-history-name:hover { text-decoration:underline; }
-#assessments .asm-badge { border-radius:20px; padding:5px 10px; background:#edf1f8; display:inline-block; font-size:10px; font-weight:600; }
-#assessments .asm-status-completed, #assessments .asm-status-enabled { background:#e9f7f2; color:#008c86; }
-#assessments .asm-status-failed { background:#fff0f1; color:#d52c42; }
-#assessments .asm-status-running, #assessments .asm-status-pending { background:#edf5ff; color:#2873b6; }
-#assessments .asm-history-filters { padding:0 25px 12px; font-size:11px; }
-#assessments .asm-history-filters>summary { color:#7c8fa8; cursor:pointer; }
-#assessments .asm-history-filters .asm-actions { margin-top:10px; }
-#assessments dialog { width:min(762px,calc(100% - 32px)); max-height:90vh; overflow:auto; border:0; border-radius:18px; padding:28px; color:var(--asm-text); background:var(--asm-bg); box-shadow:0 20px 70px #0c21382b; }
-#assessments dialog::backdrop { background:#10233094; backdrop-filter:blur(3px); }
-#assessments dialog h2 { font-size:22px; font-weight:400; letter-spacing:-.5px; margin:0 40px 4px 0; }
-#assessments .asm-dialog-sub { font-size:13px; margin-bottom:30px; }
-#assessments label { display:block; font-weight:600; font-size:11px; color:#536a85; }
-#assessments form>label { margin:16px 0; }
-#assessments form input:not([type=checkbox]), #assessments form select { display:block; width:100%; margin-top:7px; font-size:13px; padding:12px; min-height:43px; }
-#assessments form input::placeholder { color:#8794a5; }
-#assessments .asm-form-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:16px 0; }
-#assessments .asm-check { display:flex; gap:7px; align-items:center; }
-#assessments #asm-timezone, #assessments #asm-timezone+p { font-size:10px; margin:4px 0; }
-#assessments #asm-form-error { color:#b42318; font-size:12px; }
-#assessments .asm-dialog-actions { justify-content:flex-end; margin-top:24px; padding-top:20px; border-top:1px solid #e9eff5; }
-#assessments #asm-reset { margin-right:auto; font-size:11px; border:0; padding-left:0; font-weight:400; color:#7d8fa6; }
-#assessments #asm-cancel { border:0; color:#536c8d; }
-#assessments button.asm-icon-button { position:absolute; right:26px; top:26px; padding:0; border:0; color:#5e7692; font-size:27px; font-weight:300; background:transparent; line-height:1; }
-#assessments pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f5f7fb; padding:12px; border-radius:8px; }
-#assessments .asm-sr { position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); }
-@media(min-width:1600px) { #assessments .asm-schedule-card { min-height:297px; } }
-@media(max-width:1250px) { #assessments .asm-schedule-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } #assessments .asm-latest { flex-wrap:wrap; } #assessments .asm-result-metrics { margin-left:0; }.asm-preview main { padding:30px 24px; } }
-@media(max-width:850px) { .asm-shell-sidebar { display:none; }.asm-shell-topbar { left:0; padding:15px 20px; }.asm-preview main { margin-left:0; }.asm-shell-topbar>div>span { display:none; } }
-@media(max-width:620px) { #assessments .asm-schedule-grid, #assessments .asm-form-grid { grid-template-columns:1fr; } #assessments .asm-result-metrics { width:100%; } #assessments .asm-result-metrics>div { flex:1; min-width:0; padding:0 10px; } #assessments .asm-latest { padding:20px; } #assessments .asm-latest-title { min-width:160px; } #assessments .asm-header .asm-actions { width:100%; } .asm-shell-topbar>span { display:none; }.asm-shell-topbar { justify-content:flex-end; }.asm-preview main { padding:24px 16px; } #assessments dialog { padding:24px; } #assessments .asm-dialog-actions { gap:8px; } }
-@media(prefers-reduced-motion:reduce) { #assessments .asm-switch span { transition:none; } }
+
+
+#assessments{
+    --asm-bg:#fff;
+    --asm-text:#0f1f33;
+    --asm-muted:#7a8899;
+    --asm-line:#e3e9ef;
+    --asm-primary:#0f5c63;
+
+    color:var(--asm-text);
+    font-family:Georgia,'Times New Roman',Times,serif;
+}
+
+#assessments *{
+    box-sizing:border-box;
+}
+
+#assessments.hidden,
+#assessments[hidden]{
+    display:none !important;
+}
+
+/* HEADER */
+
+#assessments h1{
+    margin-top:6px;
+    font-size:26px;
+    font-weight:600;
+    color:#0f1f33;
+}
+
+#assessments h2{
+    margin:0;
+    font-size:16px;
+    font-weight:600;
+    color:#0f1f33;
+}
+
+#assessments p{
+    color:var(--asm-muted);
+    margin:3px 0 15px;
+}
+
+#assessments .asm-eyebrow{
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:#0f5c63;
+    margin-bottom:10px;
+}
+
+#assessments .asm-header,
+#assessments .asm-card-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+#assessments .asm-header{
+    margin-bottom:24px;
+    align-items:flex-end;
+}
+
+/*BUTTONS */
+
+#assessments button,
+#assessments input,
+#assessments select{
+    font:inherit;
+}
+
+#assessments button{
+    cursor:pointer;
+    border-radius:8px;
+    border:1px solid var(--asm-line);
+    padding:10px 18px;
+    font-weight:600;
+    background:#fff;
+}
+
+#assessments button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 16px rgba(0,0,0,.15);
+}
+
+#assessments button.asm-primary{
+    background:var(--asm-primary);
+    border:none;
+    color:#fff;
+}
+
+#assessments button.asm-primary:hover{
+    background:var(--asm-primary);
+}
+
+#assessments button:disabled{
+    opacity:.6;
+    cursor:default;
+    transform:none;
+    box-shadow:none;
+}
+
+#assessments button > span[aria-hidden]{
+    font-size:18px;
+    margin-right:8px;
+}
+
+/*CARDS */
+
+#assessments .asm-card,
+#assessments .asm-schedule-card,
+#assessments .asm-history-card{
+    background:#fff;
+    border:1px solid #e3e9ef;
+    border-radius:15px;
+}
+
+#assessments .asm-card{
+    padding:24px;
+    margin-bottom:24px;
+}
+
+#assessments .asm-history-card{
+    overflow:hidden;
+    padding:0;
+}
+
+#assessments .asm-history-card > .asm-card-head{
+    padding:20px;
+}
+
+/*  NOTICE */
+
+#assessments .asm-notice{
+    font-size:11px;
+    border-left:3px solid #3b82c4;
+    padding:6px 10px;
+    margin:-8px 0 16px;
+    color:#607f91;
+}
+
+#assessments #asm-message{
+    color:#1f8a6b;
+    font-size:12px;
+}
+
+#assessments #asm-message:not(:empty){
+    margin:10px 0 16px;
+}
+
+/*   LATEST ASSESSMENT*/
+
+#assessments .asm-latest{
+    display:flex;
+    gap:18px;
+    align-items:center;
+    padding:24px;
+}
+
+#assessments .asm-result-icon{
+    width:44px;
+    height:44px;
+    border-radius:10px;
+
+    background:#e8f8ee;
+    color:#1f8a6b;
+
+    display:grid;
+    place-items:center;
+    flex-shrink:0;
+}
+
+#assessments .asm-latest-title{
+    flex:1;
+}
+
+#assessments .asm-latest-title h2{
+    margin-bottom:4px;
+}
+
+#assessments .asm-latest-title p{
+    margin:0;
+    font-size:12px;
+}
+
+#assessments .asm-result-metrics{
+    display:flex;
+    align-items:center;
+    margin-left:auto;
+}
+
+#assessments .asm-result-metrics > div{
+    min-width:100px;
+    padding:0 18px;
+    border-left:1px solid var(--asm-line);
+}
+
+#assessments .asm-result-metrics small{
+    display:block;
+    font-size:11px;
+    color:var(--asm-muted);
+}
+
+#assessments .asm-result-metrics b{
+    display:block;
+    margin-top:4px;
+    font-size:18px;
+}
+
+#assessments .asm-result-metrics > div:first-child b{
+    color:#d64545;
+}
+
+#assessments .asm-result-metrics > div:last-child b{
+    color:#1f8a6b;
+}
+
+/* SCHEDULE */
+
+#assessments .asm-schedules-section{
+    margin:32px 0;
+}
+
+#assessments .asm-schedule-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+#assessments .asm-schedule-card{
+    padding:20px;
+}
+
+#assessments .asm-schedule-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+#assessments .asm-calendar-icon{
+    width:44px;
+    height:44px;
+    border-radius:10px;
+
+    background:#e8f2fc;
+    color:#3b82c4;
+
+    display:grid;
+    place-items:center;
+}
+
+#assessments .asm-schedule-card h3{
+    margin:16px 0 6px;
+    font-size:15px;
+    font-weight:600;
+}
+
+#assessments .asm-recurrence{
+    font-size:12px;
+    min-height:20px;
+    margin:0 0 20px;
+}
+
+/*    SWITCH*/
+
+#assessments button.asm-switch{
+    padding:0;
+    border:0;
+    width:40px;
+    height:23px;
+    border-radius:20px;
+    background:#cbd5df;
+    display:flex;
+    align-items:center;
+}
+
+#assessments button.asm-switch span{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:white;
+    margin-left:3px;
+    transition:transform .15s;
+}
+
+#assessments button.asm-switch[aria-checked=true]{
+    background:#1f8a6b;
+}
+
+#assessments button.asm-switch[aria-checked=true] span{
+    transform:translateX(16px);
+}
+
+/* SCHEDULE  */
+
+#assessments .asm-schedule-meta{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+
+    padding:18px 0;
+    margin-top:20px;
+
+    border-top:1px solid #e3e9ef;
+    border-bottom:1px solid #e3e9ef;
+}
+
+#assessments .asm-schedule-meta > div{
+    display:flex;
+    gap:8px;
+}
+
+#assessments .asm-schedule-meta small{
+    color:var(--asm-muted);
+    font-size:10px;
+}
+
+#assessments .asm-schedule-meta b{
+    display:block;
+    margin-top:3px;
+    font-size:11px;
+}
+
+#assessments .asm-schedule-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:16px;
+}
+
+#assessments .asm-schedule-footer > button{
+    border:none;
+    padding:0;
+    background:transparent;
+    color:#0f5c63;
+}
+
+/*    CARD MENU */
+
+#assessments .asm-card-menu{
+    position:relative;
+}
+
+#assessments .asm-card-menu > summary{
+    list-style:none;
+    cursor:pointer;
+    font-size:22px;
+    color:#607f91;
+}
+
+#assessments .asm-card-menu > summary::-webkit-details-marker{
+    display:none;
+}
+
+#assessments .asm-card-menu > div{
+    position:absolute;
+    right:0;
+    top:32px;
+
+    min-width:150px;
+
+    background:#fff;
+    border:1px solid #e3e9ef;
+    border-radius:10px;
+    padding:8px;
+    z-index:2;
+}
+
+#assessments .asm-card-menu button{
+    border:none;
+    color:#d64545;
+}
+
+/*   TABLES */
+
+#assessments .asm-table-wrap{
+    overflow-x:auto;
+}
+
+#assessments table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+#assessments th{
+    background:#7a889919;
+    border-top:1px solid #e3e9ef;
+    border-bottom:1px solid #e3e9ef;
+
+    color:#7a8899;
+    font-size:10px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+}
+
+#assessments th,
+#assessments td{
+    padding:14px 18px;
+    text-align:left;
+}
+
+#assessments td{
+    border-bottom:1px solid #e3e9ef;
+    font-size:12px;
+}
+
+#assessments tbody tr:last-child td{
+    border-bottom:none;
+}
+
+#assessments .asm-history-name{
+    border:none;
+    background:none;
+    padding:0;
+    color:#0f5c63;
+    font-weight:600;
+}
+
+#assessments .asm-history-name:hover{
+    text-decoration:underline;
+}
+
+/*    BADGES */
+
+#assessments .asm-badge{
+    display:inline-block;
+    padding:5px 10px;
+    border-radius:999px;
+    font-size:11px;
+    font-weight:600;
+}
+
+#assessments .asm-status-completed,
+#assessments .asm-status-enabled{
+    background:#e8f8ee;
+    color:#1f8a6b;
+}
+
+#assessments .asm-status-failed{
+    background:#fdeceb;
+    color:#d64545;
+}
+
+#assessments .asm-status-running,
+#assessments .asm-status-pending{
+    background:#e8f2fc;
+    color:#3b82c4;
+}
+
+/*   FILTERS*/
+
+#assessments .asm-history-filters{
+    padding:0 20px 16px;
+}
+
+#assessments .asm-history-filters > summary{
+    color:#7a8899;
+    cursor:pointer;
+}
+
+#assessments .asm-history-filters .asm-actions{
+    margin-top:10px;
+}
+
+/*    DIALOG*/
+
+#assessments dialog{
+    width:min(760px,calc(100% - 32px));
+    max-height:90vh;
+
+    overflow:auto;
+
+    background:#fff;
+    border:1px solid #e3e9ef;
+    border-radius:15px;
+
+    padding:28px;
+}
+
+#assessments dialog::backdrop{
+    background:rgba(15,25,35,.55);
+}
+
+#assessments dialog h2{
+    font-size:22px;
+    margin-bottom:4px;
+}
+
+#assessments .asm-dialog-sub{
+    font-size:13px;
+    margin-bottom:24px;
+}
+
+#assessments label{
+    display:block;
+    font-size:11px;
+    font-weight:600;
+    color:#536a85;
+}
+
+#assessments form > label{
+    margin:16px 0;
+}
+
+#assessments form input:not([type=checkbox]),
+#assessments form select{
+    width:100%;
+    margin-top:7px;
+    padding:12px;
+    min-height:42px;
+
+    border:1px solid #e3e9ef;
+    border-radius:10px;
+}
+
+#assessments .asm-form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+#assessments .asm-check{
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+
+#assessments #asm-form-error{
+    color:#d64545;
+    font-size:12px;
+}
+
+#assessments .asm-dialog-actions{
+    justify-content:flex-end;
+    margin-top:24px;
+    padding-top:20px;
+    border-top:1px solid #e3e9ef;
+}
+
+#assessments #asm-reset{
+    margin-right:auto;
+    border:none;
+    color:#7a8899;
+    background:transparent;
+}
+
+#assessments #asm-cancel{
+    border:none;
+}
+
+#assessments button.asm-icon-button{
+    position:absolute;
+    top:26px;
+    right:26px;
+
+    border:none;
+    background:transparent;
+
+    font-size:26px;
+}
+
+/*    UTILITIES--*/
+
+#assessments pre{
+    white-space:pre-wrap;
+    overflow-wrap:anywhere;
+    padding:12px;
+    border-radius:8px;
+    background:#f5f7fb;
+}
+
+#assessments .asm-sr{
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+/*   RESPONSIVE*/
+
+@media (max-width:1250px){
+
+    #assessments .asm-schedule-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    #assessments .asm-latest{
+        flex-wrap:wrap;
+    }
+
+    #assessments .asm-result-metrics{
+        margin-left:0;
+    }
+}
+
+@media (max-width:620px){
+
+    #assessments .asm-schedule-grid,
+    #assessments .asm-form-grid{
+        grid-template-columns:1fr;
+    }
+
+    #assessments .asm-result-metrics{
+        width:100%;
+    }
+
+    #assessments .asm-latest{
+        padding:20px;
+    }
+
+    #assessments dialog{
+        padding:24px;
+    }
+}
+
+@media (prefers-reduced-motion:reduce){
+
+    #assessments .asm-switch span{
+        transition:none;
+    }
+}
