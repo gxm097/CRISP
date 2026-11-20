@@ -7,7 +7,7 @@
     <title>CRISP - Reports</title>
     <link rel="stylesheet" href="/Styles/general.css">
     <link rel="stylesheet" href="/Styles/sidebar.css">
-    <link rel="stylesheet" href="/Styles/report.css">
+    <link rel="stylesheet" href="/Styles/reports.css">
     <link rel="stylesheet" href="/Styles/layout.css">
 </head>
 
@@ -19,8 +19,9 @@
                 <div>
                     <div class="section-label">SECURITY REPORTING</div>
                     <h1>Reports</h1>
-                    <p>Generate stakeholder-ready summaries, findings, and trend analysis.</p>
-                </div>
+                            <p class="sub">
+                                Generate stakeholder-ready summaries, findings, and trend analysis.
+                            </p>
                 <button class="create-btn">+ Create Report</button>
             </div>
 
@@ -40,10 +41,19 @@
             </div>
 
             <div class="report-table">
-                <h2>Recently Generated</h2>
-                <input class="search-input" placeholder="Search reports">
 
-                <table>
+                <div class="card-head padded">
+                    <div>
+                        <h2 class="card-title">Recently Generated</h2>
+                        <p class="sub">Generated reports available for export</p>
+                    </div>
+                </div>
+
+                <input class="search-input" placeholder="Search reports">
+                           <div class="table-wrap">
+                                <table> 
+                                    </table>
+                            </div>
                     <tr>
                         <th>Report</th>
                         <th>Date</th>
@@ -52,7 +62,9 @@
                     <tr>
                         <td>Assessment Summary</td>
                         <td>11/17/2026</td>
-                        <td><button>Download PDF</button></td>
+                        <td>
+                            <button class="btn">Download PDF</button>
+                        </td>
                     </tr>
                 </table>
             </div>
