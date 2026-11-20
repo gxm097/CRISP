@@ -392,7 +392,7 @@ app.post('/api/import-jobs', requireLogin, async (req, res) => {
         '--user-id', String(req.session.user?.id || 1)
       ]);
 
-      job.stage = 'Researching';
+      /* job.stage = 'Researching';
       job.progress = 65;
       await runPython(path.join(root, 'agents', 'research', 'buildResearchSummary.py'));
       await runPython(path.join(root, 'agents', 'research', 'researchAgent.py'));
@@ -413,7 +413,10 @@ app.post('/api/import-jobs', requireLogin, async (req, res) => {
         LIMIT 1
       `, [getOrganizationId(req)]);
 
-      job.assessmentId = assessment.rows[0]?.assessmentid || null;
+      job.assessmentId = assessment.rows[0]?.assessmentid || null; */
+
+      // Import only adds the assets. Research runs when someone clicks Run assessment.
+
       job.status = 'Completed';
       job.stage = 'Completed';
       job.progress = 100;
