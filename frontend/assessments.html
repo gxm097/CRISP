@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+<<<<<<< HEAD
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CRISP - Assessments</title>
@@ -14,64 +16,170 @@
   <script src="src/assessments.js" defer></script>
 
 
+=======
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRISP - Assessments</title>
+    <link rel="stylesheet" href="Styles/assessments.css">
+    <link rel="stylesheet" href="/Styles/sidebar.css">
+    <link rel="stylesheet" href="/Styles/layout.css">
+    <script>
+        window.CRISP_ASSESSMENTS = { mode: 'api', baseUrl: '/api', csrfToken: '' };
+    </script>
+    <script src="src/assessments.js" defer></script>
+>>>>>>> 2fafc82bb2eba9faabb5a48c9feea0d9a254f507
 </head>
+
 <!-------------nav-bar / side-bar--------------------->
 <body>
+    <!-------------header--------------------->
+    <header>
+        <main>
+            <section id="assessments" class="view" aria-labelledby="asm-heading">
+                <header class="page-header asm-header">
+                    <div>
+                        <p class="asm-eyebrow">CONTINUOUS SURVEILLANCE</p>
+                        <h1 id="asm-heading">Assessments</h1>
+                        <p class="sub">Run vulnerability analysis and manage automated schedules.</p>
+                    </div>
+                    <div class="asm-actions">
+                        <button type="button" id="asm-new"><span aria-hidden="true">▣</span> New schedule</button>
+                        <button type="button" class="asm-primary" id="asm-run"><span aria-hidden="true">✧</span> Run assessment</button>
+                    </div>
+                </header>
 
-<!-------------header--------------------->
-<header>
+                <p class="asm-notice" id="asm-mode"></p>
+                <p id="asm-message" role="status" aria-live="polite"></p>
+                <section class="asm-card asm-latest" aria-label="Latest assessment" id="asm-latest"></section>
 
-<main>
-<section id="assessments" class="view" aria-labelledby="asm-heading">
-  <header class="page-header asm-header">
-    <div><p
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      class="asm-eyebrow">CONTINUOUS SURVEILLANCE</p><h1 id="asm-heading">Assessments</h1>
-      <p class="sub">Run vulnerability analysis and manage automated schedules.</p></div>
-    <div class="asm-actions"><button type="button" id="asm-new"><span aria-hidden="true">▣</span> New schedule</button><button type="button" class="asm-primary" id="asm-run"><span aria-hidden="true">✧</span> Run assessment</button></div>
-  </header>
-  <p class="asm-notice" id="asm-mode"></p>
-  <p id="asm-message" role="status" aria-live="polite"></p>
-  <section class="asm-card asm-latest" aria-label="Latest assessment" id="asm-latest"></section>
-  <section class="asm-schedules-section" aria-labelledby="asm-schedules-heading">
-    <div class="asm-card-head"><div><h2 id="asm-schedules-heading">Assessment schedules</h2><p>Recurring research and correlation jobs</p></div></div>
-    <div class="asm-schedule-grid" id="asm-schedules"></div>
-  </section>
-  <section class="asm-card asm-history-card" aria-labelledby="asm-history-heading">
-    <div class="asm-card-head"><div><h2 id="asm-history-heading">Assessment history</h2><p>Previous runs and processing outcomes</p></div>
-      <button type="button" id="asm-export"><span aria-hidden="true">↓</span> Export history</button></div>
-    <details class="asm-history-filters"><summary>Search and filter history</summary><div class="asm-actions"><label>Search <input id="asm-search" type="search" placeholder="Name, ID, or trigger"></label><label>Status <select id="asm-filter"><option value="">All statuses</option><option>Pending</option><option>Running</option><option>Completed</option><option>Failed</option></select></label><button type="button" id="asm-refresh">Refresh</button></div></details>
-    <div class="asm-table-wrap"><table><caption class="asm-sr">Assessment execution history</caption><thead><tr><th>Assessment</th><th>Started</th><th>Duration</th><th>Scope</th><th>Findings</th><th>Status</th></tr></thead><tbody id="asm-history"></tbody></table></div>
-  </section>
+                <section class="asm-schedules-section" aria-labelledby="asm-schedules-heading">
+                    <div class="asm-card-head">
+                        <div>
+                            <h2 id="asm-schedules-heading">Assessment schedules</h2>
+                            <p>Recurring research and correlation jobs</p>
+                        </div>
+                    </div>
+                    <div class="asm-schedule-grid" id="asm-schedules"></div>
+                </section>
 
-  <dialog id="asm-editor" aria-labelledby="asm-editor-title">
-    <form id="asm-form">
-      <button type="button" id="asm-editor-close" class="asm-icon-button" aria-label="Close schedule dialog">×</button>
-      <h2 id="asm-editor-title">Create assessment schedule</h2><p class="asm-dialog-sub">Configure recurring vulnerability research for an inventory scope.</p>
-      <input id="asm-schedule-id" type="hidden">
-      <label>Schedule name <input id="asm-name" name="AssessmentName" placeholder="e.g. Weekly network assessment" required maxlength="150" autocomplete="off"></label>
-      <div class="asm-form-grid"><label>Frequency <select id="asm-frequency" name="Frequency"><option>Daily</option><option>Weekly</option><option>Custom</option></select></label>
-      <label>Asset scope <select id="asm-scope" name="AssetScope"><option>All active assets</option><option>Network infrastructure</option><option>VPN endpoints</option><option>SaaS platforms</option></select></label></div>
-      <div id="asm-custom-label" class="asm-form-grid" hidden><label>Repeat every <input id="asm-interval" type="number" min="1" max="365" step="1" value="14"></label><label>Interval unit <select id="asm-unit"><option value="Days">Days</option><option value="Hours">Hours</option></select></label></div>
-      <div class="asm-form-grid"><label>Start date <input id="asm-date" type="date" required></label><label>Start time <input id="asm-time" type="time" required></label></div>
-      <p id="asm-timezone"></p><p>Daily and weekly schedules retain the selected local time. Custom intervals can use calendar days or elapsed hours.</p>
-      <label class="asm-check"><input id="asm-enabled" name="Enabled" type="checkbox" checked> Active schedule</label>
-      <p id="asm-form-error" role="alert"></p>
-      <div class="asm-actions asm-dialog-actions"><button type="button" id="asm-reset">Clear / reset</button><button type="button" id="asm-cancel">Cancel</button><button id="asm-save" type="submit" class="asm-primary">Create schedule</button></div>
-    </form>
-  </dialog>
-  <dialog id="asm-confirm" aria-labelledby="asm-confirm-title"><h2 id="asm-confirm-title"></h2><p id="asm-confirm-text"></p><div class="asm-actions asm-dialog-actions"><button type="button" id="asm-confirm-cancel">Cancel</button><button type="button" class="asm-primary" id="asm-confirm-yes">Confirm</button></div></dialog>
-  <dialog id="asm-detail" aria-labelledby="asm-detail-title"><h2 id="asm-detail-title">Assessment details</h2><div id="asm-detail-content"></div><button type="button" id="asm-close-detail">Close</button></dialog>
-</section>
-</main>
-<script src="/src/layout.js"></script>
+                <section class="asm-card asm-history-card" aria-labelledby="asm-history-heading">
+                    <div class="asm-card-head">
+                        <div>
+                            <h2 id="asm-history-heading">Assessment history</h2>
+                            <p>Previous runs and processing outcomes</p>
+                        </div>
+                        <button type="button" id="asm-export"><span aria-hidden="true">↓</span> Export history</button>
+                    </div>
+
+                    <details class="asm-history-filters">
+                        <summary>Search and filter history</summary>
+                        <div class="asm-actions">
+                            <label>Search <input id="asm-search" type="search" placeholder="Name, ID, or trigger"></label>
+                            <label>Status
+                                <select id="asm-filter">
+                                    <option value="">All statuses</option>
+                                    <option>Pending</option>
+                                    <option>Running</option>
+                                    <option>Completed</option>
+                                    <option>Failed</option>
+                                </select>
+                            </label>
+                            <button type="button" id="asm-refresh">Refresh</button>
+                        </div>
+                    </details>
+
+                    <div class="asm-table-wrap">
+                        <table>
+                            <caption class="asm-sr">Assessment execution history</caption>
+                            <thead>
+                                <tr>
+                                    <th>Assessment</th>
+                                    <th>Started</th>
+                                    <th>Duration</th>
+                                    <th>Scope</th>
+                                    <th>Findings</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="asm-history"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <dialog id="asm-editor" aria-labelledby="asm-editor-title">
+                    <form id="asm-form">
+                        <button type="button" id="asm-editor-close" class="asm-icon-button" aria-label="Close schedule dialog">×</button>
+                        <h2 id="asm-editor-title">Create assessment schedule</h2>
+                        <p class="asm-dialog-sub">Configure recurring vulnerability research for an inventory scope.</p>
+                        <input id="asm-schedule-id" type="hidden">
+
+                        <label>Schedule name
+                            <input id="asm-name" name="AssessmentName" placeholder="e.g. Weekly network assessment" required maxlength="150" autocomplete="off">
+                        </label>
+
+                        <div class="asm-form-grid">
+                            <label>Frequency
+                                <select id="asm-frequency" name="Frequency">
+                                    <option>Daily</option>
+                                    <option>Weekly</option>
+                                    <option>Custom</option>
+                                </select>
+                            </label>
+                            <label>Asset scope
+                                <select id="asm-scope" name="AssetScope">
+                                    <option>All active assets</option>
+                                    <option>Network infrastructure</option>
+                                    <option>VPN endpoints</option>
+                                    <option>SaaS platforms</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div id="asm-custom-label" class="asm-form-grid" hidden>
+                            <label>Repeat every <input id="asm-interval" type="number" min="1" max="365" step="1" value="14"></label>
+                            <label>Interval unit
+                                <select id="asm-unit">
+                                    <option value="Days">Days</option>
+                                    <option value="Hours">Hours</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="asm-form-grid">
+                            <label>Start date <input id="asm-date" type="date" required></label>
+                            <label>Start time <input id="asm-time" type="time" required></label>
+                        </div>
+
+                        <p id="asm-timezone"></p>
+                        <p>Daily and weekly schedules retain the selected local time. Custom intervals can use calendar days or elapsed hours.</p>
+                        <label class="asm-check"><input id="asm-enabled" name="Enabled" type="checkbox" checked> Active schedule</label>
+                        <p id="asm-form-error" role="alert"></p>
+
+                        <div class="asm-actions asm-dialog-actions">
+                            <button type="button" id="asm-reset">Clear / reset</button>
+                            <button type="button" id="asm-cancel">Cancel</button>
+                            <button id="asm-save" type="submit" class="asm-primary">Create schedule</button>
+                        </div>
+                    </form>
+                </dialog>
+
+                <dialog id="asm-confirm" aria-labelledby="asm-confirm-title">
+                    <h2 id="asm-confirm-title"></h2>
+                    <p id="asm-confirm-text"></p>
+                    <div class="asm-actions asm-dialog-actions">
+                        <button type="button" id="asm-confirm-cancel">Cancel</button>
+                        <button type="button" class="asm-primary" id="asm-confirm-yes">Confirm</button>
+                    </div>
+                </dialog>
+
+                <dialog id="asm-detail" aria-labelledby="asm-detail-title">
+                    <h2 id="asm-detail-title">Assessment details</h2>
+                    <div id="asm-detail-content"></div>
+                    <button type="button" id="asm-close-detail">Close</button>
+                </dialog>
+            </section>
+        </main>
+        <script src="/src/layout.js"></script>
 </body>
+
 </html>
