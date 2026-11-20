@@ -166,7 +166,7 @@ app.get('/assessments', requireLogin, (req, res) => {
 });
 
 // one route per page
-const pages = ['overview', 'inventory', 'findings', 'reports', 'users', 'settings'];
+const pages = ['overview', 'inventory', 'findings', 'reports', 'report-view', 'users', 'settings'];
 
 pages.forEach(page => {
   app.get('/' + page, requireLogin, (req, res) => {
@@ -463,6 +463,136 @@ app.get('/api/import-jobs/:jobId', requireLogin, (req, res) => {
     return res.status(404).json({ message: 'Import job not found.' });
   }
   res.json(job);
+});
+
+// Reports page
+
+// list of reports that have been generated
+app.get('/api/generated-reports', requireLogin, async (req, res) => {
+  try {
+    const result = await pool.query(`
+      SELECT r.ReportID AS id,
+             r.ReportType AS type,
+             r.CreatedDate AS "createdDate",
+             u.username AS "generatedBy"
+      FROM Report r
+      LEFT JOIN user_account u ON u.user_id = r.GeneratedByUserID
+      WHERE r.OrganizationID = $1
+      ORDER BY r.CreatedDate DESC
+    `, [getOrganizationId(req)]);
+
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Could not load reports' });
+  }
+});
+
+// generate (save) a new report
+app.post('/api/generated-reports', requireLogin, async (req, res) => {
+  const allowedTypes = ['Assessment Summary', 'Vulnerability Findings'];
+  const { type } = req.body;
+
+  if (!allowedTypes.includes(type)) {
+    return res.status(400).json({ error: 'Choose a valid report type' });
+  }
+
+  try {
+    const result = await pool.query(`
+      INSERT INTO Report (OrganizationID, GeneratedByUserID, ReportType)
+      VALUES ($1, $2, $3)
+      RETURNING ReportID AS id
+    `, [getOrganizationId(req), req.session.user.id, type]);
+
+    res.status(201).json({ id: result.rows[0].id });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Could not generate report' });
+  }
+});
+
+// everything one report needs to display
+app.get('/api/generated-reports/:id', requireLogin, async (req, res) => {
+  const organizationId = getOrganizationId(req);
+
+  try {
+    const reportResult = await pool.query(`
+      SELECT r.ReportID AS id, r.ReportType AS type, r.CreatedDate AS "createdDate",
+             u.username AS "generatedBy", o.OrganizationName AS organization
+      FROM Report r
+      JOIN Organization o ON o.OrganizationID = r.OrganizationID
+      LEFT JOIN user_account u ON u.user_id = r.GeneratedByUserID
+      WHERE r.ReportID = $1 AND r.OrganizationID = $2
+    `, [req.params.id, organizationId]);
+
+    if (reportResult.rows.length === 0) {
+      return res.status(404).json({ error: 'Report not found' });
+    }
+
+    const [summaryResult, latestRunResult, findingsResult] = await Promise.all([
+      pool.query(`
+        SELECT
+          (SELECT COUNT(*)::int FROM InventoryAsset WHERE OrganizationID = $1) AS "totalAssets",
+          (SELECT COUNT(*)::int FROM InventoryAsset WHERE OrganizationID = $1 AND Status = 'Active') AS "activeAssets",
+          COUNT(*)::int AS "openFindings",
+          COUNT(*) FILTER (WHERE UPPER(v.Severity) = 'CRITICAL')::int AS critical,
+          COUNT(*) FILTER (WHERE UPPER(v.Severity) = 'HIGH')::int AS high,
+          COUNT(*) FILTER (WHERE UPPER(v.Severity) = 'MEDIUM')::int AS medium,
+          COUNT(*) FILTER (WHERE UPPER(v.Severity) = 'LOW')::int AS low,
+          COUNT(*) FILTER (WHERE v.KEVFlag)::int AS "knownExploited",
+          COUNT(DISTINCT f.AssetID) FILTER (
+            WHERE UPPER(v.Severity) IN ('CRITICAL', 'HIGH') AND ia.Status = 'Active'
+          )::int AS "assetsAtRisk"
+        FROM Finding f
+        JOIN Vulnerability v ON v.VulnerabilityID = f.VulnerabilityID
+        JOIN InventoryAsset ia ON ia.AssetID = f.AssetID
+        WHERE f.OrganizationID = $1 AND f.FindingStatus = 'Open'
+      `, [organizationId]),
+
+      pool.query(`
+        SELECT a.AssessmentEnd AS "completedAt",
+               ROUND(EXTRACT(EPOCH FROM (a.AssessmentEnd - a.AssessmentStart)) / 60)::int AS "durationMinutes",
+               (SELECT COUNT(*)::int FROM AssessmentAsset aa WHERE aa.AssessmentID = a.AssessmentID) AS "assetsAssessed"
+        FROM Assessment a
+        WHERE a.OrganizationID = $1 AND a.Status = 'Completed'
+        ORDER BY a.AssessmentEnd DESC
+        LIMIT 1
+      `, [organizationId]),
+
+      pool.query(`
+        SELECT v.CVE AS cve, v.Title AS title, v.Description AS description,
+               v.CVSSScore::float AS cvss, v.Severity AS severity, v.KEVFlag AS kev,
+               a.AssetName AS asset, t.AssetTypeName AS "assetType", a.Version AS version,
+               f.FindingStatus AS status, f.FirstDetected AS "firstDetected",
+               COALESCE((
+                 SELECT STRING_AGG(COALESCE(av.VersionStart, 'any') || ' to ' || COALESCE(av.VersionEnd, 'any'), ', ')
+                 FROM VulnerabilityAffectedVersion av
+                 WHERE av.VulnerabilityID = v.VulnerabilityID
+               ), 'Not listed') AS "affectedVersions"
+        FROM Finding f
+        JOIN Vulnerability v ON v.VulnerabilityID = f.VulnerabilityID
+        JOIN InventoryAsset a ON a.AssetID = f.AssetID
+        JOIN AssetType t ON t.AssetTypeID = a.AssetTypeID
+        WHERE f.OrganizationID = $1 AND f.FindingStatus = 'Open'
+        ORDER BY v.CVSSScore DESC NULLS LAST, f.FirstDetected DESC
+      `, [organizationId])
+    ]);
+
+    const summary = summaryResult.rows[0];
+    summary.posture = summary.activeAssets > 0
+      ? Math.round(100 * (summary.activeAssets - summary.assetsAtRisk) / summary.activeAssets)
+      : null;
+
+    res.json({
+      report: reportResult.rows[0],
+      summary,
+      latestRun: latestRunResult.rows[0] || null,
+      findings: findingsResult.rows
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Could not load report' });
+  }
 });
 
 app.get('/api/dashboard', requireLogin, async (req, res) => {
