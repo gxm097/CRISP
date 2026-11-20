@@ -6,11 +6,7 @@
         { href: '/inventory', label: 'Inventory', icon: 'inventory' },
         { href: '/assessments', label: 'Assessments', icon: 'assessments' },
         { href: '/findings', label: 'Findings', icon: 'findings' },
-        { href: '/reports', label: 'Reports', icon: 'reports' }
-    ];
-
-    const adminPages = [
-        { href: '/users', label: 'Users &amp; access', icon: 'users-access' },
+        { href: '/reports', label: 'Reports', icon: 'reports' },
         { href: '/settings', label: 'Settings', icon: 'settings' }
     ];
 
@@ -28,8 +24,6 @@
     sidebar.innerHTML = `
         <div class="crisp">Crisp</div>
         ${mainPages.map(link).join('')}
-        <div class="admin-p">Administration</div>
-        ${adminPages.map(link).join('')}
         <a class="sign-out-tab" href="/logout">
             <img src="/icons/sign-out.png" alt="">
             <div>Sign out</div>
