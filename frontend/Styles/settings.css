@@ -1,54 +1,134 @@
-#settings {
-    position: relative;
+/* Settings tab - same look as the Inventory tab (see Styles/overview.css) */
+
+*, *::after {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    background: #fff;
+    font-family: Segoe UI, sans-serif;
+    color: #0f1f33;
+}
+
+.hidden {
+    display: none;
+}
+
+.page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+h1 {
+    margin-top: 6px;
+    font-size: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sub {
+    margin-top: 4px;
+    color: #7a8899;
+    font-size: 12px;
+}
+
+.page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e3e9ef;
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 0;
+}
+
+.card-head {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-sub {
+    margin: 4px 0 0;
+    color: #7a8899;
+    font-size: 12px;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
 
 .create-acc-button {
-    position: absolute;
-    right: 170px;
-    top: 10px;
-    height: 40px;
-    width: 200px;
-    background-color: rgb(175, 169, 169);
+    background: #0f5c63;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
-.theme-toggle-div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: fit-content;
-    margin: 40px auto 0;
+.create-acc-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.theme-p {
-    font-size: 36px;
-    color: var(--text);
+.change-pass-button {
+    background: #fff;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 8px;
+    color: #4c5156;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.change-pass-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .dark-toggle {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    width: auto;
-    flex-shrink: 0;
-    white-space: nowrap;
-    padding: 8px 14px;
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 500;
-    background: var(--card);
-    color: var(--text);
-    border: 1px solid rgba(128, 128, 128, 0.35);
+    padding: 10px 18px;
+    background: #fff;
+    border: 1px solid #e3e9ef;
     border-radius: 8px;
+    color: #4c5156;
+    font-weight: 600;
+    font-family: inherit;
     cursor: pointer;
-    transition: border-color 0.15s;
+    white-space: nowrap;
 }
 
 .dark-toggle:hover {
-    border-color: rgba(128, 128, 128, 0.6);
-}
-
-.dark-toggle:active {
-    transform: scale(0.98);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .theme-icon {
@@ -60,74 +140,116 @@
     height: 16px;
 }
 
-.create-acc-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    max-width: 360px;
-    margin: 24px auto 0;
-    padding: 20px;
-    background: var(--card);
-    border: 1px solid rgba(128, 128, 128, 0.25);
-    border-radius: 12px;
-}
-
-.create-acc-form.hidden {
+.create-acc-form.hidden, .change-pass-form.hidden {
     display: none;
 }
 
-.create-acc-form label {
+.create-acc-form .grid, .change-pass-form .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.create-acc-form .full, .change-pass-form .full {
+    grid-column: 1 / -1;
+}
+
+.create-acc-form label, .change-pass-form label {
+    display: block;
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #1c2b3a;
+    margin-bottom: 6px;
+}
+
+.create-acc-form input, .create-acc-form select, .change-pass-form input, .change-pass-form select {
+    width: 100%;
+    font: inherit;
+    font-size: 0.85rem;
+    padding: 12px 14px;
+    border: 1px solid #dde3ea;
+    border-radius: 10px;
+    color: #1c2b3a;
+    background: #fff;
+}
+
+.create-acc-form .actions, .change-pass-form .actions {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-    font-size: 13px;
-    color: var(--text);
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    border-top: 1px solid #dde3ea;
+    margin-top: 20px;
+    padding-top: 16px;
 }
 
-.create-acc-form input,
-.create-acc-form select {
-    padding: 8px 10px;
-    font-family: inherit;
-    font-size: 13px;
-    color: var(--text);
-    background: var(--background-color);
-    border: 1px solid rgba(128, 128, 128, 0.35);
+.btn {
+    padding: 10px 18px;
+    border: 0;
     border-radius: 8px;
-}
-
-.form-buttons {
-    display: flex;
-    gap: 8px;
-}
-
-.save-user-button {
-    padding: 8px 14px;
+    font-weight: 600;
     font-family: inherit;
-    font-size: 13px;
-    font-weight: 500;
-    background: #0b839b;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
-.save-user-button:hover {
-    background: #076b80;
+.btn-save {
+    background: #0f5c63;
+    color: #fff;
 }
 
-.cancel-button {
-    padding: 8px 14px;
-    font-family: inherit;
-    font-size: 13px;
-    background: transparent;
-    color: var(--text);
-    border: 1px solid rgba(128, 128, 128, 0.35);
-    border-radius: 8px;
-    cursor: pointer;
+.btn-cancel {
+    background: #fff;
+    border: 1px solid #e3e9ef;
+    color: #4c5156;
 }
 
-.create-acc-message {
-    font-size: 13px;
-    color: var(--text);
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.create-acc-message, .change-pass-message {
+    margin: 0 auto 0 0;
+    color: #7a8899;
+    font-size: 12px;
+}
+
+@media (max-width: 560px) {
+    .create-acc-form .grid, .change-pass-form .grid {grid-template-columns: 1fr;}
+}
+
+body.dark {
+    background: #16181c;
+    color: #e6e6e6;
+}
+
+body.dark .card {
+    background: #1f2227;
+    border-color: #2d3238;
+}
+
+body.dark .sub, body.dark .card-sub, body.dark .create-acc-message, body.dark .change-pass-message {
+    color: #9aa7b4;
+}
+
+body.dark .create-acc-form label, body.dark .change-pass-form label {
+    color: #e6e6e6;
+}
+
+body.dark .create-acc-form input, body.dark .create-acc-form select, body.dark .change-pass-form input, body.dark .change-pass-form select {
+    background: #16181c;
+    border-color: #2d3238;
+    color: #e6e6e6;
+}
+
+body.dark .create-acc-form .actions, body.dark .change-pass-form .actions {
+    border-top-color: #2d3238;
+}
+
+body.dark .dark-toggle, body.dark .change-pass-button, body.dark .btn-cancel {
+    background: #1f2227;
+    border-color: #2d3238;
+    color: #e6e6e6;
 }

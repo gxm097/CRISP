@@ -5,61 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRISP - Settings</title>
-    <link rel="stylesheet" href="/Styles/general.css">
-    <link rel="stylesheet" href="/Styles/sidebar.css">
-    <link rel="stylesheet" href="/Styles/tabStyle.css">
     <link rel="stylesheet" href="/Styles/settings.css">
+    <link rel="stylesheet" href="/Styles/sidebar.css">
     <link rel="stylesheet" href="/Styles/layout.css">
 </head>
 
 <body>
-    <main class="main">
-        <section id="settings">
 
-            <div class="theme-toggle-div">
+    <div class="page">
+        <header class="page-header">
+            <div>
+                <h1>Settings</h1>
+                <p class="sub"> Manage appearance and CRISP user accounts</p>
+            </div>
+            <div class="btn-group">
+                <button id="change-pass-button" class="change-pass-button">Change Password</button>
+                <button id="create-acc-button" class="create-acc-button">Create User Account</button>
+            </div>
+        </header>
+
+        <!apearance>
+        <section class="card">
+            <div class="card-head">
+                <div>
+                    <h2 class="card-title">Appearance</h2>
+                    <p class="card-sub">Toggle between light and dark themes</p>
+                </div>
                 <button id="dark-toggle" class="dark-toggle">
                     <span class="theme-icon"></span>
                     <span class="theme-label">Dark mode</span>
                 </button>
-                <p class="theme-p">Toggle between light and dark themes</p>
+            </div>
+        </section>
+
+        <!create account form>
+        <form id="create-acc-form" class="card create-acc-form hidden">
+            <div class="card-head">
+                <div>
+                    <h2 class="card-title">New user account</h2>
+                    <p class="card-sub">Register an analyst or administrator for your organization</p>
+                </div>
             </div>
 
-            <button id="create-acc-button" class="create-acc-button">Create User Account</button>
-
-            <form id="create-acc-form" class="create-acc-form hidden">
-                <label>
-                    Username
+            <div class="grid">
+                <div class="full">
+                    <label for="new-username">Username</label>
                     <input type="text" id="new-username" autocomplete="off">
-                </label>
+                </div>
 
-                <label>
-                    Email
+                <div>
+                    <label for="new-email">Email</label>
                     <input type="email" id="new-email" autocomplete="off">
-                </label>
+                </div>
 
-                <label>
-                    Password
+                <div>
+                    <label for="new-password">Password</label>
                     <input type="password" id="new-password" autocomplete="new-password">
-                </label>
+                </div>
 
-                <label>
-                    Role
+                <div>
+                    <label for="new-role">Role</label>
                     <select id="new-role">
                         <option>Analyst</option>
                         <option>Account Administrator</option>
                     </select>
-                </label>
+                </div>
+            </div>
 
-                <div class="form-buttons">
-                    <button type="submit" class="save-user-button">Create account</button>
-                    <button type="button" id="cancel-create" class="cancel-button">Cancel</button>
+            <div class="actions">
+                <p id="create-acc-message" class="create-acc-message"></p>
+                <button type="button" class="btn btn-cancel" id="cancel-create">Cancel</button>
+                <button type="submit" class="btn btn-save">Create account</button>
+            </div>
+        </form>
+
+        <!change password form>
+        <form id="change-pass-form" class="card change-pass-form hidden">
+            <div class="card-head">
+                <div>
+                    <h2 class="card-title">Change password</h2>
+                    <p class="card-sub">Update the password for your own CRISP account</p>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="full">
+                    <label for="current-password">Current password</label>
+                    <input type="password" id="current-password" autocomplete="current-password">
                 </div>
 
-                <p id="create-acc-message" class="create-acc-message"></p>
-            </form>
+                <div>
+                    <label for="new-pass">New password</label>
+                    <input type="password" id="new-pass" autocomplete="new-password">
+                </div>
 
-        </section>
-    </main>
+                <div>
+                    <label for="confirm-pass">Confirm new password</label>
+                    <input type="password" id="confirm-pass" autocomplete="new-password">
+                </div>
+            </div>
+
+            <div class="actions">
+                <p id="change-pass-message" class="change-pass-message"></p>
+                <button type="button" class="btn btn-cancel" id="cancel-change">Cancel</button>
+                <button type="submit" class="btn btn-save">Change password</button>
+            </div>
+        </form>
+    </div>
 
     <script src="/src/layout.js"></script>
     <script src="/src/settings.js"></script>

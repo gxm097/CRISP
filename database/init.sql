@@ -54,7 +54,7 @@ VALUES
 (
     1,
     'admin',
-    '$2b$10$8TVe9VwYDNXJy2ciMN4ZiuEmvVzc7S.YULJlcLL9T34WP4Sh8z5pi',
+    '$2b$10$SzTuYlx3HFZlDDrlY95Zne4viKisXGIJliVHs7x9Gl01HptI3Fue2',
     'admin@example.com',
     'Account Administrator',
     TRUE,

@@ -788,6 +788,42 @@ app.get('/api/users/me', requireLogin, (req, res) => {
   res.json(req.session.user);
 });
 
+app.post('/api/users/me/password', requireLogin, async (req, res) => {
+  const { currentPassword, newPassword, confirmPassword } = req.body;
+
+  if (!currentPassword || !newPassword || !confirmPassword) {
+    return res.status(400).json({ message: 'Fill in every field.' });
+  }
+
+  if (newPassword !== confirmPassword) {
+    return res.status(400).json({ message: 'The new passwords do not match.' });
+  }
+
+  try {
+    const result = await pool.query(
+      'SELECT password_hash FROM user_account WHERE user_id = $1',
+      [req.session.user.id]
+    );
+    const user = result.rows[0];
+
+    if (!user || !await checkPassword(currentPassword, user.password_hash)) {
+      return res.status(401).json({ message: 'Your current password is wrong.' });
+    }
+
+    const hash = await hashPassword(newPassword);
+
+    await pool.query(
+      'UPDATE user_account SET password_hash = $1 WHERE user_id = $2',
+      [hash, req.session.user.id]
+    );
+
+    res.json({ message: 'Password changed.' });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ message: 'Something went wrong. Try again.' });
+  }
+});
+
 app.get('/api/users', requireAdmin, async (req, res) => {
   try {
     const result = await pool.query('SELECT * FROM user_account WHERE organization_id = $1', [req.session.user.organizationId]);

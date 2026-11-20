@@ -1,4 +1,4 @@
-// Settings page: dark mode toggle and create user account form
+// Settings page: dark mode toggle, create user account form and change password form
 
 const themeToggle = document.querySelector('#dark-toggle');
 const themeIcon = themeToggle.querySelector('.theme-icon');
@@ -59,5 +59,45 @@ createAccForm.addEventListener('submit', async (event) => {
 
     if (response.ok) {
         createAccForm.reset();
+    }
+});
+
+
+const changePassButton = document.querySelector('#change-pass-button');
+const changePassForm = document.querySelector('#change-pass-form');
+const cancelChange = document.querySelector('#cancel-change');
+const changePassMessage = document.querySelector('#change-pass-message');
+
+changePassButton.addEventListener('click', () => {
+    changePassForm.classList.toggle('hidden');
+    changePassMessage.textContent = '';
+});
+
+cancelChange.addEventListener('click', () => {
+    changePassForm.reset();
+    changePassForm.classList.add('hidden');
+    changePassMessage.textContent = '';
+});
+
+changePassForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const passwords = {
+        currentPassword: document.querySelector('#current-password').value,
+        newPassword: document.querySelector('#new-pass').value,
+        confirmPassword: document.querySelector('#confirm-pass').value
+    };
+
+    const response = await fetch('/api/users/me/password', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(passwords)
+    });
+
+    const data = await response.json();
+    changePassMessage.textContent = data.message;
+
+    if (response.ok) {
+        changePassForm.reset();
     }
 });
