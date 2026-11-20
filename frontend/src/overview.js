@@ -34,20 +34,31 @@
 
     loadDashboard() 
 
-    document.querySelector(".btn").addEventListener("click", async() => {
+        const runButton = document.querySelector(".btn");
+
+    runButton.addEventListener("click", async () => {
+        runButton.disabled = true;
+        runButton.textContent = "Starting…";
+
         const res = await fetch("/api/assessments", {
             method: "POST",
             credentials: 'same-origin',
             headers: { 'Content-Type': 'application/json' },
             body: '{}'
         });
+
+        runButton.disabled = false;
+        runButton.textContent = "Run assessment";
+
         if (!res.ok) {
             const body = await res.json().catch(() => null);
             alert(body?.message || body?.error || 'Could not start assessment');
             return;
         }
+
+        alert('Assessment started. You can follow its progress on the Assessments page.');
         loadDashboard();
-    })
+    });
 
     //greeting in header
     function getGreeting() {
@@ -60,8 +71,12 @@
 
     document.getElementById("greeting").textContent = getGreeting();
 
-    // TODO: show the logged-in user's name once the backend has login sessions
-    // document.getElementById("username").textContent = UserActivation.first.Name;
+        // show the logged-in user's name
+    fetch("/api/users/me", { credentials: 'same-origin' })
+        .then(res => res.ok ? res.json() : null)
+        .then(user => {
+            if (user) document.getElementById("username").textContent = user.username;
+        });
 
 
 

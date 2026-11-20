@@ -507,10 +507,10 @@ VALUES
 ),
 (
     1,
-    CURRENT_TIMESTAMP,
-    NULL,
+    CURRENT_TIMESTAMP - INTERVAL '2 hours',
+    CURRENT_TIMESTAMP - INTERVAL '2 hours' + INTERVAL '15 minutes',
     'Scheduled',
-    'Running'
+    'Completed'
 );
 
 --Assessment Asset
