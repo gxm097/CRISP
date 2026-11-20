@@ -1,0 +1,151 @@
+/* Printable report page /
+{
+box-sizing: border-box;
+}
+body {
+margin: 0;
+background: #eef1f5;
+font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+color: #1a1a1a;
+}
+.toolbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 900px;
+margin: 24px auto 0;
+padding: 0 8px;
+}
+.toolbar a {
+color: #0f5c63;
+text-decoration: none;
+font-weight: 600;
+}
+.toolbar button {
+padding: 10px 18px;
+font-weight: 600;
+color: #ffffff;
+background: #0f5c63;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+.report {
+max-width: 900px;
+margin: 16px auto 40px;
+padding: 40px 48px;
+background: #ffffff;
+border-radius: 12px;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+.report-header {
+border-bottom: 3px solid #07192f;
+padding-bottom: 16px;
+margin-bottom: 24px;
+}
+.brand {
+font-weight: 700;
+letter-spacing: 0.12em;
+color: #0f5c63;
+}
+.report-header h1 {
+margin: 6px 0;
+font-size: 28px;
+color: #07192f;
+}
+.meta,
+.note {
+color: #5c6b7b;
+font-size: 13px;
+}
+section {
+margin-bottom: 28px;
+}
+h2 {
+font-size: 18px;
+color: #07192f;
+border-bottom: 1px solid #e5e7eb;
+padding-bottom: 6px;
+}
+.stat-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 12px;
+}
+.stat {
+padding: 14px;
+border: 1px solid #e5e7eb;
+border-radius: 8px;
+}
+.stat-value {
+font-size: 24px;
+font-weight: 700;
+color: #07192f;
+}
+.stat-label {
+font-size: 13px;
+color: #5c6b7b;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+font-size: 14px;
+}
+th,
+td {
+text-align: left;
+padding: 8px 10px;
+border-bottom: 1px solid #e5e7eb;
+}
+th {
+background: #f1f4f8;
+width: 180px;
+}
+thead th {
+width: auto;
+}
+.nowrap {
+white-space: nowrap;
+}
+.finding {
+padding: 16px 0;
+border-bottom: 1px solid #e5e7eb;
+page-break-inside: avoid;
+}
+.finding h3 {
+margin: 0 0 6px;
+font-size: 16px;
+}
+.description {
+color: #374151;
+line-height: 1.5;
+}
+.badge {
+padding: 3px 10px;
+border-radius: 20px;
+font-size: 12px;
+font-weight: 600;
+}
+.severity-critical { background: #fde2e1; color: #b42318; }
+.severity-high { background: #fff0db; color: #cf7a00; }
+.severity-medium { background: #fef7c3; color: #8a6d00; }
+.severity-low { background: #d9f5e5; color: #12874d; }
+/* when printing or saving as PDF: hide buttons, use the full page /
+@media print {
+body {
+background: #ffffff;
+}
+.toolbar {
+display: none;
+}
+.report {
+margin: 0;
+padding: 0;
+max-width: none;
+box-shadow: none;
+}
+.badge {
+-webkit-print-color-adjust: exact;
+print-color-adjust: exact;
+}
+}
