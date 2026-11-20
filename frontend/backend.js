@@ -107,7 +107,8 @@ function parseMultipartCsv(req) {
 
 function runPython(scriptPath, args = []) {
   return new Promise((resolve, reject) => {
-    const child = spawn(process.env.PYTHON || 'python3', [scriptPath, ...args], {
+    const pythonCommand = process.env.PYTHON || (process.platform === 'win32' ? 'py' : 'python3');
+    const child = spawn(pythonCommand, [scriptPath, ...args], {
       cwd: path.join(__dirname, '..'),
       env: process.env
     });
@@ -371,7 +372,12 @@ app.post('/api/import-jobs', requireLogin, async (req, res) => {
 
       const root = path.join(__dirname, '..');
       const outputPath = path.join(uploadDir, upload.filename.replace(/\.csv$/i, '') + '_inventory.sql');
-      const cleaner = upload.importType === 'Firewall inventory'
+      // Firewall exports have a "Controller Counter" column, so Auto-detect can spot them
+      const firstLine = upload.content.toString('utf8').split(/\r?\n/)[0].toLowerCase();
+      const isFirewallFile = upload.importType === 'Firewall inventory'
+        || (upload.importType === 'Auto-detect' && firstLine.includes('controller counter'));
+
+      const cleaner = isFirewallFile
         ? path.join(root, 'cleaners', 'firewallClean.py')
         : path.join(root, 'cleaners', 'generalClean.py');
 
@@ -381,7 +387,7 @@ app.post('/api/import-jobs', requireLogin, async (req, res) => {
       job.progress = 45;
       await runPython(path.join(root, 'cleaners', 'loadInventory.py'), [
         outputPath,
-        '--db', 'postgresql://postgres:crisppassword@localhost:5432/crisp',
+        '--docker',
         '--force',
         '--user-id', String(req.session.user?.id || 1)
       ]);

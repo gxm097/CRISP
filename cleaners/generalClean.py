@@ -1,4 +1,5 @@
 import argparse
+import sys
 import pandas as pd
 from pathlib import Path
  
@@ -43,19 +44,62 @@ def loadCsv(filePath):
     return df.dropna(how="all").reset_index(drop=True)
  
  
+# Asset type names used in the CRISP template -> AssetTypeID in the database
+TYPE_IDS = {
+    "firewall": 1,
+    "vpn endpoint": 2,
+    "switch": 3,
+    "access point": 4,
+    "saas": 5,
+}
+
+
+def getColumn(df, targetRow, *names):
+    # Find a column by its header name (not case-sensitive) and return that cell
+    for column in df.columns:
+        if str(column).strip().lower() in names:
+            return df.at[targetRow, column]
+    return None
+
+
 def getData(df, targetRow, product):
-    deviceName = df.iloc[targetRow, 0]
-    # AssetName is NOT NULL in the database, so a row with no name can't be inserted.
-    if isBlank(deviceName):
-        return None
- 
-    version = df.iloc[targetRow, 1]
-    vendor = df.iloc[targetRow, 2] if len(df.columns) > 2 else None
- 
+    headers = [str(column).strip().lower() for column in df.columns]
+    rowNumber = targetRow + 2  # +1 for the header row, +1 because rows start at 1
+
+    # CRISP inventory template: Asset Name, Asset Type, Vendor, Product/Model, Version, Public Facing
+    if "asset name" in headers:
+        deviceName = getColumn(df, targetRow, "asset name")
+        if isBlank(deviceName):
+            return None
+
+        typeName = getColumn(df, targetRow, "asset type")
+        typeId = TYPE_IDS.get(str(typeName).strip().lower())
+        if typeId is None:
+            sys.exit(f'Row {rowNumber}: unknown asset type "{typeName}". '
+                     'Use Firewall, VPN Endpoint, Switch, Access Point or SaaS.')
+
+        vendor = getColumn(df, targetRow, "vendor")
+        product = getColumn(df, targetRow, "product/model", "product")
+        version = getColumn(df, targetRow, "version")
+        publicFacing = str(getColumn(df, targetRow, "public facing")).strip().lower() in ("yes", "true")
+
+    # Software installation exports: Device Name, Version, User (Name), ...
+    else:
+        deviceName = df.iloc[targetRow, 0]
+        # AssetName is NOT NULL in the database, so a row with no name can't be inserted.
+        if isBlank(deviceName):
+            return None
+
+        typeId = 5
+        vendor = getColumn(df, targetRow, "vendor", "publisher")
+        version = getColumn(df, targetRow, "version") if "version" in headers else df.iloc[targetRow, 1]
+        publicFacing = False
+
     return (
         "INSERT INTO InventoryAsset "
         "(OrganizationID, AssetTypeID, AssetName, Vendor, Product, Version, Build, Hostname, PublicFacing, Status) "
-        f"VALUES (1, 5, {sqlValue(deviceName)}, {sqlValue(vendor)}, {sqlValue(product)}, {sqlValue(version)}, NULL, NULL, FALSE, 'Active');"
+        f"VALUES (1, {typeId}, {sqlValue(deviceName)}, {sqlValue(vendor)}, {sqlValue(product)}, {sqlValue(version)}, "
+        f"NULL, NULL, {'TRUE' if publicFacing else 'FALSE'}, 'Active');"
     )
  
  
