@@ -671,14 +671,22 @@ app.get('/api/vulnerabilities', requireLogin, async (req, res) => {
 app.get('/api/findings', requireLogin, async (req, res) => {
   try {
     const result = await pool.query(`
-      SELECT f.FindingID, f.Status, f.FirstDetected, f.LastDetected, f.Resolution, f.Notes,
-             a.AssetName, a.AssetID, a.Version, a.Status AS AssetStatus,
-             v.CVE, v.CVSSScore, v.Severity
+      SELECT f.FindingID AS id,
+             v.CVE AS cve,
+             v.Title AS title,
+             a.AssetName AS asset,
+             t.AssetTypeName AS "assetType",
+             v.CVSSScore::float AS cvss,
+             v.Severity AS severity,
+             v.KEVFlag AS kev,
+             f.FindingStatus AS status,
+             TO_CHAR(f.FirstDetected, 'YYYY-MM-DD') AS "firstDetected"
       FROM Finding f
       JOIN InventoryAsset a ON a.AssetID = f.AssetID
-      LEFT JOIN Vulnerability v ON v.VulnerabilityID = f.VulnerabilityID
-      WHERE a.OrganizationID = $1
-      ORDER BY f.FirstDetected DESC
+      JOIN AssetType t ON t.AssetTypeID = a.AssetTypeID
+      JOIN Vulnerability v ON v.VulnerabilityID = f.VulnerabilityID
+      WHERE f.OrganizationID = $1
+      ORDER BY v.CVSSScore DESC NULLS LAST, f.FirstDetected DESC
     `, [getOrganizationId(req)]);
 
     res.json(result.rows);
