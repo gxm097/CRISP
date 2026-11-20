@@ -33,7 +33,7 @@
                 <td>${f.cvss ?? '—'}</td>
                 <td>${f.severity ?? '—'}</td>
                 <td>${f.status ?? '—'}</td>
-                <td>${f.discovered ?? '—'}</td>
+                <td>${f.discovered ? new Date(f.discovered).toLocaleDateString() : '—'}</td>
               </tr>
             `).join("") || '<tr><td colspan="6">No priority findings.</td></tr>';
         }
