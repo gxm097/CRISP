@@ -1,55 +1,79 @@
-document.addEventListener("DOMContentLoaded", () => {
+// Reports page: generate reports and list the ones already generated
 
-    // Generate Report Buttons
+const reportsBody = document.getElementById('reports-body');
+const reportSearch = document.querySelector('.search-input');
 
-    const generateButtons =
-        document.querySelectorAll(".report-card button");
+let allReports = [];
 
-    generateButtons.forEach(button => {
+function openReport(id) {
+    window.open('/report-view?id=' + encodeURIComponent(id), '_blank');
+}
 
-        button.addEventListener("click", () => {
+function renderReports() {
+    const search = reportSearch.value.trim().toLowerCase();
+    const rows = allReports.filter(r =>
+        `${r.type} ${r.generatedBy}`.toLowerCase().includes(search)
+    );
 
-            const reportName =
-                button.parentElement.querySelector("h3").textContent;
-
-            console.log(`Generating report: ${reportName}`);
-
-            alert(`${reportName} generation started.`);
-        });
-
-    });
-
-    // Search Reports Table
-
-    const searchInput =
-        document.querySelector(".search-input");
-
-    const rows =
-        document.querySelectorAll(".report-table table tr");
-
-    if (searchInput) {
-
-        searchInput.addEventListener("keyup", () => {
-
-            const search =
-                searchInput.value.toLowerCase();
-
-            rows.forEach((row, index) => {
-
-                if (index === 0) return;
-
-                const text =
-                    row.textContent.toLowerCase();
-
-                row.style.display =
-                    text.includes(search)
-                    ? ""
-                    : "none";
-
-            });
-
-        });
-
+    if (rows.length === 0) {
+        reportsBody.innerHTML = '<tr><td colspan="4">No reports yet. Generate one above.</td></tr>';
+        return;
     }
 
+    reportsBody.innerHTML = rows.map(r => `
+        <tr>
+            <td>${r.type}</td>
+            <td>${new Date(r.createdDate).toLocaleString()}</td>
+            <td>${r.generatedBy ?? '—'}</td>
+            <td><button class="download-btn" data-id="${r.id}">Open / Save PDF</button></td>
+        </tr>
+    `).join('');
+}
+
+async function loadReports() {
+    try {
+        const res = await fetch('/api/generated-reports', { credentials: 'same-origin' });
+        if (!res.ok) throw new Error();
+        allReports = await res.json();
+        renderReports();
+    } catch (error) {
+        reportsBody.innerHTML = '<tr><td colspan="4">Could not load reports.</td></tr>';
+    }
+}
+
+// Generate Report buttons
+document.querySelectorAll('.generate-report-btn').forEach(button => {
+    button.addEventListener('click', async () => {
+        button.disabled = true;
+        button.textContent = 'Generating…';
+
+        const res = await fetch('/api/generated-reports', {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ type: button.dataset.type })
+        });
+
+        button.disabled = false;
+        button.textContent = 'Generate Report';
+
+        if (!res.ok) {
+            alert('Could not generate the report.');
+            return;
+        }
+
+        const { id } = await res.json();
+        openReport(id);
+        loadReports();
+    });
 });
+
+// Open buttons in the table
+reportsBody.addEventListener('click', event => {
+    const button = event.target.closest('button[data-id]');
+    if (button) openReport(button.dataset.id);
+});
+
+reportSearch.addEventListener('input', renderReports);
+
+loadReports();
